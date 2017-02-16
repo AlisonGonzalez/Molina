@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5601A71E561F8A0073EE55 /* PodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5601A61E561F8A0073EE55 /* PodcastViewController.swift */; };
 		38CA797C1E4F8D8800F498CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797B1E4F8D8800F498CD /* AppDelegate.swift */; };
 		38CA797E1E4F8D8800F498CD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797D1E4F8D8800F498CD /* FirstViewController.swift */; };
 		38CA79801E4F8D8800F498CD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797F1E4F8D8800F498CD /* SecondViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D5601A61E561F8A0073EE55 /* PodcastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastViewController.swift; sourceTree = "<group>"; };
 		38CA79781E4F8D8800F498CD /* CONCEPTO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CONCEPTO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CA797B1E4F8D8800F498CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38CA797D1E4F8D8800F498CD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		38CA797A1E4F8D8800F498CD /* CONCEPTO */ = {
 			isa = PBXGroup;
 			children = (
+				1D5601A61E561F8A0073EE55 /* PodcastViewController.swift */,
 				38CA797B1E4F8D8800F498CD /* AppDelegate.swift */,
 				38CA797D1E4F8D8800F498CD /* FirstViewController.swift */,
 				38CA797F1E4F8D8800F498CD /* SecondViewController.swift */,
@@ -142,6 +145,7 @@
 				38CA79801E4F8D8800F498CD /* SecondViewController.swift in Sources */,
 				38CA797C1E4F8D8800F498CD /* AppDelegate.swift in Sources */,
 				38CA797E1E4F8D8800F498CD /* FirstViewController.swift in Sources */,
+				1D5601A71E561F8A0073EE55 /* PodcastViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +307,7 @@
 				38CA798E1E4F8D8900F498CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -294,7 +294,7 @@
         <!--Podcast-->
         <scene sceneID="gXL-mb-Yxo">
             <objects>
-                <viewController id="oE6-TR-lCq" sceneMemberID="viewController">
+                <viewController id="oE6-TR-lCq" customClass="PodcastViewController" customModule="CONCEPTO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9PV-fV-5MJ"/>
                         <viewControllerLayoutGuide type="bottom" id="nRV-5J-Asv"/>
@@ -307,7 +307,7 @@
                                 <rect key="frame" x="67" y="28" width="215" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pby-uk-onb">
+                            <searchBar contentMode="redraw" fixedFrame="YES" text="" translatesAutoresizingMaskIntoConstraints="NO" id="pby-uk-onb">
                                 <rect key="frame" x="0.0" y="98" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <string key="placeholder" base64-UTF8="YES">
@@ -344,6 +344,7 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
                     </view>
                     <tabBarItem key="tabBarItem" title="Podcast" id="eGb-lp-R7k"/>
                     <connections>
+                        <outlet property="buscaPodcast" destination="pby-uk-onb" id="qH8-HZ-5NL"/>
                         <outlet property="searchDisplayController" destination="ods-pw-y7U" id="oKl-VI-eFc"/>
                     </connections>
                 </viewController>
@@ -366,7 +367,7 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="557.60000000000002" y="789.35532233883066"/>
+            <point key="canvasLocation" x="558" y="727"/>
         </scene>
         <!--Social-->
         <scene sceneID="4Mr-E5-FD7">
@@ -421,7 +422,7 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8WX-3D-WTz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Streaming" image="first" id="acW-dT-cKf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gSe-cC-Aoa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gSe-cC-Aoa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
