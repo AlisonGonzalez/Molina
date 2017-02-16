@@ -232,6 +232,10 @@
                                 <rect key="frame" x="67" y="28" width="215" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="kh6-p2-jhw">
+                                <rect key="frame" x="76" y="166" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -239,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyr-9j-BF0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="558" y="1546"/>
+            <point key="canvasLocation" x="557.60000000000002" y="1545.8770614692655"/>
         </scene>
         <!--Eventos-->
         <scene sceneID="wg7-f3-ORb">
@@ -323,6 +327,10 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
                                 <rect key="frame" x="16" y="193" width="343" height="303"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabla" id="GJe-K5-pLF">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="313"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jKQ-1r-JyJ">
                                 <rect key="frame" x="238" y="520" width="121" height="29"/>
@@ -361,7 +369,7 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="558" y="727"/>
+            <point key="canvasLocation" x="557.60000000000002" y="726.38680659670172"/>
         </scene>
         <!--Social-->
         <scene sceneID="4Mr-E5-FD7">
@@ -431,9 +439,11 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="106" height="46"/>
         <image name="Streaming" width="108" height="83"/>
         <image name="first" width="30" height="30"/>
         <image name="logotitulo" width="279" height="45"/>
         <image name="second" width="30" height="30"/>
+        <image name="tabla" width="104" height="85"/>
     </resources>
 </document>
