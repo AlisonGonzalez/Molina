@@ -421,7 +421,7 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8WX-3D-WTz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Streaming" image="first" id="acW-dT-cKf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gSe-cC-Aoa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gSe-cC-Aoa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
