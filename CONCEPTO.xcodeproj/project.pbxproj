@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		1D46595C1E5651D400FC9415 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D46595B1E5651D400FC9415 /* MediaPlayer.framework */; };
 		1D5601A71E561F8A0073EE55 /* PodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5601A61E561F8A0073EE55 /* PodcastViewController.swift */; };
+		384B7A2D1E6B42DF00DBC3B0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B7A2B1E6B42DF00DBC3B0 /* Interface.storyboard */; };
+		384B7A2F1E6B42DF00DBC3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384B7A2E1E6B42DF00DBC3B0 /* Assets.xcassets */; };
+		384B7A361E6B42E000DBC3B0 /* conceptoWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 384B7A351E6B42E000DBC3B0 /* conceptoWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		384B7A3D1E6B42E000DBC3B0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B7A3C1E6B42E000DBC3B0 /* InterfaceController.swift */; };
+		384B7A3F1E6B42E000DBC3B0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B7A3E1E6B42E000DBC3B0 /* ExtensionDelegate.swift */; };
+		384B7A411E6B42E000DBC3B0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B7A401E6B42E000DBC3B0 /* NotificationController.swift */; };
+		384B7A431E6B42E000DBC3B0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B7A421E6B42E000DBC3B0 /* ComplicationController.swift */; };
+		384B7A451E6B42E000DBC3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384B7A441E6B42E000DBC3B0 /* Assets.xcassets */; };
+		384B7A491E6B42E000DBC3B0 /* conceptoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 384B7A291E6B42DF00DBC3B0 /* conceptoWatch.app */; };
 		38CA797C1E4F8D8800F498CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797B1E4F8D8800F498CD /* AppDelegate.swift */; };
 		38CA797E1E4F8D8800F498CD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797D1E4F8D8800F498CD /* FirstViewController.swift */; };
 		38CA79801E4F8D8800F498CD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797F1E4F8D8800F498CD /* SecondViewController.swift */; };
@@ -17,9 +26,63 @@
 		38CA79881E4F8D8900F498CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79861E4F8D8900F498CD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		384B7A371E6B42E000DBC3B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38CA79701E4F8D7900F498CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 384B7A341E6B42E000DBC3B0;
+			remoteInfo = "conceptoWatch Extension";
+		};
+		384B7A471E6B42E000DBC3B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38CA79701E4F8D7900F498CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 384B7A281E6B42DE00DBC3B0;
+			remoteInfo = conceptoWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		384B7A4F1E6B42E000DBC3B0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				384B7A361E6B42E000DBC3B0 /* conceptoWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384B7A511E6B42E000DBC3B0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				384B7A491E6B42E000DBC3B0 /* conceptoWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1D46595B1E5651D400FC9415 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		1D5601A61E561F8A0073EE55 /* PodcastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastViewController.swift; sourceTree = "<group>"; };
+		384B7A291E6B42DF00DBC3B0 /* conceptoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = conceptoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		384B7A2C1E6B42DF00DBC3B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		384B7A2E1E6B42DF00DBC3B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		384B7A301E6B42DF00DBC3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384B7A351E6B42E000DBC3B0 /* conceptoWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "conceptoWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		384B7A3B1E6B42E000DBC3B0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		384B7A3C1E6B42E000DBC3B0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		384B7A3E1E6B42E000DBC3B0 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		384B7A401E6B42E000DBC3B0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		384B7A421E6B42E000DBC3B0 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		384B7A441E6B42E000DBC3B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		384B7A461E6B42E000DBC3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38CA79781E4F8D8800F498CD /* CONCEPTO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CONCEPTO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CA797B1E4F8D8800F498CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38CA797D1E4F8D8800F498CD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +94,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		384B7A321E6B42E000DBC3B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		38CA79751E4F8D7900F498CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,10 +120,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		384B7A2A1E6B42DF00DBC3B0 /* conceptoWatch */ = {
+			isa = PBXGroup;
+			children = (
+				384B7A2B1E6B42DF00DBC3B0 /* Interface.storyboard */,
+				384B7A2E1E6B42DF00DBC3B0 /* Assets.xcassets */,
+				384B7A301E6B42DF00DBC3B0 /* Info.plist */,
+			);
+			path = conceptoWatch;
+			sourceTree = "<group>";
+		};
+		384B7A391E6B42E000DBC3B0 /* conceptoWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				384B7A3C1E6B42E000DBC3B0 /* InterfaceController.swift */,
+				384B7A3E1E6B42E000DBC3B0 /* ExtensionDelegate.swift */,
+				384B7A401E6B42E000DBC3B0 /* NotificationController.swift */,
+				384B7A421E6B42E000DBC3B0 /* ComplicationController.swift */,
+				384B7A441E6B42E000DBC3B0 /* Assets.xcassets */,
+				384B7A461E6B42E000DBC3B0 /* Info.plist */,
+				384B7A3A1E6B42E000DBC3B0 /* Supporting Files */,
+			);
+			path = "conceptoWatch Extension";
+			sourceTree = "<group>";
+		};
+		384B7A3A1E6B42E000DBC3B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				384B7A3B1E6B42E000DBC3B0 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		38CA796F1E4F8D7900F498CD = {
 			isa = PBXGroup;
 			children = (
 				38CA797A1E4F8D8800F498CD /* CONCEPTO */,
+				384B7A2A1E6B42DF00DBC3B0 /* conceptoWatch */,
+				384B7A391E6B42E000DBC3B0 /* conceptoWatch Extension */,
 				38CA79791E4F8D8800F498CD /* Products */,
 				1D46595A1E5651D400FC9415 /* Frameworks */,
 			);
@@ -63,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				38CA79781E4F8D8800F498CD /* CONCEPTO.app */,
+				384B7A291E6B42DF00DBC3B0 /* conceptoWatch.app */,
+				384B7A351E6B42E000DBC3B0 /* conceptoWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +191,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		384B7A281E6B42DE00DBC3B0 /* conceptoWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384B7A501E6B42E000DBC3B0 /* Build configuration list for PBXNativeTarget "conceptoWatch" */;
+			buildPhases = (
+				384B7A271E6B42DE00DBC3B0 /* Resources */,
+				384B7A4F1E6B42E000DBC3B0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				384B7A381E6B42E000DBC3B0 /* PBXTargetDependency */,
+			);
+			name = conceptoWatch;
+			productName = conceptoWatch;
+			productReference = 384B7A291E6B42DF00DBC3B0 /* conceptoWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		384B7A341E6B42E000DBC3B0 /* conceptoWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384B7A4E1E6B42E000DBC3B0 /* Build configuration list for PBXNativeTarget "conceptoWatch Extension" */;
+			buildPhases = (
+				384B7A311E6B42E000DBC3B0 /* Sources */,
+				384B7A321E6B42E000DBC3B0 /* Frameworks */,
+				384B7A331E6B42E000DBC3B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "conceptoWatch Extension";
+			productName = "conceptoWatch Extension";
+			productReference = 384B7A351E6B42E000DBC3B0 /* conceptoWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		38CA79771E4F8D7900F498CD /* CONCEPTO */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38CA798C1E4F8D8900F498CD /* Build configuration list for PBXNativeTarget "CONCEPTO" */;
@@ -92,10 +232,12 @@
 				38CA79741E4F8D7900F498CD /* Sources */,
 				38CA79751E4F8D7900F498CD /* Frameworks */,
 				38CA79761E4F8D7900F498CD /* Resources */,
+				384B7A511E6B42E000DBC3B0 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				384B7A481E6B42E000DBC3B0 /* PBXTargetDependency */,
 			);
 			name = CONCEPTO;
 			productName = CONCEPTO;
@@ -112,6 +254,14 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Alfredo;
 				TargetAttributes = {
+					384B7A281E6B42DE00DBC3B0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					384B7A341E6B42E000DBC3B0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					38CA79771E4F8D7900F498CD = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -132,11 +282,30 @@
 			projectRoot = "";
 			targets = (
 				38CA79771E4F8D7900F498CD /* CONCEPTO */,
+				384B7A281E6B42DE00DBC3B0 /* conceptoWatch */,
+				384B7A341E6B42E000DBC3B0 /* conceptoWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		384B7A271E6B42DE00DBC3B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384B7A2F1E6B42DF00DBC3B0 /* Assets.xcassets in Resources */,
+				384B7A2D1E6B42DF00DBC3B0 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384B7A331E6B42E000DBC3B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384B7A451E6B42E000DBC3B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		38CA79761E4F8D7900F498CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,6 +319,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		384B7A311E6B42E000DBC3B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384B7A411E6B42E000DBC3B0 /* NotificationController.swift in Sources */,
+				384B7A431E6B42E000DBC3B0 /* ComplicationController.swift in Sources */,
+				384B7A3F1E6B42E000DBC3B0 /* ExtensionDelegate.swift in Sources */,
+				384B7A3D1E6B42E000DBC3B0 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		38CA79741E4F8D7900F498CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,7 +343,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		384B7A381E6B42E000DBC3B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 384B7A341E6B42E000DBC3B0 /* conceptoWatch Extension */;
+			targetProxy = 384B7A371E6B42E000DBC3B0 /* PBXContainerItemProxy */;
+		};
+		384B7A481E6B42E000DBC3B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 384B7A281E6B42DE00DBC3B0 /* conceptoWatch */;
+			targetProxy = 384B7A471E6B42E000DBC3B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		384B7A2B1E6B42DF00DBC3B0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				384B7A2C1E6B42DF00DBC3B0 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		38CA79811E4F8D8900F498CD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -183,6 +384,72 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		384B7A4A1E6B42E000DBC3B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = conceptoWatch_Extension;
+				INFOPLIST_FILE = conceptoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		384B7A4B1E6B42E000DBC3B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = conceptoWatch_Extension;
+				INFOPLIST_FILE = conceptoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		384B7A4C1E6B42E000DBC3B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "conceptoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		384B7A4D1E6B42E000DBC3B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "conceptoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
 		38CA798A1E4F8D8900F498CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -303,6 +570,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		384B7A4E1E6B42E000DBC3B0 /* Build configuration list for PBXNativeTarget "conceptoWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384B7A4C1E6B42E000DBC3B0 /* Debug */,
+				384B7A4D1E6B42E000DBC3B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		384B7A501E6B42E000DBC3B0 /* Build configuration list for PBXNativeTarget "conceptoWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384B7A4A1E6B42E000DBC3B0 /* Debug */,
+				384B7A4B1E6B42E000DBC3B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		38CA79731E4F8D7900F498CD /* Build configuration list for PBXProject "CONCEPTO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
