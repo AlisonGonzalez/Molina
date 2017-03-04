@@ -10,8 +10,9 @@ import Foundation
 import AVFoundation
 
 class RadioPlayer {
+    //http://wms.tecnoxia.com:1935/file/playlist.m3u
     static let sharedInstance = RadioPlayer()
-    private var player = AVPlayer(url: NSURL(string: "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http%3A%2F%2Fus1.internet-radio.com%3A8105%2Flisten.pls&t=.m3u")! as URL)
+    private var player = AVPlayer(url: NSURL(string: "http://wms.tecnoxia.com:1935/8022/8022/playlist.m3u8")! as URL)
     private var isPlaying = false
     
     func play() {
