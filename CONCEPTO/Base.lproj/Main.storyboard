@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -75,7 +75,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Streaming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="say-NX-A9F">
-                                <rect key="frame" x="160.5" y="81" width="78.5" height="21"/>
+                                <rect key="frame" x="160" y="81" width="79" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ffP-93-WfY"/>
                                 </constraints>
@@ -83,12 +83,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="transmision" translatesAutoresizingMaskIntoConstraints="NO" id="dSD-nR-Jfz">
-                                <rect key="frame" x="17" y="163" width="343" height="343"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="343" id="vc1-w5-21u"/>
-                                </constraints>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAZ-VJ-ndg">
+                                <rect key="frame" x="173" y="296" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="sag-in-JXS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -99,7 +100,6 @@
                             <constraint firstItem="XR3-mb-hGK" firstAttribute="leading" secondItem="1oe-lQ-Av0" secondAttribute="trailing" constant="8" symbolic="YES" id="6wG-O5-MCg"/>
                             <constraint firstItem="XVW-Vb-81q" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="7c8-qm-xkE"/>
                             <constraint firstItem="1oe-lQ-Av0" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="7gm-2z-xvu"/>
-                            <constraint firstItem="dSD-nR-Jfz" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="1" id="8UC-3h-mCc"/>
                             <constraint firstItem="sIu-Lk-0MK" firstAttribute="top" secondItem="XVW-Vb-81q" secondAttribute="top" id="8Yn-Pa-6T4"/>
                             <constraint firstItem="YZ7-ct-pmv" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="7" id="9uj-JY-SjL"/>
                             <constraint firstItem="t4m-zU-iL8" firstAttribute="top" secondItem="1oe-lQ-Av0" secondAttribute="top" id="CrK-Fn-64e"/>
@@ -107,16 +107,16 @@
                             <constraint firstItem="sIu-Lk-0MK" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-20.5" id="G4J-pT-OiY"/>
                             <constraint firstItem="0e1-e2-o8u" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-1" id="Hq5-ak-t6U"/>
                             <constraint firstItem="sIu-Lk-0MK" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-20.5" id="Ikp-nl-BMl"/>
+                            <constraint firstItem="rAZ-VJ-ndg" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="296" id="JHz-Db-Xdr"/>
                             <constraint firstItem="1oe-lQ-Av0" firstAttribute="top" secondItem="5nw-Yf-0ed" secondAttribute="bottom" constant="8" symbolic="YES" id="Mfi-Mu-fZd"/>
                             <constraint firstItem="1oe-lQ-Av0" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="MiP-se-eWA"/>
+                            <constraint firstItem="rAZ-VJ-ndg" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="N9J-9C-YUH"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="1" id="Nje-sN-5DR"/>
                             <constraint firstItem="say-NX-A9F" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="12" id="OMe-Ks-ZLc"/>
                             <constraint firstItem="5nw-Yf-0ed" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-44.5" id="Ra2-f8-Ac9"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="dSD-nR-Jfz" secondAttribute="bottom" constant="37" id="VHl-8W-jQl"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="1" id="aCn-uR-waD"/>
                             <constraint firstItem="1oe-lQ-Av0" firstAttribute="top" secondItem="sIu-Lk-0MK" secondAttribute="bottom" constant="8" symbolic="YES" id="ci5-X8-zho"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="t4m-zU-iL8" secondAttribute="bottom" constant="26" id="dbV-os-bUJ"/>
-                            <constraint firstItem="dSD-nR-Jfz" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="1" id="eCw-bz-bcn"/>
                             <constraint firstItem="XVW-Vb-81q" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="0.5" id="eVH-dR-oSl"/>
                             <constraint firstItem="YZ7-ct-pmv" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="149" id="eg9-fV-4fC"/>
                             <constraint firstItem="t4m-zU-iL8" firstAttribute="bottom" secondItem="1oe-lQ-Av0" secondAttribute="bottom" id="f8z-YK-Q95"/>
@@ -139,6 +139,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="U3k-Gn-eQb"/>
+                    <connections>
+                        <outlet property="playButton" destination="rAZ-VJ-ndg" id="NB1-qs-4Bq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -696,7 +699,6 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
         <image name="logotitulo" width="279" height="45"/>
         <image name="second" width="30" height="30"/>
         <image name="tabla" width="104" height="85"/>
-        <image name="transmision" width="512" height="512"/>
         <image name="twitter" width="128" height="128"/>
         <image name="youtube" width="128" height="128"/>
     </resources>

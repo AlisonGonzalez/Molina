@@ -11,6 +11,10 @@ import MediaPlayer
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var playButton: UIButton!
+    @IBAction func playButtonPressed(_ sender: UIButton) {
+        toggle()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,6 +23,24 @@ class FirstViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func toggle() {
+        if RadioPlayer.sharedInstance.currentlyPlaying() {
+            pauseRadio()
+        } else {
+            playRadio()
+        }
+    }
+    
+    func playRadio() {
+        RadioPlayer.sharedInstance.play()
+        playButton.setTitle("Pause", for: UIControlState.normal)
+    }
+    
+    func pauseRadio() {
+        RadioPlayer.sharedInstance.pause()
+        playButton.setTitle("Play", for: UIControlState.normal)
+        
     }
 
 
