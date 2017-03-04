@@ -304,7 +304,7 @@
             </objects>
             <point key="canvasLocation" x="3128.8000000000002" y="-661.61919040479768"/>
         </scene>
-        <!--Item-->
+        <!--Ltas-->
         <scene sceneID="gOU-NJ-U1N">
             <objects>
                 <tableViewController id="FXg-vq-L9m" sceneMemberID="viewController">
@@ -330,7 +330,7 @@
                             <outlet property="delegate" destination="FXg-vq-L9m" id="8K4-Ub-YTq"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="w5i-su-k4h"/>
+                    <tabBarItem key="tabBarItem" title="Ltas" id="w5i-su-k4h"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="frN-ye-1MP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
