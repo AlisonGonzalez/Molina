@@ -19,6 +19,8 @@
 		384B7A431E6B42E000DBC3B0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B7A421E6B42E000DBC3B0 /* ComplicationController.swift */; };
 		384B7A451E6B42E000DBC3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384B7A441E6B42E000DBC3B0 /* Assets.xcassets */; };
 		384B7A491E6B42E000DBC3B0 /* conceptoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 384B7A291E6B42DF00DBC3B0 /* conceptoWatch.app */; };
+		38B109971E81CABC00E4D022 /* SeleccionPodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B109961E81CABC00E4D022 /* SeleccionPodcastViewController.swift */; };
+		38B109991E81CB1900E4D022 /* ListaPodcastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B109981E81CB1900E4D022 /* ListaPodcastTableViewController.swift */; };
 		38CA797C1E4F8D8800F498CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797B1E4F8D8800F498CD /* AppDelegate.swift */; };
 		38CA797E1E4F8D8800F498CD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797D1E4F8D8800F498CD /* FirstViewController.swift */; };
 		38CA79801E4F8D8800F498CD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797F1E4F8D8800F498CD /* SecondViewController.swift */; };
@@ -85,6 +87,8 @@
 		384B7A421E6B42E000DBC3B0 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		384B7A441E6B42E000DBC3B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		384B7A461E6B42E000DBC3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38B109961E81CABC00E4D022 /* SeleccionPodcastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionPodcastViewController.swift; sourceTree = "<group>"; };
+		38B109981E81CB1900E4D022 /* ListaPodcastTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaPodcastTableViewController.swift; sourceTree = "<group>"; };
 		38CA79781E4F8D8800F498CD /* CONCEPTO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CONCEPTO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CA797B1E4F8D8800F498CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38CA797D1E4F8D8800F498CD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 				38CA79841E4F8D8900F498CD /* Assets.xcassets */,
 				38CA79861E4F8D8900F498CD /* LaunchScreen.storyboard */,
 				38CA79891E4F8D8900F498CD /* Info.plist */,
+				38B109961E81CABC00E4D022 /* SeleccionPodcastViewController.swift */,
+				38B109981E81CB1900E4D022 /* ListaPodcastTableViewController.swift */,
 			);
 			path = CONCEPTO;
 			sourceTree = "<group>";
@@ -343,6 +349,8 @@
 				38CA797E1E4F8D8800F498CD /* FirstViewController.swift in Sources */,
 				1D5601A71E561F8A0073EE55 /* PodcastViewController.swift in Sources */,
 				1D7DB7FB1E6B72C50059C836 /* RadioPlayer.swift in Sources */,
+				38B109991E81CB1900E4D022 /* ListaPodcastTableViewController.swift in Sources */,
+				38B109971E81CABC00E4D022 /* SeleccionPodcastViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

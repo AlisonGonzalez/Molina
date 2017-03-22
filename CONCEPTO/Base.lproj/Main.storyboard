@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -263,19 +263,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotitulo" translatesAutoresizingMaskIntoConstraints="NO" id="G86-p5-3HA">
-                                <rect key="frame" x="67" y="20" width="215" height="35"/>
+                                <rect key="frame" x="67" y="64" width="215" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="mhq-Yj-CoX"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Politicas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9D-Tc-gA5">
-                                <rect key="frame" x="142" y="63" width="64" height="21"/>
+                                <rect key="frame" x="142" y="107" width="64" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4wq-vK-p0K">
-                                <rect key="frame" x="54" y="167" width="240" height="438"/>
+                                <rect key="frame" x="54" y="211" width="240" height="345"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -299,56 +299,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5y3-Gn-Wtq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3128.8000000000002" y="-661.61919040479768"/>
-        </scene>
-        <!--Listas-->
-        <scene sceneID="gOU-NJ-U1N">
-            <objects>
-                <tableViewController id="FXg-vq-L9m" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="V1y-hm-KqL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XnQ-Uu-DCa">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XnQ-Uu-DCa" id="W5L-h4-hSo">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="DXf-I9-eUi" kind="show" id="xos-r4-OyL"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="FXg-vq-L9m" id="CVv-uO-Lb4"/>
-                            <outlet property="delegate" destination="FXg-vq-L9m" id="8K4-Ub-YTq"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Listas" image="audifonos" selectedImage="audifonos" id="w5i-su-k4h"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="frN-ye-1MP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="639" y="1520"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="IRD-zM-Oxd">
-            <objects>
-                <viewController id="DXf-I9-eUi" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IHh-CZ-YCb"/>
-                        <viewControllerLayoutGuide type="bottom" id="g6A-1W-gnm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DKz-so-qmP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5wc-M4-Wlh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1401" y="1539"/>
         </scene>
         <!--Eventos-->
         <scene sceneID="wg7-f3-ORb">
@@ -575,6 +525,92 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
             </objects>
             <point key="canvasLocation" x="557.60000000000002" y="726.38680659670172"/>
         </scene>
+        <!--Root View Controller-->
+        <scene sceneID="iRm-ds-Zw6">
+            <objects>
+                <tableViewController id="Lhb-pS-N2z" customClass="ListaPodcastTableViewController" customModule="CONCEPTO" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Si5-pm-f3R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EntradaPodcast" id="8oN-Mr-o50">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8oN-Mr-o50" id="pKQ-jE-dYd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="IV4-7U-UiB" kind="show" id="KbX-7A-koo"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Lhb-pS-N2z" id="dvV-z8-KlJ"/>
+                            <outlet property="delegate" destination="Lhb-pS-N2z" id="dA0-Z4-rAz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="xw6-VS-Kn9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUe-8c-DwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711" y="1501"/>
+        </scene>
+        <!--Seleccion Podcast View Controller-->
+        <scene sceneID="F9Q-XP-gLU">
+            <objects>
+                <viewController id="IV4-7U-UiB" customClass="SeleccionPodcastViewController" customModule="CONCEPTO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yaH-0u-vC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="t4p-i6-3h2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O6u-Fn-Z0X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Has elegido el podcast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1R0-kW-hTb">
+                                <rect key="frame" x="100" y="154" width="175" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dq-xk-wzK">
+                                <rect key="frame" x="30" y="203" width="290" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="elPodcast" destination="1dq-xk-wzK" id="uIJ-SJ-odB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S41-KC-kmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2620" y="1503.5982008995504"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="pkb-xo-mkG">
+            <objects>
+                <navigationController id="LzG-Dp-gZm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="A5V-be-nHf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RbB-WL-zGu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Lhb-pS-N2z" kind="relationship" relationship="rootViewController" id="ggN-YO-sGW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLR-eJ-CUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="1501"/>
+        </scene>
         <!--Social-->
         <scene sceneID="4Mr-E5-FD7">
             <objects>
@@ -656,8 +692,8 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
                         <segue destination="8WX-3D-WTz" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="oE6-TR-lCq" kind="relationship" relationship="viewControllers" id="t5a-2V-X0B"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="FXg-vq-L9m" kind="relationship" relationship="viewControllers" id="daw-QQ-KOh"/>
                         <segue destination="ca5-Ls-YvM" kind="relationship" relationship="viewControllers" id="FwC-m3-hKt"/>
+                        <segue destination="LzG-Dp-gZm" kind="relationship" relationship="viewControllers" id="IWN-kA-YwN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -685,7 +721,6 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
         </scene>
     </scenes>
     <resources>
-        <image name="audifonos" width="32" height="32"/>
         <image name="calendario-1" width="40" height="40"/>
         <image name="calendario-2" width="48" height="48"/>
         <image name="compartir2" width="32" height="32"/>
