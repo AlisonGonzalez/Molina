@@ -279,7 +279,6 @@
 					};
 					38CA79771E4F8D7900F498CD = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = BT3USA77FD;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -568,7 +567,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BT3USA77FD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CONCEPTO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO;
@@ -582,7 +581,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BT3USA77FD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CONCEPTO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO;
