@@ -29,6 +29,8 @@
 		38CA79831E4F8D8900F498CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79811E4F8D8900F498CD /* Main.storyboard */; };
 		38CA79851E4F8D8900F498CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79841E4F8D8900F498CD /* Assets.xcassets */; };
 		38CA79881E4F8D8900F498CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79861E4F8D8900F498CD /* LaunchScreen.storyboard */; };
+		3922C3AB1E82FB0D0007E47D /* SocialMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922C3AA1E82FB0D0007E47D /* SocialMedia.swift */; };
+		3922C3AD1E82FBB00007E47D /* SocialButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922C3AC1E82FBB00007E47D /* SocialButtonsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		38CA79841E4F8D8900F498CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38CA79871E4F8D8900F498CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38CA79891E4F8D8900F498CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3922C3AA1E82FB0D0007E47D /* SocialMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMedia.swift; sourceTree = "<group>"; };
+		3922C3AC1E82FBB00007E47D /* SocialButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialButtonsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +203,8 @@
 				38CA79891E4F8D8900F498CD /* Info.plist */,
 				38B109961E81CABC00E4D022 /* SeleccionPodcastViewController.swift */,
 				38B109981E81CB1900E4D022 /* ListaPodcastTableViewController.swift */,
+				3922C3AA1E82FB0D0007E47D /* SocialMedia.swift */,
+				3922C3AC1E82FBB00007E47D /* SocialButtonsController.swift */,
 			);
 			path = CONCEPTO;
 			sourceTree = "<group>";
@@ -352,12 +358,14 @@
 				1DC682F61E80783C0061F98C /* DetalleViewController.swift in Sources */,
 				38CA79801E4F8D8800F498CD /* SecondViewController.swift in Sources */,
 				38CA797C1E4F8D8800F498CD /* AppDelegate.swift in Sources */,
+				3922C3AD1E82FBB00007E47D /* SocialButtonsController.swift in Sources */,
 				38CA797E1E4F8D8800F498CD /* FirstViewController.swift in Sources */,
 				1D5601A71E561F8A0073EE55 /* PodcastViewController.swift in Sources */,
 				1DC682F41E8072660061F98C /* JSONPodcastTableViewController.swift in Sources */,
 				1D7DB7FB1E6B72C50059C836 /* RadioPlayer.swift in Sources */,
 				38B109991E81CB1900E4D022 /* ListaPodcastTableViewController.swift in Sources */,
 				38B109971E81CABC00E4D022 /* SeleccionPodcastViewController.swift in Sources */,
+				3922C3AB1E82FB0D0007E47D /* SocialMedia.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

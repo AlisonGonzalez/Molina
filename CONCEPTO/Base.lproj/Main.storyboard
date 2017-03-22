@@ -513,7 +513,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotitulo" translatesAutoresizingMaskIntoConstraints="NO" id="fre-Pu-gWL">
-                                <rect key="frame" x="67" y="28" width="215" height="35"/>
+                                <rect key="frame" x="67" y="20" width="215" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Lnz-7t-bgc"/>
                                 </constraints>
@@ -542,7 +542,7 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
                                     <segment title="3"/>
                                 </segments>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LCB-ZG-5Rb">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LCB-ZG-5Rb">
                                 <rect key="frame" x="16" y="212" width="343" height="303"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabla" id="GJe-K5-pLF">
@@ -554,17 +554,17 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fre-Pu-gWL" firstAttribute="leading" secondItem="uq0-VR-k6M" secondAttribute="leadingMargin" constant="51" id="20y-bm-Sky"/>
-                            <constraint firstItem="LCB-ZG-5Rb" firstAttribute="top" secondItem="pby-uk-onb" secondAttribute="bottom" constant="51" id="3HV-g2-ayD"/>
+                            <constraint firstItem="LCB-ZG-5Rb" firstAttribute="top" secondItem="pby-uk-onb" secondAttribute="bottom" constant="70" id="3HV-g2-ayD"/>
                             <constraint firstItem="fre-Pu-gWL" firstAttribute="centerX" secondItem="uq0-VR-k6M" secondAttribute="centerX" constant="-13" id="ELT-7j-07l"/>
                             <constraint firstItem="nRV-5J-Asv" firstAttribute="top" secondItem="jKQ-1r-JyJ" secondAttribute="bottom" constant="67" id="Fmt-m2-jmW"/>
                             <constraint firstItem="LCB-ZG-5Rb" firstAttribute="centerX" secondItem="uq0-VR-k6M" secondAttribute="centerX" id="G2h-82-WPV"/>
                             <constraint firstItem="pby-uk-onb" firstAttribute="top" secondItem="wGj-m4-GpR" secondAttribute="bottom" constant="6" id="J04-72-rEG"/>
-                            <constraint firstItem="jKQ-1r-JyJ" firstAttribute="top" secondItem="LCB-ZG-5Rb" secondAttribute="bottom" constant="27" id="TgQ-oT-GsX"/>
-                            <constraint firstItem="wGj-m4-GpR" firstAttribute="top" secondItem="fre-Pu-gWL" secondAttribute="bottom" constant="8" symbolic="YES" id="aaN-n5-y94"/>
+                            <constraint firstItem="jKQ-1r-JyJ" firstAttribute="top" secondItem="LCB-ZG-5Rb" secondAttribute="bottom" constant="8" id="TgQ-oT-GsX"/>
+                            <constraint firstItem="wGj-m4-GpR" firstAttribute="top" secondItem="fre-Pu-gWL" secondAttribute="bottom" constant="16" id="aaN-n5-y94"/>
                             <constraint firstItem="LCB-ZG-5Rb" firstAttribute="trailing" secondItem="jKQ-1r-JyJ" secondAttribute="trailing" constant="12" id="ffp-em-LnL"/>
                             <constraint firstItem="pby-uk-onb" firstAttribute="centerX" secondItem="uq0-VR-k6M" secondAttribute="centerX" id="gFO-Xt-z7v"/>
                             <constraint firstItem="pby-uk-onb" firstAttribute="leading" secondItem="uq0-VR-k6M" secondAttribute="leading" id="lYM-pW-z8M"/>
-                            <constraint firstItem="fre-Pu-gWL" firstAttribute="top" secondItem="9PV-fV-5MJ" secondAttribute="bottom" constant="8" symbolic="YES" id="lqi-oR-EUW"/>
+                            <constraint firstItem="fre-Pu-gWL" firstAttribute="top" secondItem="9PV-fV-5MJ" secondAttribute="bottom" id="lqi-oR-EUW"/>
                             <constraint firstItem="wGj-m4-GpR" firstAttribute="centerX" secondItem="uq0-VR-k6M" secondAttribute="centerX" id="ltW-7n-QQe"/>
                             <constraint firstItem="jKQ-1r-JyJ" firstAttribute="centerX" secondItem="uq0-VR-k6M" secondAttribute="centerX" constant="99" id="wGG-tL-jbs"/>
                             <constraint firstItem="LCB-ZG-5Rb" firstAttribute="leading" secondItem="uq0-VR-k6M" secondAttribute="leadingMargin" id="xeW-43-gK0"/>
@@ -750,6 +750,102 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
             </objects>
             <point key="canvasLocation" x="71" y="2373"/>
         </scene>
+        <!--Social Buttons Controller-->
+        <scene sceneID="3JX-22-E42">
+            <objects>
+                <viewController id="Ufn-vg-AbY" customClass="SocialButtonsController" customModule="CONCEPTO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yrX-Sq-cqT"/>
+                        <viewControllerLayoutGuide type="bottom" id="671-Bk-ZmY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3JX-Za-c6Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA1-fq-i61">
+                                <rect key="frame" x="38" y="173" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="facebook"/>
+                                <connections>
+                                    <segue destination="VL8-P3-QJU" kind="show" id="zqZ-7f-q0y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h83-ni-eZD">
+                                <rect key="frame" x="220" y="173" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="twitter"/>
+                                <connections>
+                                    <segue destination="VL8-P3-QJU" kind="show" id="OgO-Ty-wwJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpc-zE-JUH">
+                                <rect key="frame" x="38" y="364" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="youtube"/>
+                                <connections>
+                                    <segue destination="VL8-P3-QJU" kind="show" id="3Gv-jr-Zdl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMx-dA-nyO">
+                                <rect key="frame" x="220" y="364" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="logo"/>
+                                <connections>
+                                    <segue destination="VL8-P3-QJU" kind="show" id="hVa-Om-4Lt"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logotitulo" translatesAutoresizingMaskIntoConstraints="NO" id="4iQ-n4-UxO">
+                                <rect key="frame" x="80" y="20" width="215" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Redes Sociales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTG-h5-rWx">
+                                <rect key="frame" x="119" y="104" width="137" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bX-q8-5Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="2369.8650674662672"/>
+        </scene>
+        <!--Social Media-->
+        <scene sceneID="LcC-iC-kXo">
+            <objects>
+                <viewController id="VL8-P3-QJU" customClass="SocialMedia" customModule="CONCEPTO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="19a-yh-XOw"/>
+                        <viewControllerLayoutGuide type="bottom" id="QNR-s3-afd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jSJ-B9-2b0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVQ-44-UvZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QVQ-44-UvZ" firstAttribute="centerX" secondItem="jSJ-B9-2b0" secondAttribute="centerX" id="2aM-qX-j6K"/>
+                            <constraint firstItem="QVQ-44-UvZ" firstAttribute="centerY" secondItem="jSJ-B9-2b0" secondAttribute="centerY" id="HJo-jV-Kai"/>
+                            <constraint firstItem="QVQ-44-UvZ" firstAttribute="height" secondItem="jSJ-B9-2b0" secondAttribute="height" id="dbm-uK-iot"/>
+                            <constraint firstItem="QVQ-44-UvZ" firstAttribute="width" secondItem="jSJ-B9-2b0" secondAttribute="width" id="fpo-1Y-Xg6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="WebView" destination="QVQ-44-UvZ" id="g1Q-Vc-7jj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hx0-GJ-uKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701.5999999999999" y="2369.8650674662672"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -807,5 +903,6 @@ CAhCdXNjYXIgdW4gcG9kY2FzdA
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4If-L2-jiW"/>
+        <segue reference="zqZ-7f-q0y"/>
     </inferredMetricsTieBreakers>
 </document>
