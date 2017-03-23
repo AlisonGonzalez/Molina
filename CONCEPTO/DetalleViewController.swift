@@ -13,6 +13,8 @@ class DetalleViewController: UIViewController {
     @IBOutlet weak var laMarca: UILabel!
     var marca:String="VW"
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

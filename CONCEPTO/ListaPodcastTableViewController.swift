@@ -106,7 +106,9 @@ class ListaPodcastTableViewController: UITableViewController {
         //paso 7
         let objetoMarca = nuevoArray?[indice!] as! [String: Any]
         let s: String = objetoMarca["subnombre"] as! String
+        let enlace: String = objetoMarca["link"] as! String
         siguienteVista.marca = s
+        siguienteVista.link = enlace
         
     }
  

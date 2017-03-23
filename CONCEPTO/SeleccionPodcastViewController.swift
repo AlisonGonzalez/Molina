@@ -14,6 +14,8 @@ class SeleccionPodcastViewController: UIViewController {
     
     var marca:String="VW"
     
+    var link: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
