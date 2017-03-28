@@ -39,7 +39,18 @@
         <!--Podcasts Wk Controller-->
         <scene sceneID="ktD-fe-Glq">
             <objects>
-                <controller id="UNb-WR-IMH" customClass="PodcastsWkController" customModule="conceptoWatch_Extension"/>
+                <controller id="UNb-WR-IMH" customClass="PodcastsWkController" customModule="conceptoWatch_Extension">
+                    <items>
+                        <label alignment="left" text="Podcasts" id="dyR-eL-rkh"/>
+                        <table alignment="left" id="ATc-lN-0Ev">
+                            <items>
+                                <tableRow id="Fmg-sr-cbm">
+                                    <group key="rootItem" width="1" alignment="left" id="QyN-dM-qEe"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="222" y="935"/>
         </scene>
