@@ -547,11 +547,11 @@
             </objects>
             <point key="canvasLocation" x="1719" y="940"/>
         </scene>
-        <!--Item-->
+        <!--Podcasts-->
         <scene sceneID="skd-cH-RBa">
             <objects>
                 <navigationController id="Xb4-Ka-eHY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="byb-QG-c3w"/>
+                    <tabBarItem key="tabBarItem" title="Podcasts" image="podcast" id="byb-QG-c3w"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sHG-ig-GHv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -576,25 +576,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estás Escuchando:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKx-D3-eiS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estás Escuchando:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKx-D3-eiS">
                                 <rect key="frame" x="115" y="126" width="145" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGZ-M9-TMq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGZ-M9-TMq">
                                 <rect key="frame" x="38" y="214" width="298" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OB-dL-Mei">
+                                <rect key="frame" x="38" y="362" width="46" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="play" destination="85v-h2-lSd" eventType="touchUpInside" id="vYP-4J-Nlh"/>
+                                    <action selector="play:" destination="85v-h2-lSd" eventType="touchUpInside" id="Stu-F4-jut"/>
+                                    <action selector="reproducir:" destination="85v-h2-lSd" eventType="touchUpInside" id="RX1-yP-E0l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THg-VA-aTQ">
+                                <rect key="frame" x="164" y="362" width="46" height="30"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pausa:" destination="85v-h2-lSd" eventType="touchUpInside" id="5fe-4M-wBF"/>
+                                    <action selector="pause" destination="85v-h2-lSd" eventType="touchUpInside" id="DxH-P0-Tgg"/>
+                                    <action selector="pause:" destination="85v-h2-lSd" eventType="touchUpInside" id="Lwe-Wx-isq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bx-PK-mlx">
+                                <rect key="frame" x="290" y="362" width="46" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="parar:" destination="85v-h2-lSd" eventType="touchUpInside" id="VsJ-9J-1ih"/>
+                                    <action selector="stop:" destination="85v-h2-lSd" eventType="touchUpInside" id="WMv-3P-5ck"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1bx-PK-mlx" firstAttribute="centerX" secondItem="uX2-0T-jF5" secondAttribute="centerX" constant="125.5" id="1lF-JU-aCR"/>
+                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="leading" secondItem="uX2-0T-jF5" secondAttribute="leadingMargin" constant="22" id="29E-Ti-Ebc"/>
+                            <constraint firstItem="THg-VA-aTQ" firstAttribute="baseline" secondItem="1bx-PK-mlx" secondAttribute="baseline" id="2Ti-wa-bxy"/>
+                            <constraint firstItem="THg-VA-aTQ" firstAttribute="centerX" secondItem="uX2-0T-jF5" secondAttribute="centerX" id="3yb-qx-4w8"/>
+                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="leading" secondItem="6OB-dL-Mei" secondAttribute="leading" id="4gU-hR-WFz"/>
+                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="top" secondItem="LKx-D3-eiS" secondAttribute="bottom" constant="67" id="LDZ-5M-kA8"/>
+                            <constraint firstItem="FxE-kB-vzb" firstAttribute="top" secondItem="6OB-dL-Mei" secondAttribute="bottom" constant="226" id="Q6A-2E-cqe"/>
+                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="centerX" secondItem="uX2-0T-jF5" secondAttribute="centerX" id="aNN-Rv-dAG"/>
+                            <constraint firstItem="LKx-D3-eiS" firstAttribute="centerX" secondItem="uX2-0T-jF5" secondAttribute="centerX" id="fRd-Hl-oD0"/>
+                            <constraint firstItem="6OB-dL-Mei" firstAttribute="centerX" secondItem="uX2-0T-jF5" secondAttribute="centerX" constant="-126.5" id="gQc-is-F0o"/>
+                            <constraint firstItem="6OB-dL-Mei" firstAttribute="baseline" secondItem="THg-VA-aTQ" secondAttribute="baseline" id="gtw-Vo-uK7"/>
+                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="trailing" secondItem="1bx-PK-mlx" secondAttribute="trailing" id="kqf-5y-GQS"/>
+                            <constraint firstItem="THg-VA-aTQ" firstAttribute="leading" secondItem="6OB-dL-Mei" secondAttribute="trailing" constant="80" id="vkt-q2-oXC"/>
+                            <constraint firstItem="LKx-D3-eiS" firstAttribute="top" secondItem="6La-6a-M7b" secondAttribute="bottom" constant="62" id="xQ9-XW-dy9"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="name" destination="vGZ-M9-TMq" id="a52-JW-vlQ"/>
+                        <outlet property="pausa" destination="THg-VA-aTQ" id="NpY-Gx-Z4t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSc-cF-eN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -843,6 +884,7 @@
         <image name="facebook" width="128" height="128"/>
         <image name="logo" width="200" height="200"/>
         <image name="logotitulo" width="279" height="45"/>
+        <image name="podcast" width="32" height="32"/>
         <image name="transmision-1" width="32" height="32"/>
         <image name="twitter" width="128" height="128"/>
         <image name="youtube" width="128" height="128"/>

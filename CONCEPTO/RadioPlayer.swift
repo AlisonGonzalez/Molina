@@ -11,6 +11,7 @@ import AVFoundation
 
 class RadioPlayer {
     static let sharedInstance = RadioPlayer()
+    
     private var player = AVPlayer(url: NSURL(string: "http://wms.tecnoxia.com:1935/8022/8022/playlist.m3u8")! as URL)
     private var isPlaying = false
     

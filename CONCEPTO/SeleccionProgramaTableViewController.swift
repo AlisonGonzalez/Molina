@@ -144,7 +144,9 @@ class SeleccionProgramaTableViewController: UITableViewController {
         //paso 7
         let objetoMarca = nuevoArray?[indice!] as! [String: Any]
         let s =  objetoMarca["título"]
+        let t = objetoMarca["URL"]
         siguienteVista.nombre = s as! String
+        siguienteVista.link = t as! String
     }
     
     
