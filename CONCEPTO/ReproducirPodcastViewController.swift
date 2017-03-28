@@ -1,21 +1,26 @@
 //
-//  PodcastViewController.swift
+//  ReproducirPodcastViewController.swift
 //  CONCEPTO
 //
-//  Created by Irvin Mundo on 16/02/17.
+//  Created by Alfredo on 3/24/17.
 //  Copyright © 2017 Alfredo. All rights reserved.
 //
 
 import UIKit
 
-class PodcastViewController: UIViewController {
+class ReproducirPodcastViewController: UIViewController {
+    @IBOutlet weak var name: UILabel!
 
+    var link:String = ""
+    
+    var nombre:String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        name.text = nombre
 
         // Do any additional setup after loading the view.
     }
-    @IBOutlet weak var buscaPodcast: UISearchBar!
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
