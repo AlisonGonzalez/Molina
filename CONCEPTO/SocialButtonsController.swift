@@ -1,25 +1,17 @@
 //
-//  SeleccionPodcastViewController.swift
+//  SocialButtonsController.swift
 //  CONCEPTO
 //
-//  Created by Alfredo on 3/21/17.
+//  Created by cdt307 on 3/22/17.
 //  Copyright © 2017 Alfredo. All rights reserved.
 //
 
 import UIKit
 
-class SeleccionPodcastViewController: UIViewController {
+class SocialButtonsController: UIViewController {
 
-    @IBOutlet weak var elPodcast: UILabel!
-    
-    var marca:String="VW"
-    
-    var link: String = ""
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        elPodcast.text = marca
 
         // Do any additional setup after loading the view.
     }

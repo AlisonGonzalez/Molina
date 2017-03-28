@@ -29,6 +29,8 @@
 		38CA79831E4F8D8900F498CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79811E4F8D8900F498CD /* Main.storyboard */; };
 		38CA79851E4F8D8900F498CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79841E4F8D8900F498CD /* Assets.xcassets */; };
 		38CA79881E4F8D8900F498CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79861E4F8D8900F498CD /* LaunchScreen.storyboard */; };
+		3922C3AB1E82FB0D0007E47D /* SocialMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922C3AA1E82FB0D0007E47D /* SocialMedia.swift */; };
+		3922C3AD1E82FBB00007E47D /* SocialButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922C3AC1E82FBB00007E47D /* SocialButtonsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		38CA79841E4F8D8900F498CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38CA79871E4F8D8900F498CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38CA79891E4F8D8900F498CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3922C3AA1E82FB0D0007E47D /* SocialMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMedia.swift; sourceTree = "<group>"; };
+		3922C3AC1E82FBB00007E47D /* SocialButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialButtonsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,7 @@
 				38CA797D1E4F8D8800F498CD /* FirstViewController.swift */,
 				38CA797F1E4F8D8800F498CD /* SecondViewController.swift */,
 				38CA79811E4F8D8900F498CD /* Main.storyboard */,
+				1D7B09E41E8358F5001D95A8 /* MapViewController.swift */,
 				1D7DB7FA1E6B72C50059C836 /* RadioPlayer.swift */,
 				38CA79841E4F8D8900F498CD /* Assets.xcassets */,
 				38CA79861E4F8D8900F498CD /* LaunchScreen.storyboard */,
@@ -279,7 +284,6 @@
 					};
 					38CA79771E4F8D7900F498CD = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = BT3USA77FD;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -356,8 +360,10 @@
 				38CA79801E4F8D8800F498CD /* SecondViewController.swift in Sources */,
 				384262FD1E860E5B0044B078 /* ReproducirPodcastViewController.swift in Sources */,
 				38CA797C1E4F8D8800F498CD /* AppDelegate.swift in Sources */,
+				3922C3AD1E82FBB00007E47D /* SocialButtonsController.swift in Sources */,
 				38CA797E1E4F8D8800F498CD /* FirstViewController.swift in Sources */,
 				1DC682F41E8072660061F98C /* JSONPodcastTableViewController.swift in Sources */,
+				1D7B09E51E8358F6001D95A8 /* MapViewController.swift in Sources */,
 				1D7DB7FB1E6B72C50059C836 /* RadioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,7 +574,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BT3USA77FD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CONCEPTO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO;
@@ -582,7 +588,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BT3USA77FD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CONCEPTO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO;

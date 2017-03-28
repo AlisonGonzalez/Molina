@@ -1,27 +1,23 @@
 //
-//  SeleccionPodcastViewController.swift
+//  SocialMedia.swift
 //  CONCEPTO
 //
-//  Created by Alfredo on 3/21/17.
+//  Created by cdt307 on 3/22/17.
 //  Copyright © 2017 Alfredo. All rights reserved.
 //
 
 import UIKit
 
-class SeleccionPodcastViewController: UIViewController {
+class SocialMedia: UIViewController {
 
-    @IBOutlet weak var elPodcast: UILabel!
-    
-    var marca:String="VW"
-    
-    var link: String = ""
+    @IBOutlet var WebView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        elPodcast.text = marca
 
-        // Do any additional setup after loading the view.
+        let socialURL = NSURL(string: "https://www.facebook.com/conceptoradial")
+        
+        WebView.loadRequest(NSURLRequest(url: socialURL as! URL) as URLRequest)
     }
 
     override func didReceiveMemoryWarning() {
