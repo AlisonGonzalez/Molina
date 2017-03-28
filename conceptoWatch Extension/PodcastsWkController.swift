@@ -9,19 +9,9 @@
 import UIKit
 
 class PodcastsWkController: WKInterfaceController {
-
-}
-
-////////////////////////////////
-//
-
-import UIKit
-
-class SeleccionProgramaTableViewController: UITableViewController {
     
     //paso 8 definir direccion
-    //let direccion = "http://199.233.252.86/datos/datos.json"
-    var direccion = "http://conceptoradial.000webhostapp.com/json/podcasts3.json"
+    var direccion = "https://conceptoradial.000webhostapp.com/json/podcastsWatch.json"
     
     var datos = ["Podcast1","Podcast2","Podcast3"]
     
