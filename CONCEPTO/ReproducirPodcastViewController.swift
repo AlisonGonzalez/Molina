@@ -47,7 +47,7 @@ class ReproducirPodcastViewController: UIViewController {
     @IBAction func reproducir(_ sender: Any) {
         play()
     }
-    @IBAction func pausa(_ sender: Any) {
+    @IBAction func pausaAction(_ sender: Any) {
         pause()
     }
     @IBAction func parar(_ sender: Any) {
