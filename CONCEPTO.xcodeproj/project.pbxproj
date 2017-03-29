@@ -270,14 +270,17 @@
 				TargetAttributes = {
 					384B7A281E6B42DE00DBC3B0 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BT3USA77FD;
 						ProvisioningStyle = Automatic;
 					};
 					384B7A341E6B42E000DBC3B0 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BT3USA77FD;
 						ProvisioningStyle = Automatic;
 					};
 					38CA79771E4F8D7900F498CD = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BT3USA77FD;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -408,6 +411,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BT3USA77FD;
 				IBSC_MODULE = conceptoWatch_Extension;
 				INFOPLIST_FILE = conceptoWatch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO.watchkitapp;
@@ -425,6 +429,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BT3USA77FD;
 				IBSC_MODULE = conceptoWatch_Extension;
 				INFOPLIST_FILE = conceptoWatch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO.watchkitapp;
@@ -441,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = BT3USA77FD;
 				INFOPLIST_FILE = "conceptoWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO.watchkitapp.watchkitextension;
@@ -457,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = BT3USA77FD;
 				INFOPLIST_FILE = "conceptoWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO.watchkitapp.watchkitextension;
@@ -566,7 +573,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BT3USA77FD;
 				INFOPLIST_FILE = CONCEPTO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO;
@@ -580,7 +587,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BT3USA77FD;
 				INFOPLIST_FILE = CONCEPTO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO;

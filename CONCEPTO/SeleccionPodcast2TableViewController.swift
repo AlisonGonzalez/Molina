@@ -116,6 +116,7 @@ class SeleccionPodcast2TableViewController: UITableViewController {
         siguienteVista.tipo = s as! String
     }
     
+
     
     /*
      // Override to support conditional editing of the table view.
