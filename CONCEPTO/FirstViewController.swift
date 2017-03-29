@@ -8,6 +8,7 @@
 
 import UIKit
 import MediaPlayer
+import AVFoundation
 
 class FirstViewController: UIViewController {
 
@@ -15,6 +16,7 @@ class FirstViewController: UIViewController {
     @IBAction func playButtonPressed(_ sender: UIButton) {
         toggle()
     }
+    @IBOutlet weak var volumeView: MPVolumeView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
