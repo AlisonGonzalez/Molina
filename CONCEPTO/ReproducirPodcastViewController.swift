@@ -29,8 +29,8 @@ class ReproducirPodcastViewController: UIViewController {
         let soundURL = NSURL(string: link)
         
         do{
-            let sonido = try AVAudioPlayer(contentsOf: soundURL as! URL)
-            reproductor = sonido
+           // let sonido = try AVAudioPlayer(contentsOf: soundURL as! URL)
+            //reproductor = sonido
             
         }catch let error as NSError{
             createError = error

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D46595C1E5651D400FC9415 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D46595B1E5651D400FC9415 /* MediaPlayer.framework */; };
+		1D5E3A971E8B0DC600798557 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A961E8B0DC600798557 /* MapViewController.swift */; };
 		1D7DB7FB1E6B72C50059C836 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7DB7FA1E6B72C50059C836 /* RadioPlayer.swift */; };
 		1DC682F61E80783C0061F98C /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC682F51E80783C0061F98C /* DetalleViewController.swift */; };
 		384262F91E86056B0044B078 /* SeleccionPodcast2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384262F81E86056B0044B078 /* SeleccionPodcast2TableViewController.swift */; };
@@ -75,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		1D46595B1E5651D400FC9415 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1D5E3A961E8B0DC600798557 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1D7DB7FA1E6B72C50059C836 /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
 		1DC682F51E80783C0061F98C /* DetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
 		384262F81E86056B0044B078 /* SeleccionPodcast2TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionPodcast2TableViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				38CA797B1E4F8D8800F498CD /* AppDelegate.swift */,
 				1DC682F51E80783C0061F98C /* DetalleViewController.swift */,
 				38CA797D1E4F8D8800F498CD /* FirstViewController.swift */,
+				1D5E3A961E8B0DC600798557 /* MapViewController.swift */,
 				38CA797F1E4F8D8800F498CD /* SecondViewController.swift */,
 				38CA79811E4F8D8900F498CD /* Main.storyboard */,
 				1D7DB7FA1E6B72C50059C836 /* RadioPlayer.swift */,
@@ -351,6 +354,7 @@
 				1DC682F61E80783C0061F98C /* DetalleViewController.swift in Sources */,
 				384262FB1E8609D30044B078 /* SeleccionProgramaTableViewController.swift in Sources */,
 				384262F91E86056B0044B078 /* SeleccionPodcast2TableViewController.swift in Sources */,
+				1D5E3A971E8B0DC600798557 /* MapViewController.swift in Sources */,
 				38CA79801E4F8D8800F498CD /* SecondViewController.swift in Sources */,
 				384262FD1E860E5B0044B078 /* ReproducirPodcastViewController.swift in Sources */,
 				38CA797C1E4F8D8800F498CD /* AppDelegate.swift in Sources */,
