@@ -468,6 +468,45 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
             </objects>
             <point key="canvasLocation" x="3180" y="-998"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="7hv-Ya-bnk">
+            <objects>
+                <viewController id="hV6-gr-mJi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BF1-ha-iU7"/>
+                        <viewControllerLayoutGuide type="bottom" id="UK1-a4-YKb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sgA-MK-hqJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4f-7Q-qa1">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Cámara" id="F1Q-sn-AeN"/>
+                                    <barButtonItem title="Galería" id="xB2-fu-V1R"/>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tyS-XV-HTg">
+                                <rect key="frame" x="16" y="28" width="343" height="581"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U4f-7Q-qa1" firstAttribute="top" secondItem="tyS-XV-HTg" secondAttribute="bottom" constant="14" id="Het-gV-wjQ"/>
+                            <constraint firstItem="tyS-XV-HTg" firstAttribute="leading" secondItem="sgA-MK-hqJ" secondAttribute="leadingMargin" id="ReS-FX-EO5"/>
+                            <constraint firstItem="tyS-XV-HTg" firstAttribute="centerX" secondItem="sgA-MK-hqJ" secondAttribute="centerX" id="ea1-c9-JhC"/>
+                            <constraint firstItem="U4f-7Q-qa1" firstAttribute="leading" secondItem="sgA-MK-hqJ" secondAttribute="leading" id="iqn-ep-Qbg"/>
+                            <constraint firstItem="U4f-7Q-qa1" firstAttribute="bottom" secondItem="UK1-a4-YKb" secondAttribute="top" id="wLI-kh-KZo"/>
+                            <constraint firstItem="U4f-7Q-qa1" firstAttribute="centerX" secondItem="sgA-MK-hqJ" secondAttribute="centerX" id="wRU-KB-IE5"/>
+                            <constraint firstItem="tyS-XV-HTg" firstAttribute="top" secondItem="BF1-ha-iU7" secondAttribute="bottom" constant="8" symbolic="YES" id="ygR-9f-m4t"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KOf-db-V3m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3922" y="-859"/>
+        </scene>
         <!--Eventos-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
