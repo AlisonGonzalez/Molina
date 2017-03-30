@@ -301,7 +301,6 @@
         <!--View Controller-->
         <scene sceneID="lqy-tf-zEM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SDS-0p-z9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="lQF-s0-J5D" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lHD-WB-y2n"/>
@@ -355,6 +354,7 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDS-0p-z9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4141.6000000000004" y="-36.431784107946029"/>
         </scene>
@@ -781,7 +781,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="facebook"/>
                                 <connections>
-                                    <segue destination="VL8-P3-QJU" kind="show" id="zqZ-7f-q0y"/>
+                                    <action selector="fbButton:" destination="Ufn-vg-AbY" eventType="touchUpInside" id="82v-Zl-tTm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h83-ni-eZD">
@@ -789,7 +789,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="twitter"/>
                                 <connections>
-                                    <segue destination="VL8-P3-QJU" kind="show" id="OgO-Ty-wwJ"/>
+                                    <action selector="twButton:" destination="Ufn-vg-AbY" eventType="touchUpInside" id="VTx-Gn-egh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpc-zE-JUH">
@@ -797,23 +797,19 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="youtube"/>
                                 <connections>
-                                    <segue destination="VL8-P3-QJU" kind="show" id="3Gv-jr-Zdl"/>
+                                    <action selector="ytButton:" destination="Ufn-vg-AbY" eventType="touchUpInside" id="z81-X0-T45"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMx-dA-nyO">
                                 <rect key="frame" x="220" y="364" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="logo"/>
+                                <state key="normal" title="Button" image="radial"/>
                                 <connections>
-                                    <segue destination="VL8-P3-QJU" kind="show" id="hVa-Om-4Lt"/>
+                                    <action selector="webButton:" destination="Ufn-vg-AbY" eventType="touchUpInside" id="3Je-29-QO0"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logotitulo" translatesAutoresizingMaskIntoConstraints="NO" id="4iQ-n4-UxO">
-                                <rect key="frame" x="80" y="20" width="215" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Redes Sociales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTG-h5-rWx">
-                                <rect key="frame" x="119" y="104" width="137" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visítanos en" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTG-h5-rWx">
+                                <rect key="frame" x="132" y="104" width="110" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -823,43 +819,31 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Social" image="shareTabBar" selectedImage="sharedFilledTabBar" id="0vB-9X-nY6"/>
+                    <navigationItem key="navigationItem" title="Social" id="hrZ-XM-BJ3">
+                        <barButtonItem key="backBarButtonItem" title="Volver" id="QFa-ah-az8"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="lQ9-EP-xaZ"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bX-q8-5Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-226" y="1632"/>
+            <point key="canvasLocation" x="-306" y="2071"/>
         </scene>
-        <!--Social Media-->
-        <scene sceneID="LcC-iC-kXo">
+        <!--Social-->
+        <scene sceneID="23C-k3-arz">
             <objects>
-                <viewController id="VL8-P3-QJU" customClass="SocialMedia" customModule="CONCEPTO" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="19a-yh-XOw"/>
-                        <viewControllerLayoutGuide type="bottom" id="QNR-s3-afd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jSJ-B9-2b0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVQ-44-UvZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="QVQ-44-UvZ" firstAttribute="centerX" secondItem="jSJ-B9-2b0" secondAttribute="centerX" id="2aM-qX-j6K"/>
-                            <constraint firstItem="QVQ-44-UvZ" firstAttribute="centerY" secondItem="jSJ-B9-2b0" secondAttribute="centerY" id="HJo-jV-Kai"/>
-                            <constraint firstItem="QVQ-44-UvZ" firstAttribute="height" secondItem="jSJ-B9-2b0" secondAttribute="height" id="dbm-uK-iot"/>
-                            <constraint firstItem="QVQ-44-UvZ" firstAttribute="width" secondItem="jSJ-B9-2b0" secondAttribute="width" id="fpo-1Y-Xg6"/>
-                        </constraints>
-                    </view>
+                <navigationController id="YJY-4j-Zqb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Social" image="shareTabBar" selectedImage="sharedFilledTabBar" id="iL3-9Y-cHb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="om9-rs-ndt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
                     <connections>
-                        <outlet property="WebView" destination="QVQ-44-UvZ" id="g1Q-Vc-7jj"/>
+                        <segue destination="Ufn-vg-AbY" kind="relationship" relationship="rootViewController" id="yaV-BI-PHq"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hx0-GJ-uKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l0u-zY-OZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="558" y="1632"/>
+            <point key="canvasLocation" x="-306" y="1263"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -875,7 +859,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                         <segue destination="8WX-3D-WTz" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="HUX-K0-iFe" kind="relationship" relationship="viewControllers" id="Ub3-us-RUK"/>
                         <segue destination="Xb4-Ka-eHY" kind="relationship" relationship="viewControllers" id="ihr-q8-jNK"/>
-                        <segue destination="Ufn-vg-AbY" kind="relationship" relationship="viewControllers" id="g4m-tD-fUI"/>
+                        <segue destination="YJY-4j-Zqb" kind="relationship" relationship="viewControllers" id="e2q-vE-VCb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -912,12 +896,12 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
         <image name="depeche" width="1620" height="1099"/>
         <image name="depeche2" width="558" height="992"/>
         <image name="facebook" width="128" height="128"/>
-        <image name="logo" width="200" height="200"/>
         <image name="logotitulo" width="279" height="45"/>
         <image name="mac2" width="2048" height="1152"/>
         <image name="micFilledTabBar" width="25" height="25"/>
         <image name="micTabBar" width="25" height="25"/>
         <image name="pausa" width="512" height="512"/>
+        <image name="radial" width="400" height="400"/>
         <image name="reproducir-1" width="256" height="256"/>
         <image name="shareTabBar" width="25" height="25"/>
         <image name="sharedFilledTabBar" width="25" height="25"/>
@@ -925,7 +909,6 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
         <image name="youtube" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OgO-Ty-wwJ"/>
         <segue reference="4If-L2-jiW"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

@@ -10,6 +10,22 @@ import UIKit
 
 class SocialButtonsController: UIViewController {
 
+    @IBAction func fbButton(_ sender: UIButton) {
+        let url = NSURL(string: "https://www.facebook.com/conceptoradial/")
+        UIApplication.shared.open(url as! URL)
+    }
+    @IBAction func twButton(_ sender: UIButton) {
+        let url = NSURL(string: "https://twitter.com/conceptoradial")
+        UIApplication.shared.open(url as! URL)
+    }
+    @IBAction func ytButton(_ sender: UIButton) {
+        let url = NSURL(string: "https://www.youtube.com/watch?v=H1g3pGEo-TU")
+        UIApplication.shared.open(url as! URL)
+    }
+    @IBAction func webButton(_ sender: UIButton) {
+        let url = NSURL(string: "http://www.conceptoradial.com/")
+        UIApplication.shared.open(url as! URL)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
