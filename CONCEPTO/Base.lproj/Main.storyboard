@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -479,7 +479,7 @@
                             <constraint firstItem="Dzp-z5-EGv" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" constant="25.5" id="xQy-Qe-S6C"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Eventos" image="calendario-1" selectedImage="calendario-1" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Eventos" image="calendarTabBar" selectedImage="calendarFilledTabBar" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -543,7 +543,7 @@
         <scene sceneID="skd-cH-RBa">
             <objects>
                 <navigationController id="Xb4-Ka-eHY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Podcasts" image="podcast" id="byb-QG-c3w"/>
+                    <tabBarItem key="tabBarItem" title="Podcasts" image="micTabBar" selectedImage="micFilledTabBar" id="byb-QG-c3w"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sHG-ig-GHv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -717,7 +717,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Social" image="compartirblanco" selectedImage="compartirblanco" id="0vB-9X-nY6"/>
+                    <tabBarItem key="tabBarItem" title="Social" image="shareTabBar" selectedImage="sharedFilledTabBar" id="0vB-9X-nY6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bX-q8-5Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -781,7 +781,7 @@
         <scene sceneID="AQX-RV-eB2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8WX-3D-WTz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Streaming" image="transmision-1" selectedImage="transmision-1" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Streaming" image="audioTabBar" selectedImage="audioFilledTabBar" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gSe-cC-Aoa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -798,17 +798,21 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendario-1" width="40" height="40"/>
+        <image name="audioFilledTabBar" width="25" height="25"/>
+        <image name="audioTabBar" width="25" height="25"/>
+        <image name="calendarFilledTabBar" width="25" height="25"/>
+        <image name="calendarTabBar" width="25" height="25"/>
         <image name="calendario-2" width="48" height="48"/>
-        <image name="compartirblanco" width="32" height="32"/>
         <image name="facebook" width="128" height="128"/>
         <image name="logo" width="200" height="200"/>
         <image name="logotitulo" width="279" height="45"/>
         <image name="mac2" width="2048" height="1152"/>
+        <image name="micFilledTabBar" width="25" height="25"/>
+        <image name="micTabBar" width="25" height="25"/>
         <image name="pausa" width="512" height="512"/>
-        <image name="podcast" width="32" height="32"/>
         <image name="reproducir-1" width="256" height="256"/>
-        <image name="transmision-1" width="32" height="32"/>
+        <image name="shareTabBar" width="25" height="25"/>
+        <image name="sharedFilledTabBar" width="25" height="25"/>
         <image name="twitter" width="128" height="128"/>
         <image name="youtube" width="128" height="128"/>
     </resources>
