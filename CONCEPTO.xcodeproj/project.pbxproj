@@ -151,13 +151,13 @@
 		384B7A391E6B42E000DBC3B0 /* conceptoWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				38EE132C1E8D698700518328 /* DetalleControladorInterfaceController.swift */,
 				384B7A3C1E6B42E000DBC3B0 /* InterfaceController.swift */,
 				38EE132A1E8D612800518328 /* controladorRenglon.swift */,
 				384B7A3E1E6B42E000DBC3B0 /* ExtensionDelegate.swift */,
 				384B7A401E6B42E000DBC3B0 /* NotificationController.swift */,
 				384B7A421E6B42E000DBC3B0 /* ComplicationController.swift */,
 				39A460CB1E8D4A7F00B3352A /* PodcastTable.swift */,
+				38EE132C1E8D698700518328 /* DetalleControladorInterfaceController.swift */,
 				384B7A441E6B42E000DBC3B0 /* Assets.xcassets */,
 				384B7A461E6B42E000DBC3B0 /* Info.plist */,
 				384B7A3A1E6B42E000DBC3B0 /* Supporting Files */,
