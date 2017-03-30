@@ -506,7 +506,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9rR-dp-DPd" id="BOP-im-Qoi">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -580,43 +580,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OB-dL-Mei">
-                                <rect key="frame" x="38" y="362" width="46" height="30"/>
-                                <state key="normal" title="Play"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OB-dL-Mei">
+                                <rect key="frame" x="162" y="346" width="50" height="22"/>
+                                <state key="normal" title="Play" image="reproducir-1"/>
                                 <connections>
                                     <action selector="reproducir:" destination="85v-h2-lSd" eventType="touchUpInside" id="gwB-Tj-oDc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THg-VA-aTQ">
-                                <rect key="frame" x="164" y="362" width="46" height="30"/>
-                                <state key="normal" title="Pause"/>
-                                <connections>
-                                    <action selector="pausa:" destination="85v-h2-lSd" eventType="touchUpInside" id="vjQ-Hb-Ovq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bx-PK-mlx">
-                                <rect key="frame" x="290" y="362" width="46" height="30"/>
-                                <state key="normal" title="Stop"/>
-                                <connections>
-                                    <action selector="detener:" destination="85v-h2-lSd" eventType="touchUpInside" id="zl9-tX-4J3"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1bx-PK-mlx" firstAttribute="centerX" secondItem="uX2-0T-jF5" secondAttribute="centerX" constant="125.5" id="1lF-JU-aCR"/>
                             <constraint firstItem="vGZ-M9-TMq" firstAttribute="leading" secondItem="uX2-0T-jF5" secondAttribute="leadingMargin" constant="22" id="29E-Ti-Ebc"/>
-                            <constraint firstItem="THg-VA-aTQ" firstAttribute="baseline" secondItem="1bx-PK-mlx" secondAttribute="baseline" id="2Ti-wa-bxy"/>
-                            <constraint firstItem="THg-VA-aTQ" firstAttribute="centerX" secondItem="uX2-0T-jF5" secondAttribute="centerX" id="3yb-qx-4w8"/>
-                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="leading" secondItem="6OB-dL-Mei" secondAttribute="leading" id="4gU-hR-WFz"/>
+                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="leading" secondItem="6OB-dL-Mei" secondAttribute="leading" constant="-124" id="4gU-hR-WFz"/>
                             <constraint firstItem="vGZ-M9-TMq" firstAttribute="top" secondItem="LKx-D3-eiS" secondAttribute="bottom" constant="67" id="LDZ-5M-kA8"/>
-                            <constraint firstItem="FxE-kB-vzb" firstAttribute="top" secondItem="6OB-dL-Mei" secondAttribute="bottom" constant="226" id="Q6A-2E-cqe"/>
+                            <constraint firstItem="FxE-kB-vzb" firstAttribute="top" secondItem="6OB-dL-Mei" secondAttribute="bottom" constant="250" id="Q6A-2E-cqe"/>
                             <constraint firstItem="vGZ-M9-TMq" firstAttribute="centerX" secondItem="uX2-0T-jF5" secondAttribute="centerX" id="aNN-Rv-dAG"/>
                             <constraint firstItem="LKx-D3-eiS" firstAttribute="centerX" secondItem="uX2-0T-jF5" secondAttribute="centerX" id="fRd-Hl-oD0"/>
-                            <constraint firstItem="6OB-dL-Mei" firstAttribute="centerX" secondItem="uX2-0T-jF5" secondAttribute="centerX" constant="-126.5" id="gQc-is-F0o"/>
-                            <constraint firstItem="6OB-dL-Mei" firstAttribute="baseline" secondItem="THg-VA-aTQ" secondAttribute="baseline" id="gtw-Vo-uK7"/>
-                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="trailing" secondItem="1bx-PK-mlx" secondAttribute="trailing" id="kqf-5y-GQS"/>
-                            <constraint firstItem="THg-VA-aTQ" firstAttribute="leading" secondItem="6OB-dL-Mei" secondAttribute="trailing" constant="80" id="vkt-q2-oXC"/>
+                            <constraint firstItem="6OB-dL-Mei" firstAttribute="centerX" secondItem="uX2-0T-jF5" secondAttribute="centerX" constant="-0.5" id="gQc-is-F0o"/>
                             <constraint firstItem="LKx-D3-eiS" firstAttribute="top" secondItem="6La-6a-M7b" secondAttribute="bottom" constant="62" id="xQ9-XW-dy9"/>
                         </constraints>
                     </view>
@@ -626,7 +606,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSc-cF-eN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3570" y="940"/>
+            <point key="canvasLocation" x="3568.8000000000002" y="939.58020989505258"/>
         </scene>
         <!--Seleccion Programa Table View Controller-->
         <scene sceneID="CYy-zP-pCq">
@@ -649,7 +629,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ini-bX-gFA" id="GhF-Lb-i5G">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
