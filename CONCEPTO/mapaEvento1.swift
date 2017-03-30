@@ -2,7 +2,7 @@
 //  MapViewController.swift
 //  CONCEPTO
 //
-//  Created by Irvin Mundo on 22/03/17.
+//  Created by Emiliano Cervantes on 22/03/17.
 //  Copyright © 2017 Emiliano. All rights reserved.
 //
 
@@ -10,13 +10,11 @@ import MapKit
 import CoreLocation
 import UIKit
 
-class MapViewController: UIViewController,CLLocationManagerDelegate {
-    
-    //mapa acerca de
-    @IBOutlet weak var mapa: MKMapView!
-    
+class mapaEvento1: UIViewController,CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
+    
+    @IBOutlet weak var mapaEventos1: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,32 +25,33 @@ class MapViewController: UIViewController,CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         
         
-        mapa.mapType=MKMapType.standard
-        let cl=CLLocationCoordinate2DMake(19.283996, -99.136006)
-        mapa.region=MKCoordinateRegionMakeWithDistance(cl, 10, 10)
-        var punto = CLLocationCoordinate2D()
-        punto.latitude = 19.283996
-        punto.longitude = -99.136006
-        let pin = MKPointAnnotation()
-        pin.coordinate = punto
-        pin.title = "Tec CCM"
-        pin.subtitle = "Tlalpan"
-        mapa.addAnnotation(pin)
+        //mapa eventos 1
+        mapaEventos1.mapType=MKMapType.standard
+        //coordenadas auditorio nacional
+        let cl1=CLLocationCoordinate2DMake(19.424722, -99.194917)
+        mapaEventos1.region=MKCoordinateRegionMakeWithDistance(cl1, 10, 10)
+        var punto1 = CLLocationCoordinate2D()
+        punto1.latitude = 19.424722
+        punto1.longitude = -99.194917
+        let pin1 = MKPointAnnotation()
+        pin1.coordinate = punto1
+        pin1.title = "Björk en CDMX"
+        pin1.subtitle = "Auditorio Nacional"
+        mapaEventos1.addAnnotation(pin1)
         
-        mapa.showsCompass=true
-        mapa.showsScale=true
-        mapa.showsTraffic=true
-        mapa.isZoomEnabled=true
-        
+        mapaEventos1.showsCompass=true
+        mapaEventos1.showsScale=true
+        mapaEventos1.showsTraffic=true
+        mapaEventos1.isZoomEnabled=true
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == .authorizedWhenInUse{
             locationManager.startUpdatingLocation()
-            mapa.showsUserLocation = true
+            mapaEventos1.showsUserLocation = true
         } else {
             locationManager.stopUpdatingLocation()
-            mapa.showsUserLocation = false
+            mapaEventos1.showsUserLocation = false
         }
     }
     

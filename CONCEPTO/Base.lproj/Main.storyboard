@@ -424,10 +424,10 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
             </objects>
             <point key="canvasLocation" x="4214" y="463"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Map Eventos2-->
         <scene sceneID="geZ-bh-fhL">
             <objects>
-                <viewController id="37k-iz-HPD" customClass="MapViewController" customModule="CONCEPTO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="37k-iz-HPD" customClass="mapEventos2" customModule="CONCEPTO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eq5-uz-wK6"/>
                         <viewControllerLayoutGuide type="bottom" id="k0B-fx-Sem"/>
@@ -449,7 +449,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mapaEventos2" destination="ADF-3g-A0x" id="Hkr-jO-lfN"/>
+                        <outlet property="mapaEventos2" destination="ADF-3g-A0x" id="Agc-5S-lUx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sMd-qN-F4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -790,10 +790,10 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
             </objects>
             <point key="canvasLocation" x="3568.8000000000002" y="939.58020989505258"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Mapa Evento1-->
         <scene sceneID="dzG-PR-4EL">
             <objects>
-                <viewController id="qA4-4l-BTq" customClass="MapViewController" customModule="CONCEPTO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qA4-4l-BTq" customClass="mapaEvento1" customModule="CONCEPTO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ELR-QL-q1G"/>
                         <viewControllerLayoutGuide type="bottom" id="5T7-v4-3a7"/>
@@ -815,7 +815,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mapaEventos1" destination="sd7-DN-1r8" id="zLo-a6-F7E"/>
+                        <outlet property="mapaEventos1" destination="sd7-DN-1r8" id="GTM-IN-WmE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YeE-T9-tK7" userLabel="First Responder" sceneMemberID="firstResponder"/>

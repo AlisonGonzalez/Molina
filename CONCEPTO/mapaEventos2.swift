@@ -10,13 +10,13 @@ import MapKit
 import CoreLocation
 import UIKit
 
-class MapViewController: UIViewController,CLLocationManagerDelegate {
-    
-    //mapa acerca de
-    @IBOutlet weak var mapa: MKMapView!
+class mapEventos2: UIViewController,CLLocationManagerDelegate {
     
     
     let locationManager = CLLocationManager()
+    
+    @IBOutlet weak var mapaEventos2: MKMapView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,33 +26,34 @@ class MapViewController: UIViewController,CLLocationManagerDelegate {
         locationManager.distanceFilter = 1000.0
         locationManager.requestWhenInUseAuthorization()
         
+        //mapa eventos 2
+        mapaEventos2.mapType=MKMapType.standard
+        //coordendas foro sol
+        let cl2=CLLocationCoordinate2DMake(19.404889, -99.095944)
+        mapaEventos2.region=MKCoordinateRegionMakeWithDistance(cl2, 10, 10)
+        var punto2 = CLLocationCoordinate2D()
+        punto2.latitude = 19.404889
+        punto2.longitude = -99.095944
+        let pin2 = MKPointAnnotation()
+        pin2.coordinate = punto2
+        pin2.title = "Depeche Mode en México"
+        pin2.subtitle = "Foro Sol"
+        mapaEventos2.addAnnotation(pin2)
         
-        mapa.mapType=MKMapType.standard
-        let cl=CLLocationCoordinate2DMake(19.283996, -99.136006)
-        mapa.region=MKCoordinateRegionMakeWithDistance(cl, 10, 10)
-        var punto = CLLocationCoordinate2D()
-        punto.latitude = 19.283996
-        punto.longitude = -99.136006
-        let pin = MKPointAnnotation()
-        pin.coordinate = punto
-        pin.title = "Tec CCM"
-        pin.subtitle = "Tlalpan"
-        mapa.addAnnotation(pin)
-        
-        mapa.showsCompass=true
-        mapa.showsScale=true
-        mapa.showsTraffic=true
-        mapa.isZoomEnabled=true
+        mapaEventos2.showsCompass=true
+        mapaEventos2.showsScale=true
+        mapaEventos2.showsTraffic=true
+        mapaEventos2.isZoomEnabled=true
         
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == .authorizedWhenInUse{
             locationManager.startUpdatingLocation()
-            mapa.showsUserLocation = true
+            mapaEventos2.showsUserLocation = true
         } else {
             locationManager.stopUpdatingLocation()
-            mapa.showsUserLocation = false
+            mapaEventos2.showsUserLocation = false
         }
     }
     

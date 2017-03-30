@@ -31,6 +31,8 @@
 		38EE132B1E8D612800518328 /* controladorRenglon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EE132A1E8D612800518328 /* controladorRenglon.swift */; };
 		38EE132D1E8D698700518328 /* DetalleControladorInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EE132C1E8D698700518328 /* DetalleControladorInterfaceController.swift */; };
 		3922C3AD1E82FBB00007E47D /* SocialButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922C3AC1E82FBB00007E47D /* SocialButtonsController.swift */; };
+		39265C211E8DA050003D36E1 /* mapaEvento1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39265C201E8DA050003D36E1 /* mapaEvento1.swift */; };
+		39265C231E8DA12B003D36E1 /* mapaEventos2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39265C221E8DA12B003D36E1 /* mapaEventos2.swift */; };
 		39A460CC1E8D4A7F00B3352A /* PodcastTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A460CB1E8D4A7F00B3352A /* PodcastTable.swift */; };
 		A76A71861E8D73DF00DF6936 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A71851E8D73DF00DF6936 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
@@ -107,6 +109,8 @@
 		38EE132A1E8D612800518328 /* controladorRenglon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = controladorRenglon.swift; sourceTree = "<group>"; };
 		38EE132C1E8D698700518328 /* DetalleControladorInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetalleControladorInterfaceController.swift; path = ../conceptoWatch/DetalleControladorInterfaceController.swift; sourceTree = "<group>"; };
 		3922C3AC1E82FBB00007E47D /* SocialButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialButtonsController.swift; sourceTree = "<group>"; };
+		39265C201E8DA050003D36E1 /* mapaEvento1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapaEvento1.swift; sourceTree = "<group>"; };
+		39265C221E8DA12B003D36E1 /* mapaEventos2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapaEventos2.swift; sourceTree = "<group>"; };
 		39A460CB1E8D4A7F00B3352A /* PodcastTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTable.swift; sourceTree = "<group>"; };
 		A76A71851E8D73DF00DF6936 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +214,8 @@
 				384262F81E86056B0044B078 /* SeleccionPodcast2TableViewController.swift */,
 				384262FA1E8609D30044B078 /* SeleccionProgramaTableViewController.swift */,
 				384262FC1E860E5B0044B078 /* ReproducirPodcastViewController.swift */,
+				39265C201E8DA050003D36E1 /* mapaEvento1.swift */,
+				39265C221E8DA12B003D36E1 /* mapaEventos2.swift */,
 			);
 			path = CONCEPTO;
 			sourceTree = "<group>";
@@ -368,8 +374,10 @@
 				A76A71861E8D73DF00DF6936 /* MapViewController.swift in Sources */,
 				1DC682F61E80783C0061F98C /* DetalleViewController.swift in Sources */,
 				384262FB1E8609D30044B078 /* SeleccionProgramaTableViewController.swift in Sources */,
+				39265C231E8DA12B003D36E1 /* mapaEventos2.swift in Sources */,
 				384262F91E86056B0044B078 /* SeleccionPodcast2TableViewController.swift in Sources */,
 				38CA79801E4F8D8800F498CD /* SecondViewController.swift in Sources */,
+				39265C211E8DA050003D36E1 /* mapaEvento1.swift in Sources */,
 				384262FD1E860E5B0044B078 /* ReproducirPodcastViewController.swift in Sources */,
 				38EE132D1E8D698700518328 /* DetalleControladorInterfaceController.swift in Sources */,
 				38CA797C1E4F8D8800F498CD /* AppDelegate.swift in Sources */,
