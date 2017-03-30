@@ -58,8 +58,8 @@ class MapViewController: UIViewController,CLLocationManagerDelegate {
         let cl1=CLLocationCoordinate2DMake(19.424722, -99.194917)
         mapaEventos1.region=MKCoordinateRegionMakeWithDistance(cl1, 10, 10)
         var punto1 = CLLocationCoordinate2D()
-        punto1.latitude = 19.283996
-        punto1.longitude = -99.136006
+        punto1.latitude = 19.424722
+        punto1.longitude = -99.194917
         let pin1 = MKPointAnnotation()
         pin1.coordinate = punto1
         pin1.title = "Björk en CDMX"
@@ -78,8 +78,8 @@ class MapViewController: UIViewController,CLLocationManagerDelegate {
         let cl2=CLLocationCoordinate2DMake(19.404889, -99.095944)
         mapaEventos1.region=MKCoordinateRegionMakeWithDistance(cl2, 10, 10)
         var punto2 = CLLocationCoordinate2D()
-        punto2.latitude = 19.283996
-        punto2.longitude = -99.136006
+        punto2.latitude = 19.404889
+        punto2.longitude = -99.095944
         let pin2 = MKPointAnnotation()
         pin2.coordinate = punto2
         pin2.title = "Depeche Mode en México"
