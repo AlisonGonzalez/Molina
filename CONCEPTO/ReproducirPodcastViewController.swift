@@ -19,10 +19,15 @@ class ReproducirPodcastViewController: UIViewController {
     
     var nombre:String = ""
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    let sharedInstance = RadioPlayer()
+    
+    var player = AVPlayer(url: NSURL(string: link) as! URL)
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        /*
         name.text = link
-
+        
         // Do any additional setup after loading the view.
         
         var createError: NSError?
@@ -40,21 +45,28 @@ class ReproducirPodcastViewController: UIViewController {
             if let error = createError{
                 print("Error en audio \(error.localizedDescription)")
             }
-        }
+        }*/
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        player = AVPlayer(url: NSURL(string: link) as! URL)
         
     }
 
     @IBAction func reproducir(_ sender: Any) {
         play()
     }
+    
     @IBAction func pausa(_ sender: Any) {
         pause()
     }
-    @IBAction func parar(_ sender: Any) {
+    
+    @IBAction func detener(_ sender: Any) {
         stop()
     }
-    
-    func play() {
+    /*func play() {
         if !reproductor.isPlaying{
             reproductor.play()
         }
@@ -68,9 +80,36 @@ class ReproducirPodcastViewController: UIViewController {
     
     func stop() {
         reproductor.stop()
+    }*/
+    
+    
+    private var isPlaying = false
+    
+    func play() {
+        player.play()
+        isPlaying = true
     }
     
+    func pause() {
+        player.pause()
+        isPlaying = false
+    }
     
+    func stop(){
+        
+    }
+    
+    func toggle() {
+        if isPlaying == true {
+            pause()
+        } else {
+            play()
+        }
+    }
+    
+    func currentlyPlaying() -> Bool {
+        return isPlaying
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
