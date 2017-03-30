@@ -448,6 +448,9 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                             <constraint firstItem="ADF-3g-A0x" firstAttribute="top" secondItem="eq5-uz-wK6" secondAttribute="bottom" id="fO9-Mj-67h"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapaEventos2" destination="ADF-3g-A0x" id="Hkr-jO-lfN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sMd-qN-F4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -811,6 +814,9 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                             <constraint firstItem="sd7-DN-1r8" firstAttribute="leading" secondItem="PG4-8I-7TH" secondAttribute="leading" id="zM1-UT-GH7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapaEventos1" destination="sd7-DN-1r8" id="zLo-a6-F7E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YeE-T9-tK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
