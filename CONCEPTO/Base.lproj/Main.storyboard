@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -95,7 +95,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Concepto Radial" id="U3k-Gn-eQb">
                         <barButtonItem key="backBarButtonItem" title="Volver" id="rAG-9a-KER"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="2AI-Yj-zCm"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="2AI-Yj-zCm">
+                            <connections>
+                                <segue destination="hV6-gr-mJi" kind="show" id="9w5-Vc-GEb"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Ajustes" id="g3l-Rl-mIl">
                             <connections>
                                 <segue destination="IWG-zX-cBX" kind="show" id="rfJ-jl-l3V"/>
@@ -259,35 +263,35 @@
                                     <constraint firstAttribute="height" constant="35" id="Qd5-09-B9J"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3qg-DS-Ox3">
+                                <rect key="frame" x="40" y="205" width="294" height="152"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Concepto Radial es la estación de radio del Tecnológico de monterrey, Campus Ciudad de México ubicada en Calle del Puente #222 Col. Ejidos de Huipulco en la Delegación Tlalpan, México D.F. Transmitimos las 24 horas del día los 365 días del año.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qV8-dt-e31">
+                                <rect key="frame" x="40" y="385" width="294" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acerca de" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bD-8t-APK">
-                                <rect key="frame" x="159" y="132" width="77" height="21"/>
+                                <rect key="frame" x="149" y="132" width="77" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3qg-DS-Ox3">
-                                <rect key="frame" x="77" y="227" width="240" height="212"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qV8-dt-e31">
-                                <rect key="frame" x="67" y="463" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hgA-Ja-mAW" firstAttribute="top" secondItem="GqA-UA-iDS" secondAttribute="bottom" constant="8" symbolic="YES" id="3DB-rM-1mT"/>
-                            <constraint firstItem="3qg-DS-Ox3" firstAttribute="centerX" secondItem="M2d-lr-fbp" secondAttribute="centerX" constant="9.5" id="4lI-SL-ZDg"/>
+                            <constraint firstItem="3qg-DS-Ox3" firstAttribute="centerX" secondItem="M2d-lr-fbp" secondAttribute="centerX" constant="-0.5" id="4lI-SL-ZDg"/>
                             <constraint firstItem="hgA-Ja-mAW" firstAttribute="centerX" secondItem="M2d-lr-fbp" secondAttribute="centerX" constant="-7" id="ATP-TC-nrg"/>
-                            <constraint firstItem="3qg-DS-Ox3" firstAttribute="top" secondItem="5bD-8t-APK" secondAttribute="bottom" constant="74" id="NOy-Ii-Mxa"/>
-                            <constraint firstItem="5bD-8t-APK" firstAttribute="centerX" secondItem="M2d-lr-fbp" secondAttribute="centerX" constant="10" id="S1t-se-F02"/>
-                            <constraint firstItem="3qg-DS-Ox3" firstAttribute="centerY" secondItem="M2d-lr-fbp" secondAttribute="centerY" id="ZnB-fq-5eT"/>
+                            <constraint firstItem="3qg-DS-Ox3" firstAttribute="top" secondItem="5bD-8t-APK" secondAttribute="bottom" constant="52" id="NOy-Ii-Mxa"/>
+                            <constraint firstItem="5bD-8t-APK" firstAttribute="centerX" secondItem="M2d-lr-fbp" secondAttribute="centerX" id="S1t-se-F02"/>
+                            <constraint firstItem="3qg-DS-Ox3" firstAttribute="centerY" secondItem="M2d-lr-fbp" secondAttribute="centerY" constant="-52.5" id="ZnB-fq-5eT"/>
                             <constraint firstItem="5bD-8t-APK" firstAttribute="top" secondItem="hgA-Ja-mAW" secondAttribute="bottom" constant="25" id="cHn-7f-vGl"/>
                             <constraint firstItem="hgA-Ja-mAW" firstAttribute="leading" secondItem="M2d-lr-fbp" secondAttribute="leadingMargin" constant="57" id="vXk-9S-vpi"/>
-                            <constraint firstItem="3qg-DS-Ox3" firstAttribute="leading" secondItem="M2d-lr-fbp" secondAttribute="leadingMargin" constant="61" id="wtz-xm-L9T"/>
+                            <constraint firstItem="3qg-DS-Ox3" firstAttribute="leading" secondItem="M2d-lr-fbp" secondAttribute="leadingMargin" constant="24" id="wtz-xm-L9T"/>
                         </constraints>
                     </view>
                     <connections>
@@ -506,10 +510,10 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
             </objects>
             <point key="canvasLocation" x="3180" y="-998"/>
         </scene>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="7hv-Ya-bnk">
             <objects>
-                <viewController id="hV6-gr-mJi" sceneMemberID="viewController">
+                <viewController id="hV6-gr-mJi" customClass="FirstViewController" customModule="CONCEPTO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BF1-ha-iU7"/>
                         <viewControllerLayoutGuide type="bottom" id="UK1-a4-YKb"/>
@@ -518,32 +522,55 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4f-7Q-qa1">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tyS-XV-HTg">
+                                <rect key="frame" x="6" y="72" width="363" height="500"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4GR-d6-HLY">
+                                <rect key="frame" x="0.0" y="579" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Cámara" id="F1Q-sn-AeN"/>
-                                    <barButtonItem title="Galería" id="xB2-fu-V1R"/>
+                                    <barButtonItem title="Cámara" id="AX6-tl-WwI">
+                                        <connections>
+                                            <action selector="useCamera:" destination="hV6-gr-mJi" id="8xM-OT-S4h"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Galería" width="74" id="bJw-wB-kmn">
+                                        <connections>
+                                            <action selector="useCameraRoll:" destination="hV6-gr-mJi" id="71L-DY-eMK"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tyS-XV-HTg">
-                                <rect key="frame" x="16" y="28" width="343" height="581"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radial" translatesAutoresizingMaskIntoConstraints="NO" id="QrB-wu-45V">
+                                <rect key="frame" x="102" y="396" width="170" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="0hx-Az-BYO"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="U4f-7Q-qa1" firstAttribute="top" secondItem="tyS-XV-HTg" secondAttribute="bottom" constant="14" id="Het-gV-wjQ"/>
-                            <constraint firstItem="tyS-XV-HTg" firstAttribute="leading" secondItem="sgA-MK-hqJ" secondAttribute="leadingMargin" id="ReS-FX-EO5"/>
+                            <constraint firstItem="tyS-XV-HTg" firstAttribute="leading" secondItem="4GR-d6-HLY" secondAttribute="leading" constant="6" id="K7p-G2-5b5"/>
+                            <constraint firstItem="QrB-wu-45V" firstAttribute="centerX" secondItem="sgA-MK-hqJ" secondAttribute="centerX" id="Mb9-E4-tCf"/>
+                            <constraint firstItem="4GR-d6-HLY" firstAttribute="centerX" secondItem="sgA-MK-hqJ" secondAttribute="centerX" id="Njm-Az-uif"/>
+                            <constraint firstItem="QrB-wu-45V" firstAttribute="leading" secondItem="sgA-MK-hqJ" secondAttribute="leadingMargin" constant="86" id="Oux-Ty-7yJ"/>
+                            <constraint firstItem="tyS-XV-HTg" firstAttribute="leading" secondItem="sgA-MK-hqJ" secondAttribute="leadingMargin" constant="-10" id="ReS-FX-EO5"/>
+                            <constraint firstItem="4GR-d6-HLY" firstAttribute="bottom" secondItem="UK1-a4-YKb" secondAttribute="top" id="SCn-XP-bEM"/>
+                            <constraint firstItem="4GR-d6-HLY" firstAttribute="top" secondItem="QrB-wu-45V" secondAttribute="bottom" constant="13" id="dCU-kU-ZLl"/>
                             <constraint firstItem="tyS-XV-HTg" firstAttribute="centerX" secondItem="sgA-MK-hqJ" secondAttribute="centerX" id="ea1-c9-JhC"/>
-                            <constraint firstItem="U4f-7Q-qa1" firstAttribute="leading" secondItem="sgA-MK-hqJ" secondAttribute="leading" id="iqn-ep-Qbg"/>
-                            <constraint firstItem="U4f-7Q-qa1" firstAttribute="bottom" secondItem="UK1-a4-YKb" secondAttribute="top" id="wLI-kh-KZo"/>
-                            <constraint firstItem="U4f-7Q-qa1" firstAttribute="centerX" secondItem="sgA-MK-hqJ" secondAttribute="centerX" id="wRU-KB-IE5"/>
-                            <constraint firstItem="tyS-XV-HTg" firstAttribute="top" secondItem="BF1-ha-iU7" secondAttribute="bottom" constant="8" symbolic="YES" id="ygR-9f-m4t"/>
+                            <constraint firstItem="4GR-d6-HLY" firstAttribute="top" secondItem="tyS-XV-HTg" secondAttribute="bottom" constant="7" id="ind-B9-j0t"/>
+                            <constraint firstItem="tyS-XV-HTg" firstAttribute="centerX" secondItem="sgA-MK-hqJ" secondAttribute="centerX" id="nqt-a2-QCP"/>
+                            <constraint firstItem="tyS-XV-HTg" firstAttribute="top" secondItem="BF1-ha-iU7" secondAttribute="bottom" constant="8" id="ygR-9f-m4t"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="tyS-XV-HTg" id="bWf-9c-QKc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KOf-db-V3m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3922" y="-859"/>
+            <point key="canvasLocation" x="3920.8000000000002" y="-859.52023988005999"/>
         </scene>
         <!--Eventos-->
         <scene sceneID="wg7-f3-ORb">
@@ -640,7 +667,11 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                     <tabBarItem key="tabBarItem" title="Eventos" image="calendarTabBar" selectedImage="calendarFilledTabBar" id="cPa-gy-q4n"/>
                     <navigationItem key="navigationItem" title="Eventos" id="pHL-fW-nzj">
                         <barButtonItem key="backBarButtonItem" title="Volver" id="qq0-HU-htI"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="2Zp-nk-bai"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="2Zp-nk-bai">
+                            <connections>
+                                <segue destination="hV6-gr-mJi" kind="show" id="aeY-Qg-xQb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -930,7 +961,11 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                     <tabBarItem key="tabBarItem" title="Social" image="shareTabBar" selectedImage="sharedFilledTabBar" id="0vB-9X-nY6"/>
                     <navigationItem key="navigationItem" title="Social" id="hrZ-XM-BJ3">
                         <barButtonItem key="backBarButtonItem" title="Volver" id="QFa-ah-az8"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="lQ9-EP-xaZ"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="lQ9-EP-xaZ">
+                            <connections>
+                                <segue destination="hV6-gr-mJi" kind="show" id="Htr-JW-JsP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bX-q8-5Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1018,6 +1053,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
         <image name="youtube" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Htr-JW-JsP"/>
         <segue reference="4If-L2-jiW"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
