@@ -29,6 +29,7 @@
 		38CA79851E4F8D8900F498CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79841E4F8D8900F498CD /* Assets.xcassets */; };
 		38CA79881E4F8D8900F498CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79861E4F8D8900F498CD /* LaunchScreen.storyboard */; };
 		3922C3AD1E82FBB00007E47D /* SocialButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922C3AC1E82FBB00007E47D /* SocialButtonsController.swift */; };
+		39A460CC1E8D4A7F00B3352A /* PodcastTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A460CB1E8D4A7F00B3352A /* PodcastTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		38CA79871E4F8D8900F498CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38CA79891E4F8D8900F498CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3922C3AC1E82FBB00007E47D /* SocialButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialButtonsController.swift; sourceTree = "<group>"; };
+		39A460CB1E8D4A7F00B3352A /* PodcastTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				384B7A3E1E6B42E000DBC3B0 /* ExtensionDelegate.swift */,
 				384B7A401E6B42E000DBC3B0 /* NotificationController.swift */,
 				384B7A421E6B42E000DBC3B0 /* ComplicationController.swift */,
+				39A460CB1E8D4A7F00B3352A /* PodcastTable.swift */,
 				384B7A441E6B42E000DBC3B0 /* Assets.xcassets */,
 				384B7A461E6B42E000DBC3B0 /* Info.plist */,
 				384B7A3A1E6B42E000DBC3B0 /* Supporting Files */,
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A460CC1E8D4A7F00B3352A /* PodcastTable.swift in Sources */,
 				384B7A411E6B42E000DBC3B0 /* NotificationController.swift in Sources */,
 				384B7A431E6B42E000DBC3B0 /* ComplicationController.swift in Sources */,
 				384B7A3F1E6B42E000DBC3B0 /* ExtensionDelegate.swift in Sources */,
