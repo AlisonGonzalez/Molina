@@ -9,7 +9,7 @@
 import WatchKit
 import UIKit
 
-class PodcastTable: NSObject {
+class PodcastTable {
     var nombre:String
     var descripcion:String
     
