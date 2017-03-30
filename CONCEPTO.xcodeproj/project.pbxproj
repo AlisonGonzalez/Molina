@@ -28,6 +28,8 @@
 		38CA79831E4F8D8900F498CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79811E4F8D8900F498CD /* Main.storyboard */; };
 		38CA79851E4F8D8900F498CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79841E4F8D8900F498CD /* Assets.xcassets */; };
 		38CA79881E4F8D8900F498CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79861E4F8D8900F498CD /* LaunchScreen.storyboard */; };
+		38EE132B1E8D612800518328 /* controladorRenglon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EE132A1E8D612800518328 /* controladorRenglon.swift */; };
+		38EE132D1E8D698700518328 /* DetalleControladorInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EE132C1E8D698700518328 /* DetalleControladorInterfaceController.swift */; };
 		3922C3AD1E82FBB00007E47D /* SocialButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922C3AC1E82FBB00007E47D /* SocialButtonsController.swift */; };
 		39A460CC1E8D4A7F00B3352A /* PodcastTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A460CB1E8D4A7F00B3352A /* PodcastTable.swift */; };
 /* End PBXBuildFile section */
@@ -101,6 +103,8 @@
 		38CA79841E4F8D8900F498CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38CA79871E4F8D8900F498CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38CA79891E4F8D8900F498CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38EE132A1E8D612800518328 /* controladorRenglon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = controladorRenglon.swift; sourceTree = "<group>"; };
+		38EE132C1E8D698700518328 /* DetalleControladorInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetalleControladorInterfaceController.swift; path = ../conceptoWatch/DetalleControladorInterfaceController.swift; sourceTree = "<group>"; };
 		3922C3AC1E82FBB00007E47D /* SocialButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialButtonsController.swift; sourceTree = "<group>"; };
 		39A460CB1E8D4A7F00B3352A /* PodcastTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,7 +149,9 @@
 		384B7A391E6B42E000DBC3B0 /* conceptoWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				38EE132C1E8D698700518328 /* DetalleControladorInterfaceController.swift */,
 				384B7A3C1E6B42E000DBC3B0 /* InterfaceController.swift */,
+				38EE132A1E8D612800518328 /* controladorRenglon.swift */,
 				384B7A3E1E6B42E000DBC3B0 /* ExtensionDelegate.swift */,
 				384B7A401E6B42E000DBC3B0 /* NotificationController.swift */,
 				384B7A421E6B42E000DBC3B0 /* ComplicationController.swift */,
@@ -348,6 +354,7 @@
 				384B7A431E6B42E000DBC3B0 /* ComplicationController.swift in Sources */,
 				384B7A3F1E6B42E000DBC3B0 /* ExtensionDelegate.swift in Sources */,
 				384B7A3D1E6B42E000DBC3B0 /* InterfaceController.swift in Sources */,
+				38EE132B1E8D612800518328 /* controladorRenglon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +367,7 @@
 				384262F91E86056B0044B078 /* SeleccionPodcast2TableViewController.swift in Sources */,
 				38CA79801E4F8D8800F498CD /* SecondViewController.swift in Sources */,
 				384262FD1E860E5B0044B078 /* ReproducirPodcastViewController.swift in Sources */,
+				38EE132D1E8D698700518328 /* DetalleControladorInterfaceController.swift in Sources */,
 				38CA797C1E4F8D8800F498CD /* AppDelegate.swift in Sources */,
 				3922C3AD1E82FBB00007E47D /* SocialButtonsController.swift in Sources */,
 				38CA797E1E4F8D8800F498CD /* FirstViewController.swift in Sources */,

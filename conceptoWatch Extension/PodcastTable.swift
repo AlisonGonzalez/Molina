@@ -7,7 +7,17 @@
 //
 
 import WatchKit
+import UIKit
 
 class PodcastTable: NSObject {
+    var nombre:String
+    var descripcion:String
+    
+    
+    init(elnombre:String,ladescripcion:String)
+    {
+        nombre=elnombre
+        descripcion=ladescripcion
+    }
 
 }

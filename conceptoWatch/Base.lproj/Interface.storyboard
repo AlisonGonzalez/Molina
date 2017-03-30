@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,22 +9,48 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
+        <!--Detalle Controlador Interface Controller-->
+        <scene sceneID="vFQ-N2-Nel">
+            <objects>
+                <controller id="wdn-C5-Sc7" customClass="DetalleControladorInterfaceController" customModule="CONCEPTO">
+                    <items>
+                        <label alignment="left" text="Label" id="EKU-cf-1Ny"/>
+                        <label alignment="left" text="Label" id="GkZ-vW-1Dj"/>
+                    </items>
+                    <connections>
+                        <outlet property="sintesis" destination="GkZ-vW-1Dj" id="lfS-Vb-Vga"/>
+                        <outlet property="titulo" destination="EKU-cf-1Ny" id="e0b-7a-Lky"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="516" y="345"/>
+        </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="conceptoWatch" customModuleProvider="target">
                     <items>
                         <label alignment="left" text="Hola Mundo" id="kMk-Cd-IlU"/>
-                        <table alignment="left" id="yBI-be-POM">
+                        <table alignment="left" id="yBI-be-POM" userLabel="La Table">
                             <items>
-                                <tableRow identifier="Podcast" id="1bg-Fp-Yih" customClass="PodcastTable" customModule="conceptoWatch_Extension">
-                                    <group key="rootItem" width="1" alignment="left" id="HSS-5f-w6U"/>
+                                <tableRow identifier="Podcast" id="1bg-Fp-Yih" userLabel="renglones" customClass="controladorRenglon" customModule="conceptoWatch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="HSS-5f-w6U">
+                                        <items>
+                                            <label alignment="left" text="Label" id="8Fu-2r-0VR"/>
+                                            <label alignment="left" text="Label" id="K1d-KP-Tc1"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="name" destination="8Fu-2r-0VR" id="8KG-To-h3S"/>
+                                        <outlet property="subname" destination="K1d-KP-Tc1" id="VHC-MG-B6u"/>
+                                        <segue destination="wdn-C5-Sc7" kind="push" id="97H-aq-ggd"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
                     <connections>
-                        <outlet property="PodcastTableView" destination="yBI-be-POM" id="wva-ov-kzw"/>
+                        <outlet property="laTable" destination="yBI-be-POM" id="qon-MY-mEI"/>
                     </connections>
                 </controller>
             </objects>
