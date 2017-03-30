@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D46595C1E5651D400FC9415 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D46595B1E5651D400FC9415 /* MediaPlayer.framework */; };
+		1D7DB7FB1E6B72C50059C836 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7DB7FA1E6B72C50059C836 /* RadioPlayer.swift */; };
+		1DC682F61E80783C0061F98C /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC682F51E80783C0061F98C /* DetalleViewController.swift */; };
+		384262F91E86056B0044B078 /* SeleccionPodcast2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384262F81E86056B0044B078 /* SeleccionPodcast2TableViewController.swift */; };
+		384262FB1E8609D30044B078 /* SeleccionProgramaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384262FA1E8609D30044B078 /* SeleccionProgramaTableViewController.swift */; };
+		384262FD1E860E5B0044B078 /* ReproducirPodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384262FC1E860E5B0044B078 /* ReproducirPodcastViewController.swift */; };
+		384B7A2D1E6B42DF00DBC3B0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B7A2B1E6B42DF00DBC3B0 /* Interface.storyboard */; };
+		384B7A2F1E6B42DF00DBC3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384B7A2E1E6B42DF00DBC3B0 /* Assets.xcassets */; };
+		384B7A361E6B42E000DBC3B0 /* conceptoWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 384B7A351E6B42E000DBC3B0 /* conceptoWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		384B7A3D1E6B42E000DBC3B0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B7A3C1E6B42E000DBC3B0 /* InterfaceController.swift */; };
+		384B7A3F1E6B42E000DBC3B0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B7A3E1E6B42E000DBC3B0 /* ExtensionDelegate.swift */; };
+		384B7A411E6B42E000DBC3B0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B7A401E6B42E000DBC3B0 /* NotificationController.swift */; };
+		384B7A431E6B42E000DBC3B0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B7A421E6B42E000DBC3B0 /* ComplicationController.swift */; };
+		384B7A451E6B42E000DBC3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384B7A441E6B42E000DBC3B0 /* Assets.xcassets */; };
+		384B7A491E6B42E000DBC3B0 /* conceptoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 384B7A291E6B42DF00DBC3B0 /* conceptoWatch.app */; };
+		38CA797C1E4F8D8800F498CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797B1E4F8D8800F498CD /* AppDelegate.swift */; };
+		38CA797E1E4F8D8800F498CD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797D1E4F8D8800F498CD /* FirstViewController.swift */; };
+		38CA79801E4F8D8800F498CD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797F1E4F8D8800F498CD /* SecondViewController.swift */; };
+		38CA79831E4F8D8900F498CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79811E4F8D8900F498CD /* Main.storyboard */; };
+		38CA79851E4F8D8900F498CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79841E4F8D8900F498CD /* Assets.xcassets */; };
+		38CA79881E4F8D8900F498CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79861E4F8D8900F498CD /* LaunchScreen.storyboard */; };
+		38EE132B1E8D612800518328 /* controladorRenglon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EE132A1E8D612800518328 /* controladorRenglon.swift */; };
+		38EE132D1E8D698700518328 /* DetalleControladorInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EE132C1E8D698700518328 /* DetalleControladorInterfaceController.swift */; };
+		3922C3AD1E82FBB00007E47D /* SocialButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922C3AC1E82FBB00007E47D /* SocialButtonsController.swift */; };
+		39265C211E8DA050003D36E1 /* mapaEvento1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39265C201E8DA050003D36E1 /* mapaEvento1.swift */; };
+		39265C231E8DA12B003D36E1 /* mapaEventos2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39265C221E8DA12B003D36E1 /* mapaEventos2.swift */; };
+		39A460CC1E8D4A7F00B3352A /* PodcastTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A460CB1E8D4A7F00B3352A /* PodcastTable.swift */; };
+		A76A71861E8D73DF00DF6936 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A71851E8D73DF00DF6936 /* MapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		384B7A371E6B42E000DBC3B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38CA79701E4F8D7900F498CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 384B7A341E6B42E000DBC3B0;
+			remoteInfo = "conceptoWatch Extension";
+		};
+		384B7A471E6B42E000DBC3B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38CA79701E4F8D7900F498CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 384B7A281E6B42DE00DBC3B0;
+			remoteInfo = conceptoWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		384B7A4F1E6B42E000DBC3B0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				384B7A361E6B42E000DBC3B0 /* conceptoWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384B7A511E6B42E000DBC3B0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				384B7A491E6B42E000DBC3B0 /* conceptoWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D46595B1E5651D400FC9415 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1D7DB7FA1E6B72C50059C836 /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
+		1DC682F51E80783C0061F98C /* DetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
+		384262F81E86056B0044B078 /* SeleccionPodcast2TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionPodcast2TableViewController.swift; sourceTree = "<group>"; };
+		384262FA1E8609D30044B078 /* SeleccionProgramaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionProgramaTableViewController.swift; sourceTree = "<group>"; };
+		384262FC1E860E5B0044B078 /* ReproducirPodcastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReproducirPodcastViewController.swift; sourceTree = "<group>"; };
+		384B7A291E6B42DF00DBC3B0 /* conceptoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = conceptoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		384B7A2C1E6B42DF00DBC3B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		384B7A2E1E6B42DF00DBC3B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		384B7A301E6B42DF00DBC3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384B7A351E6B42E000DBC3B0 /* conceptoWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "conceptoWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		384B7A3B1E6B42E000DBC3B0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		384B7A3C1E6B42E000DBC3B0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		384B7A3E1E6B42E000DBC3B0 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		384B7A401E6B42E000DBC3B0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		384B7A421E6B42E000DBC3B0 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		384B7A441E6B42E000DBC3B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		384B7A461E6B42E000DBC3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38CA79781E4F8D8800F498CD /* CONCEPTO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CONCEPTO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38CA797B1E4F8D8800F498CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		38CA797D1E4F8D8800F498CD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		38CA797F1E4F8D8800F498CD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		38CA79821E4F8D8900F498CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		38CA79841E4F8D8900F498CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38CA79871E4F8D8900F498CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		38CA79891E4F8D8900F498CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38EE132A1E8D612800518328 /* controladorRenglon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = controladorRenglon.swift; sourceTree = "<group>"; };
+		38EE132C1E8D698700518328 /* DetalleControladorInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetalleControladorInterfaceController.swift; path = ../conceptoWatch/DetalleControladorInterfaceController.swift; sourceTree = "<group>"; };
+		3922C3AC1E82FBB00007E47D /* SocialButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialButtonsController.swift; sourceTree = "<group>"; };
+		39265C201E8DA050003D36E1 /* mapaEvento1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapaEvento1.swift; sourceTree = "<group>"; };
+		39265C221E8DA12B003D36E1 /* mapaEventos2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapaEventos2.swift; sourceTree = "<group>"; };
+		39A460CB1E8D4A7F00B3352A /* PodcastTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTable.swift; sourceTree = "<group>"; };
+		A76A71851E8D73DF00DF6936 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		384B7A321E6B42E000DBC3B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38CA79751E4F8D7900F498CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D46595C1E5651D400FC9415 /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D46595A1E5651D400FC9415 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D46595B1E5651D400FC9415 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		384B7A2A1E6B42DF00DBC3B0 /* conceptoWatch */ = {
+			isa = PBXGroup;
+			children = (
+				384B7A2B1E6B42DF00DBC3B0 /* Interface.storyboard */,
+				384B7A2E1E6B42DF00DBC3B0 /* Assets.xcassets */,
+				384B7A301E6B42DF00DBC3B0 /* Info.plist */,
+			);
+			path = conceptoWatch;
+			sourceTree = "<group>";
+		};
+		384B7A391E6B42E000DBC3B0 /* conceptoWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				384B7A3C1E6B42E000DBC3B0 /* InterfaceController.swift */,
+				38EE132A1E8D612800518328 /* controladorRenglon.swift */,
+				384B7A3E1E6B42E000DBC3B0 /* ExtensionDelegate.swift */,
+				384B7A401E6B42E000DBC3B0 /* NotificationController.swift */,
+				384B7A421E6B42E000DBC3B0 /* ComplicationController.swift */,
+				39A460CB1E8D4A7F00B3352A /* PodcastTable.swift */,
+				38EE132C1E8D698700518328 /* DetalleControladorInterfaceController.swift */,
+				384B7A441E6B42E000DBC3B0 /* Assets.xcassets */,
+				384B7A461E6B42E000DBC3B0 /* Info.plist */,
+				384B7A3A1E6B42E000DBC3B0 /* Supporting Files */,
+			);
+			path = "conceptoWatch Extension";
+			sourceTree = "<group>";
+		};
+		384B7A3A1E6B42E000DBC3B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				384B7A3B1E6B42E000DBC3B0 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38CA796F1E4F8D7900F498CD = {
+			isa = PBXGroup;
+			children = (
+				38CA797A1E4F8D8800F498CD /* CONCEPTO */,
+				384B7A2A1E6B42DF00DBC3B0 /* conceptoWatch */,
+				384B7A391E6B42E000DBC3B0 /* conceptoWatch Extension */,
+				38CA79791E4F8D8800F498CD /* Products */,
+				1D46595A1E5651D400FC9415 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		38CA79791E4F8D8800F498CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38CA79781E4F8D8800F498CD /* CONCEPTO.app */,
+				384B7A291E6B42DF00DBC3B0 /* conceptoWatch.app */,
+				384B7A351E6B42E000DBC3B0 /* conceptoWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38CA797A1E4F8D8800F498CD /* CONCEPTO */ = {
+			isa = PBXGroup;
+			children = (
+				38CA797B1E4F8D8800F498CD /* AppDelegate.swift */,
+				1DC682F51E80783C0061F98C /* DetalleViewController.swift */,
+				38CA797D1E4F8D8800F498CD /* FirstViewController.swift */,
+				38CA797F1E4F8D8800F498CD /* SecondViewController.swift */,
+				38CA79811E4F8D8900F498CD /* Main.storyboard */,
+				1D7DB7FA1E6B72C50059C836 /* RadioPlayer.swift */,
+				A76A71851E8D73DF00DF6936 /* MapViewController.swift */,
+				38CA79841E4F8D8900F498CD /* Assets.xcassets */,
+				38CA79861E4F8D8900F498CD /* LaunchScreen.storyboard */,
+				38CA79891E4F8D8900F498CD /* Info.plist */,
+				384262F81E86056B0044B078 /* SeleccionPodcast2TableViewController.swift */,
+				384262FA1E8609D30044B078 /* SeleccionProgramaTableViewController.swift */,
+				384262FC1E860E5B0044B078 /* ReproducirPodcastViewController.swift */,
+				39265C201E8DA050003D36E1 /* mapaEvento1.swift */,
+				39265C221E8DA12B003D36E1 /* mapaEventos2.swift */,
+			);
+			path = CONCEPTO;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		384B7A281E6B42DE00DBC3B0 /* conceptoWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384B7A501E6B42E000DBC3B0 /* Build configuration list for PBXNativeTarget "conceptoWatch" */;
+			buildPhases = (
+				384B7A271E6B42DE00DBC3B0 /* Resources */,
+				384B7A4F1E6B42E000DBC3B0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				384B7A381E6B42E000DBC3B0 /* PBXTargetDependency */,
+			);
+			name = conceptoWatch;
+			productName = conceptoWatch;
+			productReference = 384B7A291E6B42DF00DBC3B0 /* conceptoWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		384B7A341E6B42E000DBC3B0 /* conceptoWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384B7A4E1E6B42E000DBC3B0 /* Build configuration list for PBXNativeTarget "conceptoWatch Extension" */;
+			buildPhases = (
+				384B7A311E6B42E000DBC3B0 /* Sources */,
+				384B7A321E6B42E000DBC3B0 /* Frameworks */,
+				384B7A331E6B42E000DBC3B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "conceptoWatch Extension";
+			productName = "conceptoWatch Extension";
+			productReference = 384B7A351E6B42E000DBC3B0 /* conceptoWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		38CA79771E4F8D7900F498CD /* CONCEPTO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38CA798C1E4F8D8900F498CD /* Build configuration list for PBXNativeTarget "CONCEPTO" */;
+			buildPhases = (
+				38CA79741E4F8D7900F498CD /* Sources */,
+				38CA79751E4F8D7900F498CD /* Frameworks */,
+				38CA79761E4F8D7900F498CD /* Resources */,
+				384B7A511E6B42E000DBC3B0 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				384B7A481E6B42E000DBC3B0 /* PBXTargetDependency */,
+			);
+			name = CONCEPTO;
+			productName = CONCEPTO;
+			productReference = 38CA79781E4F8D8800F498CD /* CONCEPTO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38CA79701E4F8D7900F498CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Alfredo;
+				TargetAttributes = {
+					384B7A281E6B42DE00DBC3B0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BT3USA77FD;
+						ProvisioningStyle = Automatic;
+					};
+					384B7A341E6B42E000DBC3B0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BT3USA77FD;
+						ProvisioningStyle = Automatic;
+					};
+					38CA79771E4F8D7900F498CD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BT3USA77FD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 38CA79731E4F8D7900F498CD /* Build configuration list for PBXProject "CONCEPTO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38CA796F1E4F8D7900F498CD;
+			productRefGroup = 38CA79791E4F8D8800F498CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38CA79771E4F8D7900F498CD /* CONCEPTO */,
+				384B7A281E6B42DE00DBC3B0 /* conceptoWatch */,
+				384B7A341E6B42E000DBC3B0 /* conceptoWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		384B7A271E6B42DE00DBC3B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384B7A2F1E6B42DF00DBC3B0 /* Assets.xcassets in Resources */,
+				384B7A2D1E6B42DF00DBC3B0 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384B7A331E6B42E000DBC3B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384B7A451E6B42E000DBC3B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38CA79761E4F8D7900F498CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38CA79881E4F8D8900F498CD /* LaunchScreen.storyboard in Resources */,
+				38CA79851E4F8D8900F498CD /* Assets.xcassets in Resources */,
+				38CA79831E4F8D8900F498CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		384B7A311E6B42E000DBC3B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A460CC1E8D4A7F00B3352A /* PodcastTable.swift in Sources */,
+				384B7A411E6B42E000DBC3B0 /* NotificationController.swift in Sources */,
+				384B7A431E6B42E000DBC3B0 /* ComplicationController.swift in Sources */,
+				384B7A3F1E6B42E000DBC3B0 /* ExtensionDelegate.swift in Sources */,
+				384B7A3D1E6B42E000DBC3B0 /* InterfaceController.swift in Sources */,
+				38EE132B1E8D612800518328 /* controladorRenglon.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38CA79741E4F8D7900F498CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76A71861E8D73DF00DF6936 /* MapViewController.swift in Sources */,
+				1DC682F61E80783C0061F98C /* DetalleViewController.swift in Sources */,
+				384262FB1E8609D30044B078 /* SeleccionProgramaTableViewController.swift in Sources */,
+				39265C231E8DA12B003D36E1 /* mapaEventos2.swift in Sources */,
+				384262F91E86056B0044B078 /* SeleccionPodcast2TableViewController.swift in Sources */,
+				38CA79801E4F8D8800F498CD /* SecondViewController.swift in Sources */,
+				39265C211E8DA050003D36E1 /* mapaEvento1.swift in Sources */,
+				384262FD1E860E5B0044B078 /* ReproducirPodcastViewController.swift in Sources */,
+				38EE132D1E8D698700518328 /* DetalleControladorInterfaceController.swift in Sources */,
+				38CA797C1E4F8D8800F498CD /* AppDelegate.swift in Sources */,
+				3922C3AD1E82FBB00007E47D /* SocialButtonsController.swift in Sources */,
+				38CA797E1E4F8D8800F498CD /* FirstViewController.swift in Sources */,
+				1D7DB7FB1E6B72C50059C836 /* RadioPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		384B7A381E6B42E000DBC3B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 384B7A341E6B42E000DBC3B0 /* conceptoWatch Extension */;
+			targetProxy = 384B7A371E6B42E000DBC3B0 /* PBXContainerItemProxy */;
+		};
+		384B7A481E6B42E000DBC3B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 384B7A281E6B42DE00DBC3B0 /* conceptoWatch */;
+			targetProxy = 384B7A471E6B42E000DBC3B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		384B7A2B1E6B42DF00DBC3B0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				384B7A2C1E6B42DF00DBC3B0 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		38CA79811E4F8D8900F498CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38CA79821E4F8D8900F498CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		38CA79861E4F8D8900F498CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38CA79871E4F8D8900F498CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		384B7A4A1E6B42E000DBC3B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BT3USA77FD;
+				IBSC_MODULE = conceptoWatch_Extension;
+				INFOPLIST_FILE = conceptoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		384B7A4B1E6B42E000DBC3B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BT3USA77FD;
+				IBSC_MODULE = conceptoWatch_Extension;
+				INFOPLIST_FILE = conceptoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		384B7A4C1E6B42E000DBC3B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = BT3USA77FD;
+				INFOPLIST_FILE = "conceptoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		384B7A4D1E6B42E000DBC3B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = BT3USA77FD;
+				INFOPLIST_FILE = "conceptoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		38CA798A1E4F8D8900F498CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38CA798B1E4F8D8900F498CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38CA798D1E4F8D8900F498CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BT3USA77FD;
+				INFOPLIST_FILE = CONCEPTO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38CA798E1E4F8D8900F498CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BT3USA77FD;
+				INFOPLIST_FILE = CONCEPTO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.CONCEPTO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		384B7A4E1E6B42E000DBC3B0 /* Build configuration list for PBXNativeTarget "conceptoWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384B7A4C1E6B42E000DBC3B0 /* Debug */,
+				384B7A4D1E6B42E000DBC3B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384B7A501E6B42E000DBC3B0 /* Build configuration list for PBXNativeTarget "conceptoWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384B7A4A1E6B42E000DBC3B0 /* Debug */,
+				384B7A4B1E6B42E000DBC3B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38CA79731E4F8D7900F498CD /* Build configuration list for PBXProject "CONCEPTO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38CA798A1E4F8D8900F498CD /* Debug */,
+				38CA798B1E4F8D8900F498CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38CA798C1E4F8D8900F498CD /* Build configuration list for PBXNativeTarget "CONCEPTO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38CA798D1E4F8D8900F498CD /* Debug */,
+				38CA798E1E4F8D8900F498CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38CA79701E4F8D7900F498CD /* Project object */;
+}
