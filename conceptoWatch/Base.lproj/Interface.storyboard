@@ -17,7 +17,7 @@
                         <label alignment="left" text="Hola Mundo" id="kMk-Cd-IlU"/>
                         <table alignment="left" id="yBI-be-POM">
                             <items>
-                                <tableRow identifier="Podcast" id="1bg-Fp-Yih">
+                                <tableRow identifier="Podcast" id="1bg-Fp-Yih" customClass="PodcastTable" customModule="conceptoWatch_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="HSS-5f-w6U"/>
                                 </tableRow>
                             </items>
