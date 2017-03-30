@@ -13,10 +13,8 @@ import UIKit
 class MapViewController: UIViewController,CLLocationManagerDelegate {
     
     
-    let locationManager = CLLocationManager()
-    
     @IBOutlet weak var mapa: MKMapView!
-    
+    let locationManager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
