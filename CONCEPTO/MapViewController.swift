@@ -12,8 +12,15 @@ import UIKit
 
 class MapViewController: UIViewController,CLLocationManagerDelegate {
     
-    
+    //mapa acerca de
     @IBOutlet weak var mapa: MKMapView!
+    
+    //mapa eventos 1
+    
+    
+    //mapa eventos 2
+    
+    
     let locationManager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
