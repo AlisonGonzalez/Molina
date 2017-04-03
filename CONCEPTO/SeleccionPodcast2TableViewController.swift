@@ -31,6 +31,11 @@ class SeleccionPodcast2TableViewController: UITableViewController {
     //paso 2 definir nuevo arreglo
     var nuevoArray:[Any]?
     
+    
+    //cosas para barra de buscar
+    var barraControlador: UISearchController!
+    var resultadosControlador = UITableViewController()
+    
     //paso 3 convertir json en diccionario
     func JSONParseArray(_ string: String) -> [AnyObject]{
         if let data = string.data(using: String.Encoding.utf8){
@@ -63,6 +68,9 @@ class SeleccionPodcast2TableViewController: UITableViewController {
         //trae el contenido de la nube
         let datos = try? Data(contentsOf: url!)
         nuevoArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
+        
+        self.barraControlador = UISearchController(searchResultsController: self.resultadosControlador)
+        self.tableView.tableHeaderView = self.barraControlador.searchBar
         
     }
     
@@ -116,7 +124,7 @@ class SeleccionPodcast2TableViewController: UITableViewController {
         siguienteVista.tipo = s as! String
     }
     
-
+    
     
     /*
      // Override to support conditional editing of the table view.

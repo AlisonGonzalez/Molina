@@ -18,8 +18,8 @@
                         <label alignment="left" text="Label" id="GkZ-vW-1Dj"/>
                     </items>
                     <connections>
-                        <outlet property="sintesis" destination="GkZ-vW-1Dj" id="lfS-Vb-Vga"/>
-                        <outlet property="titulo" destination="EKU-cf-1Ny" id="e0b-7a-Lky"/>
+                        <outlet property="sintesis" destination="GkZ-vW-1Dj" id="Z00-0g-8iJ"/>
+                        <outlet property="titulo" destination="EKU-cf-1Ny" id="ig3-ec-z55"/>
                     </connections>
                 </controller>
             </objects>
@@ -43,6 +43,7 @@
                                     <connections>
                                         <outlet property="name" destination="8Fu-2r-0VR" id="8KG-To-h3S"/>
                                         <outlet property="subname" destination="K1d-KP-Tc1" id="VHC-MG-B6u"/>
+                                        <segue destination="wdn-C5-Sc7" kind="push" id="Z1F-6b-LPj"/>
                                     </connections>
                                 </tableRow>
                             </items>

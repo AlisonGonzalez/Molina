@@ -13,8 +13,8 @@ import Foundation
 class DetalleControladorInterfaceController: WKInterfaceController {
 
     @IBOutlet var titulo: WKInterfaceLabel!
-    @IBOutlet var sintesis: WKInterfaceLabel!
     
+    @IBOutlet var sintesis: WKInterfaceLabel!
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
