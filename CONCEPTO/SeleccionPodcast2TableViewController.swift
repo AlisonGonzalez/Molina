@@ -10,7 +10,7 @@ import UIKit
 
 class SeleccionPodcast2TableViewController: UITableViewController {
     
-    //a
+    
     
     //paso 8 definir direccion
     //let direccion = "http://199.233.252.86/datos/datos.json"
