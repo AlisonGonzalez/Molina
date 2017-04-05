@@ -1,23 +1,27 @@
 //
-//  RadioPlayer.swift
-//  Radio
+//  PodcastPlayer.swift
+//  CONCEPTO
 //
-//  Created by Alison Gonzalez on 2/11/17.
-//  Copyright © 2017 Alison Gonzalez. All rights reserved.
+//  Created by cdt307 on 4/5/17.
+//  Copyright © 2017 Alfredo. All rights reserved.
 //
 
 import Foundation
 import AVFoundation
 
-class RadioPlayer {
-    static let sharedInstance = RadioPlayer()
+class PodcastPlayer {
+    static let sharedInstance = PodcastPlayer()
     
-    private var player = AVPlayer(url: NSURL(string: "http://wms.tecnoxia.com:1935/8022/8022/playlist.m3u8")! as URL)
+    private var player = AVPlayer()
     private var isPlaying = false
     
+    func setURL(url: String){
+        player = AVPlayer(url: NSURL(string: url)! as URL)
+    }
+    
     func play() {
-        if(PodcastPlayer.sharedInstance.currentlyPlaying()){
-            PodcastPlayer.sharedInstance.pause()
+        if(RadioPlayer.sharedInstance.currentlyPlaying()){
+            RadioPlayer.sharedInstance.pause()
         }
         player.play()
         isPlaying = true

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9sH-yk-AcX">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
         <!--Detalle Controlador Interface Controller-->
@@ -23,14 +23,35 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="516" y="345"/>
+            <point key="canvasLocation" x="703" y="740"/>
+        </scene>
+        <!--First Interface Controller-->
+        <scene sceneID="zd1-ih-wJ2">
+            <objects>
+                <controller id="0L7-D8-hgY" customClass="FirstInterfaceController" customModule="conceptoWatch_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Concepto Radial" textAlignment="center" id="Hu7-6r-0dy"/>
+                        <label width="136" alignment="left" text="Streaming" textAlignment="center" id="6jk-f2-tFH">
+                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <button width="136" height="56" alignment="left" title="Button" id="B2c-ho-D6i">
+                            <connections>
+                                <action selector="playRadio" destination="0L7-D8-hgY" id="n7e-Xs-K0p"/>
+                            </connections>
+                        </button>
+                        <slider width="1" alignment="left" value="1" maximum="7" steps="7" id="OqR-Zt-aNz">
+                            <color key="color" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </slider>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="404" y="427"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="conceptoWatch" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="Hola Mundo" id="kMk-Cd-IlU"/>
                         <table alignment="left" id="yBI-be-POM" userLabel="La Table">
                             <items>
                                 <tableRow identifier="Podcast" id="1bg-Fp-Yih" userLabel="renglones" customClass="controladorRenglon" customModule="conceptoWatch_Extension">
@@ -54,7 +75,27 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="407" y="740"/>
+        </scene>
+        <!--First Interface Controller-->
+        <scene sceneID="mS5-Kf-9vi">
+            <objects>
+                <controller id="9sH-yk-AcX" customClass="FirstInterfaceController" customModule="conceptoWatch_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Streaming" id="OxZ-4F-2fB">
+                            <connections>
+                                <segue destination="0L7-D8-hgY" kind="push" id="WTF-um-ajw"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Podcasts" id="lpB-5o-UAf">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="3ut-ys-c0D"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="126" y="617"/>
         </scene>
     </scenes>
 </document>

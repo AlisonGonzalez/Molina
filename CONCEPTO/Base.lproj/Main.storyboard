@@ -44,7 +44,7 @@
                                 <rect key="frame" x="167" y="524" width="0.0" height="30"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAZ-VJ-ndg">
-                                <rect key="frame" x="169" y="383" width="38" height="38"/>
+                                <rect key="frame" x="168.5" y="383" width="38" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="Bsl-Sn-RPj"/>
                                     <constraint firstAttribute="width" constant="38" id="QOm-Da-a1z"/>
@@ -56,19 +56,19 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mac2" translatesAutoresizingMaskIntoConstraints="NO" id="bZK-QR-WR5">
-                                <rect key="frame" x="-47" y="64" width="470" height="277"/>
+                                <rect key="frame" x="-47" y="64" width="469" height="277"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="277" id="SXt-Mx-8i6"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Streaming en Vivo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="128" y="449" width="118" height="17"/>
+                                <rect key="frame" x="128.5" y="449" width="118" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qy6-88-dzY" customClass="MPVolumeView">
-                                <rect key="frame" x="67" y="482" width="240" height="128"/>
+                                <rect key="frame" x="67" y="482" width="241" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -541,7 +541,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radial" translatesAutoresizingMaskIntoConstraints="NO" id="QrB-wu-45V">
-                                <rect key="frame" x="102" y="396" width="170" height="170"/>
+                                <rect key="frame" x="102" y="396" width="171" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="0hx-Az-BYO"/>
                                 </constraints>
@@ -592,7 +592,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="depeche" translatesAutoresizingMaskIntoConstraints="NO" id="EOa-W7-s4f">
-                                <rect key="frame" x="-33" y="330" width="440" height="302"/>
+                                <rect key="frame" x="-33" y="330" width="441" height="302"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="302" id="eWA-wc-A3v"/>
                                 </constraints>
@@ -716,7 +716,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9rR-dp-DPd" id="BOP-im-Qoi">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -779,22 +779,32 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estás Escuchando:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKx-D3-eiS">
-                                <rect key="frame" x="115" y="126" width="145" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="110" y="368" width="155" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGZ-M9-TMq">
-                                <rect key="frame" x="38" y="214" width="298" height="21"/>
+                                <rect key="frame" x="38" y="397" width="298" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OB-dL-Mei">
-                                <rect key="frame" x="162" y="346" width="50" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="listeningImage" translatesAutoresizingMaskIntoConstraints="NO" id="3Tk-cG-BQC">
+                                <rect key="frame" x="0.0" y="34" width="375" height="299"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="6nk-bD-Nqz"/>
-                                    <constraint firstAttribute="height" constant="50" id="801-Ja-oG2"/>
+                                    <constraint firstAttribute="height" constant="299" id="9WH-zs-Lpa"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hzt-65-zIs" customClass="MPVolumeView">
+                                <rect key="frame" x="67" y="490" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OB-dL-Mei">
+                                <rect key="frame" x="166" y="440" width="42" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="FMn-TX-aJY"/>
+                                    <constraint firstAttribute="width" constant="42" id="f0A-e2-J9F"/>
                                 </constraints>
                                 <state key="normal" title="Play" image="reproducir-1"/>
                                 <connections>
@@ -804,17 +814,25 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="centerX" secondItem="uX2-0T-jF5" secondAttribute="centerX" id="Cv9-6K-SLF"/>
-                            <constraint firstItem="LKx-D3-eiS" firstAttribute="top" secondItem="6La-6a-M7b" secondAttribute="bottom" constant="62" id="EfZ-oZ-4DV"/>
-                            <constraint firstItem="LKx-D3-eiS" firstAttribute="centerX" secondItem="vGZ-M9-TMq" secondAttribute="centerX" id="IdU-sf-Qxc"/>
-                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="centerX" secondItem="6OB-dL-Mei" secondAttribute="centerX" id="Z7R-OA-bzf"/>
-                            <constraint firstItem="FxE-kB-vzb" firstAttribute="top" secondItem="6OB-dL-Mei" secondAttribute="bottom" constant="222" id="aG4-eS-bJ3"/>
-                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="top" secondItem="LKx-D3-eiS" secondAttribute="bottom" constant="67" id="bH4-pp-ljg"/>
-                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="leading" secondItem="uX2-0T-jF5" secondAttribute="leadingMargin" constant="22" id="uaM-Hy-R6W"/>
+                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="top" secondItem="LKx-D3-eiS" secondAttribute="bottom" constant="8" symbolic="YES" id="Hum-P8-Sy2"/>
+                            <constraint firstItem="LKx-D3-eiS" firstAttribute="centerX" secondItem="vGZ-M9-TMq" secondAttribute="centerX" id="J9h-hR-j1R"/>
+                            <constraint firstItem="LKx-D3-eiS" firstAttribute="top" secondItem="3Tk-cG-BQC" secondAttribute="bottom" constant="35" id="KGM-Nx-yjc"/>
+                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="centerX" secondItem="6OB-dL-Mei" secondAttribute="centerX" id="OrX-kz-9w1"/>
+                            <constraint firstItem="3Tk-cG-BQC" firstAttribute="centerX" secondItem="LKx-D3-eiS" secondAttribute="centerX" id="XKe-EX-9Mr"/>
+                            <constraint firstItem="6OB-dL-Mei" firstAttribute="centerX" secondItem="Hzt-65-zIs" secondAttribute="centerX" id="bLo-cw-5tB"/>
+                            <constraint firstItem="Hzt-65-zIs" firstAttribute="bottom" secondItem="FxE-kB-vzb" secondAttribute="top" id="dZM-TY-r91"/>
+                            <constraint firstItem="Hzt-65-zIs" firstAttribute="leading" secondItem="uX2-0T-jF5" secondAttribute="leadingMargin" constant="51" id="eHz-kA-j8Y"/>
+                            <constraint firstItem="3Tk-cG-BQC" firstAttribute="top" secondItem="uX2-0T-jF5" secondAttribute="top" constant="34" id="gKD-Gi-Mok"/>
+                            <constraint firstAttribute="trailing" secondItem="3Tk-cG-BQC" secondAttribute="trailing" id="oTG-gf-Gbq"/>
+                            <constraint firstItem="6OB-dL-Mei" firstAttribute="top" secondItem="vGZ-M9-TMq" secondAttribute="bottom" constant="22" id="pOS-Fv-n5n"/>
+                            <constraint firstItem="3Tk-cG-BQC" firstAttribute="leading" secondItem="uX2-0T-jF5" secondAttribute="leading" id="tcK-Hb-dHv"/>
+                            <constraint firstItem="Hzt-65-zIs" firstAttribute="top" secondItem="6OB-dL-Mei" secondAttribute="bottom" constant="8" id="y4T-et-AQD"/>
+                            <constraint firstItem="vGZ-M9-TMq" firstAttribute="leading" secondItem="uX2-0T-jF5" secondAttribute="leadingMargin" constant="22" id="zc8-TR-ISL"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="name" destination="vGZ-M9-TMq" id="a52-JW-vlQ"/>
+                        <outlet property="playButton" destination="6OB-dL-Mei" id="ttl-OB-U9T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSc-cF-eN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -874,7 +892,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ini-bX-gFA" id="GhF-Lb-i5G">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -1040,6 +1058,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
         <image name="depeche" width="1620" height="1099"/>
         <image name="depeche2" width="558" height="992"/>
         <image name="facebook" width="128" height="128"/>
+        <image name="listeningImage" width="3780" height="2782"/>
         <image name="logotitulo" width="279" height="45"/>
         <image name="mac2" width="2048" height="1152"/>
         <image name="micFilledTabBar" width="25" height="25"/>
@@ -1053,8 +1072,8 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
         <image name="youtube" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Htr-JW-JsP"/>
         <segue reference="4If-L2-jiW"/>
+        <segue reference="9w5-Vc-GEb"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
