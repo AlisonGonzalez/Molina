@@ -12,12 +12,45 @@ import AVFoundation
 import MobileCoreServices
 
 class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
     @IBOutlet weak var imageView: UIImageView!
     var newMedia: Bool?
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var volumeView: MPVolumeView!
     @IBAction func playButtonPressed(_ sender: UIButton) {
         toggle()
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        do{
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            UIApplication.shared.beginReceivingRemoteControlEvents()
+        }catch{
+            print("Error")
+        }
+    }
+    
+    func toggle() {
+        if RadioPlayer.sharedInstance.currentlyPlaying() {
+            pauseRadio()
+        } else {
+            playRadio()
+        }
+    }
+    
+    func playRadio() {
+        RadioPlayer.sharedInstance.play()
+        playButton.setImage(#imageLiteral(resourceName: "pause"), for: UIControlState.normal)
+    }
+    
+    func pauseRadio() {
+        RadioPlayer.sharedInstance.pause()
+        playButton.setImage(#imageLiteral(resourceName: "play"), for: UIControlState.normal)
+        
+    }
+    
     @IBAction func useCamera(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
             let imagePicker = UIImagePickerController()
@@ -39,44 +72,10 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
             imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
             imagePicker.mediaTypes = [kUTTypeImage as String]
             imagePicker.allowsEditing = false
+            
             self.present(imagePicker, animated : true, completion: nil)
             newMedia = false
         }
-    }
-    
-    @IBOutlet weak var volumeView: MPVolumeView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        do{
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            UIApplication.shared.beginReceivingRemoteControlEvents()
-        }catch{
-            print("Error")
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    func toggle() {
-        if RadioPlayer.sharedInstance.currentlyPlaying() {
-            pauseRadio()
-        } else {
-            playRadio()
-        }
-    }
-    
-    func playRadio() {
-        RadioPlayer.sharedInstance.play()
-        playButton.setImage(#imageLiteral(resourceName: "pause"), for: UIControlState.normal)
-    }
-    
-    func pauseRadio() {
-        RadioPlayer.sharedInstance.pause()
-        playButton.setImage(#imageLiteral(resourceName: "reproducir-1"), for: UIControlState.normal)
-        
     }
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){
@@ -102,6 +101,27 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
             alert.addAction(cancelAction)
             self.present(alert, animated: true, completion: nil)
         }
+    }
+    
+    @IBAction func share(_ sender: Any) {
+        let text = "Escúcha tú también la mejor musica! "
+        let url = "www.conceptoradial.com"
+        let image = imageView.image
+        let objects:[AnyObject]
+        if (image != nil){
+            objects = [text as AnyObject, url as AnyObject, imageView.image!]
+        }else{
+            objects = [text as AnyObject, url as AnyObject]
+        }
+        
+        let activities = UIActivityViewController(activityItems : objects, applicationActivities: nil)
+        //activities.excludedActivityTypes = [UIActivityType.mail]
+        self.present(activities, animated:true, completion:nil)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 
 }

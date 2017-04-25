@@ -12,11 +12,9 @@ import UIKit
 
 class mapEventos2: UIViewController,CLLocationManagerDelegate {
     
-    
     let locationManager = CLLocationManager()
     
     @IBOutlet weak var mapaEventos2: MKMapView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +26,7 @@ class mapEventos2: UIViewController,CLLocationManagerDelegate {
         
         //mapa eventos 2
         mapaEventos2.mapType=MKMapType.standard
+        
         //coordendas foro sol
         let cl2=CLLocationCoordinate2DMake(19.404889, -99.095944)
         mapaEventos2.region=MKCoordinateRegionMakeWithDistance(cl2, 10, 10)
@@ -44,7 +43,6 @@ class mapEventos2: UIViewController,CLLocationManagerDelegate {
         mapaEventos2.showsScale=true
         mapaEventos2.showsTraffic=true
         mapaEventos2.isZoomEnabled=true
-        
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {

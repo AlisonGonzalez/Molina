@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1D46595C1E5651D400FC9415 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D46595B1E5651D400FC9415 /* MediaPlayer.framework */; };
 		1D7DB7FB1E6B72C50059C836 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7DB7FA1E6B72C50059C836 /* RadioPlayer.swift */; };
-		1DC682F61E80783C0061F98C /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC682F51E80783C0061F98C /* DetalleViewController.swift */; };
 		384262F91E86056B0044B078 /* SeleccionPodcast2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384262F81E86056B0044B078 /* SeleccionPodcast2TableViewController.swift */; };
 		384262FB1E8609D30044B078 /* SeleccionProgramaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384262FA1E8609D30044B078 /* SeleccionProgramaTableViewController.swift */; };
 		384262FD1E860E5B0044B078 /* ReproducirPodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384262FC1E860E5B0044B078 /* ReproducirPodcastViewController.swift */; };
@@ -24,7 +23,6 @@
 		384B7A491E6B42E000DBC3B0 /* conceptoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 384B7A291E6B42DF00DBC3B0 /* conceptoWatch.app */; };
 		38CA797C1E4F8D8800F498CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797B1E4F8D8800F498CD /* AppDelegate.swift */; };
 		38CA797E1E4F8D8800F498CD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797D1E4F8D8800F498CD /* FirstViewController.swift */; };
-		38CA79801E4F8D8800F498CD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA797F1E4F8D8800F498CD /* SecondViewController.swift */; };
 		38CA79831E4F8D8900F498CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79811E4F8D8900F498CD /* Main.storyboard */; };
 		38CA79851E4F8D8900F498CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79841E4F8D8900F498CD /* Assets.xcassets */; };
 		38CA79881E4F8D8900F498CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA79861E4F8D8900F498CD /* LaunchScreen.storyboard */; };
@@ -85,7 +83,6 @@
 /* Begin PBXFileReference section */
 		1D46595B1E5651D400FC9415 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		1D7DB7FA1E6B72C50059C836 /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
-		1DC682F51E80783C0061F98C /* DetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
 		384262F81E86056B0044B078 /* SeleccionPodcast2TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionPodcast2TableViewController.swift; sourceTree = "<group>"; };
 		384262FA1E8609D30044B078 /* SeleccionProgramaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionProgramaTableViewController.swift; sourceTree = "<group>"; };
 		384262FC1E860E5B0044B078 /* ReproducirPodcastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReproducirPodcastViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +101,6 @@
 		38CA79781E4F8D8800F498CD /* CONCEPTO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CONCEPTO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CA797B1E4F8D8800F498CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38CA797D1E4F8D8800F498CD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		38CA797F1E4F8D8800F498CD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		38CA79821E4F8D8900F498CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38CA79841E4F8D8900F498CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38CA79871E4F8D8900F498CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -213,9 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				38CA797B1E4F8D8800F498CD /* AppDelegate.swift */,
-				1DC682F51E80783C0061F98C /* DetalleViewController.swift */,
 				38CA797D1E4F8D8800F498CD /* FirstViewController.swift */,
-				38CA797F1E4F8D8800F498CD /* SecondViewController.swift */,
 				38CA79811E4F8D8900F498CD /* Main.storyboard */,
 				1D7DB7FA1E6B72C50059C836 /* RadioPlayer.swift */,
 				392FEBC01E957ED9009A065D /* PodcastPlayer.swift */,
@@ -385,11 +379,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A76A71861E8D73DF00DF6936 /* MapViewController.swift in Sources */,
-				1DC682F61E80783C0061F98C /* DetalleViewController.swift in Sources */,
 				384262FB1E8609D30044B078 /* SeleccionProgramaTableViewController.swift in Sources */,
 				39265C231E8DA12B003D36E1 /* mapaEventos2.swift in Sources */,
 				384262F91E86056B0044B078 /* SeleccionPodcast2TableViewController.swift in Sources */,
-				38CA79801E4F8D8800F498CD /* SecondViewController.swift in Sources */,
 				39265C211E8DA050003D36E1 /* mapaEvento1.swift in Sources */,
 				392FEBC11E957ED9009A065D /* PodcastPlayer.swift in Sources */,
 				384262FD1E860E5B0044B078 /* ReproducirPodcastViewController.swift in Sources */,

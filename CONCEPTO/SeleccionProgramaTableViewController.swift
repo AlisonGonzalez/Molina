@@ -9,30 +9,21 @@
 import UIKit
 
 class SeleccionProgramaTableViewController: UITableViewController {
-
-    //paso 8 definir direccion
-    //let direccion = "http://199.233.252.86/datos/datos.json"
+    
+    //Definir direccion
     var direccion = "http://conceptoradial.000webhostapp.com/json/podcasts3.json"
     
     var datos = ["Podcast1","Podcast2","Podcast3"]
     
     var tipo: String = ""
     
-    
-    //paso 1 definir json estatico
-    //let datosJSON = "[ {\"marca\": \"FORD\", \"agencias\": 21},{\"marca\": \"BMW\", \"agencias\": 35}]"
-    
+    //Definir json estatico
     var datosJSON = "[{\"título\": \"pod1\", \"URL\": \"http://mx.ivoox.com/es/sintonia-capital-seguridad-mexico-14-mar_mf_17565955_feed_1.mp3?_=1\"}]"
     
-    
-    
-    
-    //"Podcast1-Titulo\",\"URL\":\"http://podcastcdn-16.ivoox.com/audio/6/4/4/1/influenzaestacional-wernickebroca-ivoox13631446.mp3?secure=er6bQJv-_jNawcvIS9l4tw==,1489892439\"}]"
-    
-    //paso 2 definir nuevo arreglo
+    //Definir nuevo arreglo
     var nuevoArray:[Any]?
     
-    //paso 3 convertir json en diccionario
+    //Convertir json en diccionario
     func JSONParseArray(_ string: String) -> [AnyObject]{
         if let data = string.data(using: String.Encoding.utf8){
             do{
@@ -88,10 +79,10 @@ class SeleccionProgramaTableViewController: UITableViewController {
             direccion = "http://conceptoradial.000webhostapp.com/json/cajonsistor.json"
         }
         
-        //paso 9
-        //convierto mi linea string en url
+        //Convertir string en url
         let url = URL(string: direccion)
-        //trae el contenido de la nube
+        
+        //Obrener el contenido de la nube
         let datos = try? Data(contentsOf: url!)
         nuevoArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
         
@@ -119,13 +110,14 @@ class SeleccionProgramaTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NombrePrograma", for: indexPath)
         //cell.textLabel?.text = datos[indexPath.row]
+        
         // Configure the cell...
         
-        //paso 6 saco el renglon
+        //Obtener la fila
         let objetoPodcast = nuevoArray?[indexPath.row] as! [String: Any]
-        //determino el valor del renglon que quiero
-        let s: String = objetoPodcast["título"] as! String
         
+        //Determinar el valor de la fila
+        let s: String = objetoPodcast["título"] as! String
         cell.textLabel?.text = s
         
         return cell
@@ -135,11 +127,9 @@ class SeleccionProgramaTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         let siguienteVista = segue.destination as! ReproducirPodcastViewController
-        
         let indice = self.tableView.indexPathForSelectedRow?.row
         
         //siguienteVista.marca = datos[indice!]
-        //paso 7
         let objetoMarca = nuevoArray?[indice!] as! [String: Any]
         let s =  objetoMarca["título"]
         let t = objetoMarca["URL"]

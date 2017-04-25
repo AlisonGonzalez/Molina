@@ -9,34 +9,23 @@
 import UIKit
 
 class SeleccionPodcast2TableViewController: UITableViewController {
-    
-    
-    
-    //paso 8 definir direccion
-    //let direccion = "http://199.233.252.86/datos/datos.json"
+   
+    //Definir direccion
     let direccion = "http://conceptoradial.000webhostapp.com/json/podcasts3.json"
     
     private let datos = ["Podcast1","Podcast2","Podcast3"]
     
-    //paso 1 definir json estatico
-    //let datosJSON = "[ {\"marca\": \"FORD\", \"agencias\": 21},{\"marca\": \"BMW\", \"agencias\": 35}]"
-    
+    //Definir json estatico
     let datosJSON = "[ {\"nombre\": \"Podcast1\",\"podcasts\": \"[{\"título\": \"pod1\", \"URL\": \"http://mx.ivoox.com/es/sintonia-capital-seguridad-mexico-14-mar_mf_17565955_feed_1.mp3?_=1\"}]\"}]"
     
-    
-    
-    
-    //"Podcast1-Titulo\",\"URL\":\"http://podcastcdn-16.ivoox.com/audio/6/4/4/1/influenzaestacional-wernickebroca-ivoox13631446.mp3?secure=er6bQJv-_jNawcvIS9l4tw==,1489892439\"}]"
-    
-    //paso 2 definir nuevo arreglo
+    //Definir nuevo arreglo
     var nuevoArray:[Any]?
     
-    
-    //cosas para barra de buscar
+    //Elementos para barra de buscar
     var barraControlador: UISearchController!
     var resultadosControlador = UITableViewController()
     
-    //paso 3 convertir json en diccionario
+    //Convertir json en diccionario
     func JSONParseArray(_ string: String) -> [AnyObject]{
         if let data = string.data(using: String.Encoding.utf8){
             do{
@@ -59,19 +48,14 @@ class SeleccionPodcast2TableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        //paso 4 llenamos el arreglo
-        //nuevoArray = (JSONParseArray(datosJSON) as NSArray) as? [Any]
-        
-        //paso 9
-        //convierto mi linea string en url
+        //Convertir string en url
         let url = URL(string: direccion)
-        //trae el contenido de la nube
+        
+        //Obtener contenido de la nube
         let datos = try? Data(contentsOf: url!)
         nuevoArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
-        
         self.barraControlador = UISearchController(searchResultsController: self.resultadosControlador)
         self.tableView.tableHeaderView = self.barraControlador.searchBar
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -88,7 +72,7 @@ class SeleccionPodcast2TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        //paso 5 regresamos el numero de elementos del arreglo
+        //Regresar el numero de elementos del arreglo
         return (nuevoArray?.count)!
     }
     
@@ -100,11 +84,11 @@ class SeleccionPodcast2TableViewController: UITableViewController {
         
         // Configure the cell...
         
-        //paso 6 saco el renglon
+        //Obtener fila
         let objetoPodcast = nuevoArray?[indexPath.row] as! [String: Any]
-        //determino el valor del renglon que quiero
-        let s: String = objetoPodcast["nombre"] as! String
         
+        //Determinar el valor del renglon
+        let s: String = objetoPodcast["nombre"] as! String
         cell.textLabel?.text = s
         
         return cell
@@ -114,11 +98,9 @@ class SeleccionPodcast2TableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         let siguienteVista = segue.destination as! SeleccionProgramaTableViewController
-        
         let indice = self.tableView.indexPathForSelectedRow?.row
         
         //siguienteVista.marca = datos[indice!]
-        //paso 7
         let objetoMarca = nuevoArray?[indice!] as! [String: Any]
         let s =  objetoMarca["nombre"]
         siguienteVista.tipo = s as! String

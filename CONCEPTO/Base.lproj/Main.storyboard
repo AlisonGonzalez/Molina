@@ -49,7 +49,7 @@
                                     <constraint firstAttribute="height" constant="38" id="Bsl-Sn-RPj"/>
                                     <constraint firstAttribute="width" constant="38" id="QOm-Da-a1z"/>
                                 </constraints>
-                                <state key="normal" image="reproducir-1"/>
+                                <state key="normal" image="play"/>
                                 <state key="selected" image="pausa"/>
                                 <connections>
                                     <action selector="playButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="sag-in-JXS"/>
@@ -538,6 +538,12 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                             <action selector="useCameraRoll:" destination="hV6-gr-mJi" id="71L-DY-eMK"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem title="                                   " id="05V-GL-Ptq"/>
+                                    <barButtonItem systemItem="action" id="in8-AQ-Tkc">
+                                        <connections>
+                                            <action selector="share:" destination="hV6-gr-mJi" id="9gz-YA-2Cg"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radial" translatesAutoresizingMaskIntoConstraints="NO" id="QrB-wu-45V">
@@ -806,7 +812,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                     <constraint firstAttribute="height" constant="42" id="FMn-TX-aJY"/>
                                     <constraint firstAttribute="width" constant="42" id="f0A-e2-J9F"/>
                                 </constraints>
-                                <state key="normal" title="Play" image="reproducir-1"/>
+                                <state key="normal" title="Play" image="play"/>
                                 <connections>
                                     <action selector="reproducir:" destination="85v-h2-lSd" eventType="touchUpInside" id="gwB-Tj-oDc"/>
                                 </connections>
@@ -984,6 +990,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                 <segue destination="hV6-gr-mJi" kind="show" id="Htr-JW-JsP"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="CmE-Ub-OsW"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bX-q8-5Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1064,8 +1071,8 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
         <image name="micFilledTabBar" width="25" height="25"/>
         <image name="micTabBar" width="25" height="25"/>
         <image name="pausa" width="512" height="512"/>
+        <image name="play" width="256" height="256"/>
         <image name="radial" width="400" height="400"/>
-        <image name="reproducir-1" width="256" height="256"/>
         <image name="shareTabBar" width="25" height="25"/>
         <image name="sharedFilledTabBar" width="25" height="25"/>
         <image name="twitter" width="128" height="128"/>

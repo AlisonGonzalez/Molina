@@ -10,6 +10,7 @@ import Foundation
 import AVFoundation
 
 class PodcastPlayer {
+    
     static let sharedInstance = PodcastPlayer()
     
     private var player = AVPlayer()

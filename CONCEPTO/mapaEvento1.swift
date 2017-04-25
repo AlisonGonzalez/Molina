@@ -11,7 +11,7 @@ import CoreLocation
 import UIKit
 
 class mapaEvento1: UIViewController,CLLocationManagerDelegate {
-    
+   
     let locationManager = CLLocationManager()
     
     @IBOutlet weak var mapaEventos1: MKMapView!
@@ -24,9 +24,9 @@ class mapaEvento1: UIViewController,CLLocationManagerDelegate {
         locationManager.distanceFilter = 1000.0
         locationManager.requestWhenInUseAuthorization()
         
-        
         //mapa eventos 1
         mapaEventos1.mapType=MKMapType.standard
+       
         //coordenadas auditorio nacional
         let cl1=CLLocationCoordinate2DMake(19.424722, -99.194917)
         mapaEventos1.region=MKCoordinateRegionMakeWithDistance(cl1, 10, 10)

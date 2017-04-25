@@ -44,7 +44,7 @@ class ReproducirPodcastViewController: UIViewController {
     }
     
     func pausePodcast() {
-        playButton.setImage(#imageLiteral(resourceName: "reproducir-1"), for: UIControlState.normal)
+        playButton.setImage(#imageLiteral(resourceName: "play"), for: UIControlState.normal)
         PodcastPlayer.sharedInstance.pause()
     }
  
