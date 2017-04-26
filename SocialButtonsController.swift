@@ -26,6 +26,15 @@ class SocialButtonsController: UIViewController {
         let url = NSURL(string: "http://www.conceptoradial.com/")
         UIApplication.shared.open(url as! URL)
     }
+    @IBAction func share(_ sender: Any) {
+        let text = "Escúcha tú también la mejor musica! "
+        let url = "www.conceptoradial.com"
+        let objects:[AnyObject]
+        objects = [text as AnyObject, url as AnyObject]
+        
+        let activities = UIActivityViewController(activityItems : objects, applicationActivities: nil)
+        self.present(activities, animated:true, completion:nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

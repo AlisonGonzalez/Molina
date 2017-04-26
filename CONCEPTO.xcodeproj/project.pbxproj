@@ -34,7 +34,9 @@
 		392FEBBD1E956874009A065D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392FEBBC1E956874009A065D /* AVFoundation.framework */; };
 		392FEBC11E957ED9009A065D /* PodcastPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392FEBC01E957ED9009A065D /* PodcastPlayer.swift */; };
 		392FEBC71E958C1D009A065D /* FirstInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392FEBC61E958C1D009A065D /* FirstInterfaceController.swift */; };
+		39627AFD1EB138920079D1CD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39627AFC1EB138920079D1CD /* AudioToolbox.framework */; };
 		39A460CC1E8D4A7F00B3352A /* PodcastTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A460CB1E8D4A7F00B3352A /* PodcastTable.swift */; };
+		39E57F611EB1175700DFD453 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E57F601EB1175700DFD453 /* SecondViewController.swift */; };
 		A76A71861E8D73DF00DF6936 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A71851E8D73DF00DF6936 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -114,7 +116,9 @@
 		392FEBBE1E95693B009A065D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		392FEBC01E957ED9009A065D /* PodcastPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastPlayer.swift; sourceTree = "<group>"; };
 		392FEBC61E958C1D009A065D /* FirstInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstInterfaceController.swift; sourceTree = "<group>"; };
+		39627AFC1EB138920079D1CD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		39A460CB1E8D4A7F00B3352A /* PodcastTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTable.swift; sourceTree = "<group>"; };
+		39E57F601EB1175700DFD453 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A76A71851E8D73DF00DF6936 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39627AFD1EB138920079D1CD /* AudioToolbox.framework in Frameworks */,
 				392FEBBD1E956874009A065D /* AVFoundation.framework in Frameworks */,
 				1D46595C1E5651D400FC9415 /* MediaPlayer.framework in Frameworks */,
 			);
@@ -141,6 +146,7 @@
 		1D46595A1E5651D400FC9415 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				39627AFC1EB138920079D1CD /* AudioToolbox.framework */,
 				392FEBBE1E95693B009A065D /* AVFoundation.framework */,
 				392FEBBC1E956874009A065D /* AVFoundation.framework */,
 				1D46595B1E5651D400FC9415 /* MediaPlayer.framework */,
@@ -210,6 +216,7 @@
 			children = (
 				38CA797B1E4F8D8800F498CD /* AppDelegate.swift */,
 				38CA797D1E4F8D8800F498CD /* FirstViewController.swift */,
+				39E57F601EB1175700DFD453 /* SecondViewController.swift */,
 				38CA79811E4F8D8900F498CD /* Main.storyboard */,
 				1D7DB7FA1E6B72C50059C836 /* RadioPlayer.swift */,
 				392FEBC01E957ED9009A065D /* PodcastPlayer.swift */,
@@ -384,6 +391,7 @@
 				384262F91E86056B0044B078 /* SeleccionPodcast2TableViewController.swift in Sources */,
 				39265C211E8DA050003D36E1 /* mapaEvento1.swift in Sources */,
 				392FEBC11E957ED9009A065D /* PodcastPlayer.swift in Sources */,
+				39E57F611EB1175700DFD453 /* SecondViewController.swift in Sources */,
 				384262FD1E860E5B0044B078 /* ReproducirPodcastViewController.swift in Sources */,
 				38EE132D1E8D698700518328 /* DetalleControladorInterfaceController.swift in Sources */,
 				38CA797C1E4F8D8800F498CD /* AppDelegate.swift in Sources */,

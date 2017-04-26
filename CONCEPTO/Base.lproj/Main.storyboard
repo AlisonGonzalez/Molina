@@ -163,7 +163,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOD-4s-HO6">
-                                <rect key="frame" x="102" y="525.5" width="69" height="30"/>
+                                <rect key="frame" x="102" y="526" width="69" height="30"/>
                                 <state key="normal" title="Acerca de"/>
                                 <connections>
                                     <segue destination="djd-Wg-wVO" kind="show" id="oFA-Tb-uRZ"/>
@@ -182,8 +182,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotitulo" translatesAutoresizingMaskIntoConstraints="NO" id="yRJ-MO-FrS">
-                                <rect key="frame" x="88" y="96" width="199" height="35"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotitulo" translatesAutoresizingMaskIntoConstraints="NO" id="97f-kY-aPb">
+                                <rect key="frame" x="48" y="100" width="279" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="8Qo-W0-3f2"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -191,12 +194,12 @@
                             <constraint firstItem="r94-Ru-LZG" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="17.5" id="1da-7Z-Key"/>
                             <constraint firstItem="uyh-bi-JjS" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="25.5" id="2CE-KB-OmN"/>
                             <constraint firstItem="mOD-4s-HO6" firstAttribute="baseline" secondItem="Oe4-Ij-ByG" secondAttribute="baseline" id="4Sl-3e-9O5"/>
+                            <constraint firstItem="97f-kY-aPb" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" id="4pG-eP-L01"/>
                             <constraint firstItem="lRh-NX-LXQ" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="-84.5" id="8Jj-3S-HRk"/>
                             <constraint firstItem="lRh-NX-LXQ" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="-84.5" id="A3x-s9-ThW"/>
                             <constraint firstItem="Oe4-Ij-ByG" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="39.5" id="BKP-st-xpw"/>
                             <constraint firstItem="bzG-Wk-biX" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="-107" id="Byw-Gm-wqi"/>
                             <constraint firstItem="bzG-Wk-biX" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="-107" id="CHK-IE-CFC"/>
-                            <constraint firstItem="yRJ-MO-FrS" firstAttribute="trailing" secondItem="ev1-0a-GnN" secondAttribute="trailing" constant="-58" id="DpL-Uj-GVz"/>
                             <constraint firstItem="mOD-4s-HO6" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="-51" id="FYM-mD-XvD"/>
                             <constraint firstItem="ev1-0a-GnN" firstAttribute="leading" secondItem="lRh-NX-LXQ" secondAttribute="trailing" constant="48" id="GKW-G0-18d"/>
                             <constraint firstItem="5YI-Pc-6M5" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="-107" id="J4u-vg-qAd"/>
@@ -204,12 +207,11 @@
                             <constraint firstItem="WIS-Eh-Pr5" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="-51.5" id="KpA-Ok-ulx"/>
                             <constraint firstItem="uyh-bi-JjS" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="25.5" id="LaW-lb-m0E"/>
                             <constraint firstItem="ev1-0a-GnN" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="84" id="MFz-eH-kn2"/>
+                            <constraint firstItem="97f-kY-aPb" firstAttribute="top" secondItem="AI0-xI-FI7" secondAttribute="bottom" constant="36" id="NeA-dr-vZf"/>
                             <constraint firstItem="WIS-Eh-Pr5" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="-51.5" id="OPe-VK-k20"/>
                             <constraint firstItem="f8f-xG-cnA" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="32" id="Qo9-yO-sCg"/>
                             <constraint firstItem="uyh-bi-JjS" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="25.5" id="RYj-N8-7lw"/>
-                            <constraint firstItem="yRJ-MO-FrS" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" id="USZ-vc-myY"/>
                             <constraint firstItem="5YI-Pc-6M5" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="-107" id="Uec-6v-CYg"/>
-                            <constraint firstItem="yRJ-MO-FrS" firstAttribute="leading" secondItem="5Ol-EC-PPX" secondAttribute="leadingMargin" constant="72" id="UmK-kp-xiP"/>
                             <constraint firstItem="bmk-29-5A4" firstAttribute="top" secondItem="bzG-Wk-biX" secondAttribute="bottom" constant="32" id="V7I-3U-0Op"/>
                             <constraint firstItem="lRh-NX-LXQ" firstAttribute="top" secondItem="WIS-Eh-Pr5" secondAttribute="bottom" constant="36" id="Vgh-8N-bvW"/>
                             <constraint firstItem="ev1-0a-GnN" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="84" id="XK6-fA-hns"/>
@@ -223,17 +225,14 @@
                             <constraint firstItem="bmk-29-5A4" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="-107" id="ddK-FA-NsB"/>
                             <constraint firstItem="r94-Ru-LZG" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="17.5" id="ehz-bF-VDa"/>
                             <constraint firstItem="r94-Ru-LZG" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="17.5" id="gjl-US-WeU"/>
-                            <constraint firstItem="5YI-Pc-6M5" firstAttribute="top" secondItem="yRJ-MO-FrS" secondAttribute="bottom" constant="57" id="go2-cc-Vnv"/>
                             <constraint firstItem="f8f-xG-cnA" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="32" id="hX2-Zh-Vyr"/>
                             <constraint firstItem="5YI-Pc-6M5" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="-107" id="iND-BT-0aL"/>
                             <constraint firstItem="f8f-xG-cnA" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="32" id="j2S-II-r8f"/>
                             <constraint firstItem="Oe4-Ij-ByG" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="39.5" id="j9v-9L-CjK"/>
                             <constraint firstItem="r94-Ru-LZG" firstAttribute="top" secondItem="f8f-xG-cnA" secondAttribute="bottom" constant="42" id="ljt-nY-84Q"/>
                             <constraint firstItem="bmk-29-5A4" firstAttribute="centerY" secondItem="5Ol-EC-PPX" secondAttribute="centerY" id="ogi-fs-7P8"/>
-                            <constraint firstItem="yRJ-MO-FrS" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" id="s48-l1-EYw"/>
                             <constraint firstItem="Oe4-Ij-ByG" firstAttribute="top" secondItem="ev1-0a-GnN" secondAttribute="bottom" constant="39" id="sYi-J9-jWS"/>
                             <constraint firstItem="bmk-29-5A4" firstAttribute="centerX" secondItem="5Ol-EC-PPX" secondAttribute="centerX" constant="-107" id="vJo-YF-5bW"/>
-                            <constraint firstItem="yRJ-MO-FrS" firstAttribute="top" secondItem="AI0-xI-FI7" secondAttribute="bottom" constant="32" id="vVb-fX-auX"/>
                             <constraint firstItem="f8f-xG-cnA" firstAttribute="top" secondItem="uyh-bi-JjS" secondAttribute="bottom" constant="51" id="vet-BT-Zt7"/>
                             <constraint firstItem="5YI-Pc-6M5" firstAttribute="top" secondItem="uyh-bi-JjS" secondAttribute="top" id="ylX-HT-TMj"/>
                             <constraint firstItem="WIS-Eh-Pr5" firstAttribute="top" secondItem="bmk-29-5A4" secondAttribute="bottom" constant="42" id="yy1-wX-J2e"/>
@@ -257,41 +256,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotitulo" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-Ja-mAW">
-                                <rect key="frame" x="73" y="72" width="215" height="35"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qV8-dt-e31">
+                                <rect key="frame" x="40" y="327" width="294" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="Qd5-09-B9J"/>
+                                    <constraint firstAttribute="height" constant="180" id="w0T-FM-mUg"/>
                                 </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3qg-DS-Ox3">
-                                <rect key="frame" x="40" y="205" width="294" height="152"/>
+                            </mapView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hQb-ZZ-Vky">
+                                <rect key="frame" x="40" y="515" width="294" height="103"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="5FX-cv-4KT"/>
+                                </constraints>
+                                <string key="text">Aplicación desarrollada por Alison Ricardo González, Irvin Mundo, Emiliano Cervantes y Alfredo Puente para la clase "Proyecto de desarrollo de dispositivos móviles" del Dr. José Martín Molina Espinosa en ITESM CCM.                        Mayo 2017.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acerca de" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bD-8t-APK">
+                                <rect key="frame" x="143.5" y="78" width="87" height="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="XIb-Tf-wBR">
+                                <rect key="frame" x="40" y="171" width="294" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Concepto Radial es la estación de radio del Tecnológico de monterrey, Campus Ciudad de México ubicada en Calle del Puente #222 Col. Ejidos de Huipulco en la Delegación Tlalpan, México D.F. Transmitimos las 24 horas del día los 365 días del año.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qV8-dt-e31">
-                                <rect key="frame" x="40" y="385" width="294" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acerca de" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bD-8t-APK">
-                                <rect key="frame" x="149" y="132" width="77" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotitulo" translatesAutoresizingMaskIntoConstraints="NO" id="zoQ-Li-KNu">
+                                <rect key="frame" x="40" y="128" width="279" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Yvk-Pq-Wpi"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hgA-Ja-mAW" firstAttribute="top" secondItem="GqA-UA-iDS" secondAttribute="bottom" constant="8" symbolic="YES" id="3DB-rM-1mT"/>
-                            <constraint firstItem="3qg-DS-Ox3" firstAttribute="centerX" secondItem="M2d-lr-fbp" secondAttribute="centerX" constant="-0.5" id="4lI-SL-ZDg"/>
-                            <constraint firstItem="hgA-Ja-mAW" firstAttribute="centerX" secondItem="M2d-lr-fbp" secondAttribute="centerX" constant="-7" id="ATP-TC-nrg"/>
-                            <constraint firstItem="3qg-DS-Ox3" firstAttribute="top" secondItem="5bD-8t-APK" secondAttribute="bottom" constant="52" id="NOy-Ii-Mxa"/>
-                            <constraint firstItem="5bD-8t-APK" firstAttribute="centerX" secondItem="M2d-lr-fbp" secondAttribute="centerX" id="S1t-se-F02"/>
-                            <constraint firstItem="3qg-DS-Ox3" firstAttribute="centerY" secondItem="M2d-lr-fbp" secondAttribute="centerY" constant="-52.5" id="ZnB-fq-5eT"/>
-                            <constraint firstItem="5bD-8t-APK" firstAttribute="top" secondItem="hgA-Ja-mAW" secondAttribute="bottom" constant="25" id="cHn-7f-vGl"/>
-                            <constraint firstItem="hgA-Ja-mAW" firstAttribute="leading" secondItem="M2d-lr-fbp" secondAttribute="leadingMargin" constant="57" id="vXk-9S-vpi"/>
-                            <constraint firstItem="3qg-DS-Ox3" firstAttribute="leading" secondItem="M2d-lr-fbp" secondAttribute="leadingMargin" constant="24" id="wtz-xm-L9T"/>
+                            <constraint firstItem="5bD-8t-APK" firstAttribute="centerX" secondItem="zoQ-Li-KNu" secondAttribute="centerX" constant="7.5" id="3Ht-Mh-M2v"/>
+                            <constraint firstItem="hQb-ZZ-Vky" firstAttribute="top" secondItem="qV8-dt-e31" secondAttribute="bottom" constant="8" symbolic="YES" id="725-6G-LfG"/>
+                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="centerX" secondItem="zoQ-Li-KNu" secondAttribute="centerX" constant="7.5" id="7hs-D0-EHl"/>
+                            <constraint firstItem="zoQ-Li-KNu" firstAttribute="top" secondItem="5bD-8t-APK" secondAttribute="bottom" constant="28" id="7zN-Yv-or3"/>
+                            <constraint firstItem="5bD-8t-APK" firstAttribute="top" secondItem="GqA-UA-iDS" secondAttribute="bottom" constant="14" id="CoG-bW-p1I"/>
+                            <constraint firstItem="qV8-dt-e31" firstAttribute="leading" secondItem="hQb-ZZ-Vky" secondAttribute="leading" id="D4I-eN-I6a"/>
+                            <constraint firstItem="qV8-dt-e31" firstAttribute="trailing" secondItem="hQb-ZZ-Vky" secondAttribute="trailing" id="IQE-h2-QMW"/>
+                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="centerY" secondItem="M2d-lr-fbp" secondAttribute="centerY" constant="-87.5" id="Sl5-RV-Aor"/>
+                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="top" secondItem="zoQ-Li-KNu" secondAttribute="bottom" constant="8" symbolic="YES" id="TJc-Ku-CYh"/>
+                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="leading" secondItem="M2d-lr-fbp" secondAttribute="leadingMargin" constant="24" id="UZd-Jr-ge1"/>
+                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="leading" secondItem="qV8-dt-e31" secondAttribute="leading" id="fVW-cF-hhC"/>
+                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="centerX" secondItem="M2d-lr-fbp" secondAttribute="centerX" id="ihv-el-9SR"/>
+                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="trailing" secondItem="qV8-dt-e31" secondAttribute="trailing" id="qsE-AQ-39D"/>
+                            <constraint firstItem="hQb-ZZ-Vky" firstAttribute="bottom" secondItem="23c-uf-zm1" secondAttribute="top" id="tBJ-x3-83j"/>
                         </constraints>
                     </view>
                     <connections>
@@ -472,43 +488,54 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotitulo" translatesAutoresizingMaskIntoConstraints="NO" id="G86-p5-3HA">
-                                <rect key="frame" x="67" y="64" width="215" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Políticas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzH-rF-X9Y">
+                                <rect key="frame" x="144" y="81" width="87" height="22"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="mhq-Yj-CoX"/>
+                                    <constraint firstAttribute="width" constant="87" id="W7h-w0-a3T"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Politicas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9D-Tc-gA5">
-                                <rect key="frame" x="142" y="107" width="64" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4wq-vK-p0K">
-                                <rect key="frame" x="54" y="211" width="240" height="345"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="© 2017 Tecnológico de Monterrey." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W25-SU-AT8">
+                                <rect key="frame" x="66" y="574" width="240" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Ipm-43-1xO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-6B-KJA">
+                                <rect key="frame" x="47" y="173" width="279" height="393"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">La aplicación requiere de conexión a Internet para reproducción de contenido multimedia, así como a servidores diseñados para la distribución de Podcasts y selección de contenido. La información personal, como datos de cuentas y fotografías tomadas utilizando la aplicación, son almacenadas únicamente de forma local en el dispositivo utilizado. Se prohíbe la reproducción total o parcial del código y componentes de la aplicación "Concepto Radial" por cualquier medio digital, impreso o cualquier otro. Concepto Radial, ITESM y Tecnológico de Monterrey son marcas comerciales registradas por el Instituto Tecnológico de Monterrey.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotitulo" translatesAutoresizingMaskIntoConstraints="NO" id="yF9-Bf-ixP">
+                                <rect key="frame" x="38" y="119" width="279" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="So6-cA-f1W"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4wq-vK-p0K" firstAttribute="top" secondItem="S9D-Tc-gA5" secondAttribute="bottom" constant="83" id="7rc-Y5-Qk1"/>
-                            <constraint firstItem="rbQ-WL-wFF" firstAttribute="top" secondItem="4wq-vK-p0K" secondAttribute="bottom" constant="62" id="Ahz-ah-V74"/>
-                            <constraint firstItem="G86-p5-3HA" firstAttribute="centerX" secondItem="cAV-cK-rtW" secondAttribute="centerX" constant="-13" id="RhG-kw-s26"/>
-                            <constraint firstItem="4wq-vK-p0K" firstAttribute="centerX" secondItem="cAV-cK-rtW" secondAttribute="centerX" constant="-13.5" id="SoQ-7d-DiK"/>
-                            <constraint firstItem="G86-p5-3HA" firstAttribute="leading" secondItem="cAV-cK-rtW" secondAttribute="leadingMargin" constant="51" id="VRW-rr-pPj"/>
-                            <constraint firstItem="S9D-Tc-gA5" firstAttribute="centerX" secondItem="cAV-cK-rtW" secondAttribute="centerX" constant="-13.5" id="WBC-WX-vDS"/>
-                            <constraint firstItem="4wq-vK-p0K" firstAttribute="leading" secondItem="cAV-cK-rtW" secondAttribute="leadingMargin" constant="38" id="bP1-ea-1fg"/>
-                            <constraint firstItem="S9D-Tc-gA5" firstAttribute="top" secondItem="G86-p5-3HA" secondAttribute="bottom" constant="8" symbolic="YES" id="feu-rD-FP9"/>
-                            <constraint firstItem="G86-p5-3HA" firstAttribute="top" secondItem="Djh-rA-Vgs" secondAttribute="bottom" id="kc2-ZA-fF0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W25-SU-AT8" secondAttribute="trailing" constant="53" id="Lfg-PR-hwk"/>
+                            <constraint firstItem="W25-SU-AT8" firstAttribute="leading" secondItem="cAV-cK-rtW" secondAttribute="leadingMargin" constant="50" id="P5Y-CO-CXc"/>
+                            <constraint firstItem="hzH-rF-X9Y" firstAttribute="top" secondItem="Djh-rA-Vgs" secondAttribute="bottom" constant="17" id="d4B-K2-cqW"/>
+                            <constraint firstItem="rbQ-WL-wFF" firstAttribute="top" secondItem="W25-SU-AT8" secondAttribute="bottom" constant="8" symbolic="YES" id="dqu-1Z-Bk6"/>
+                            <constraint firstItem="yF9-Bf-ixP" firstAttribute="top" secondItem="hzH-rF-X9Y" secondAttribute="bottom" constant="16" id="hsD-Sf-CuG"/>
+                            <constraint firstItem="yF9-Bf-ixP" firstAttribute="leading" secondItem="cAV-cK-rtW" secondAttribute="leadingMargin" constant="22" id="jFK-kv-c1P"/>
+                            <constraint firstItem="hzH-rF-X9Y" firstAttribute="centerX" secondItem="cAV-cK-rtW" secondAttribute="centerX" id="uug-hR-1tf"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5y3-Gn-Wtq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3180" y="-998"/>
+            <point key="canvasLocation" x="3180" y="-998.05097451274366"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="7hv-Ya-bnk">
@@ -990,7 +1017,6 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                 <segue destination="hV6-gr-mJi" kind="show" id="Htr-JW-JsP"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="CmE-Ub-OsW"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bX-q8-5Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1080,7 +1106,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4If-L2-jiW"/>
-        <segue reference="9w5-Vc-GEb"/>
+        <segue reference="Htr-JW-JsP"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

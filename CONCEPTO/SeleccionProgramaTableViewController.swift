@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AudioToolbox.AudioServices
+
 
 class SeleccionProgramaTableViewController: UITableViewController {
     
@@ -46,7 +48,7 @@ class SeleccionProgramaTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        //paso 4 llenamos el arreglo
+        //Llenar el arreglo
         //nuevoArray = (JSONParseArray(datosJSON) as NSArray) as? [Any]
         
         if tipo == "Sintonía Capital"{
@@ -102,7 +104,7 @@ class SeleccionProgramaTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        //paso 5 regresamos el numero de elementos del arreglo
+        //Regresar el numero de elementos del arreglo
         return (nuevoArray?.count)!
     }
     
@@ -137,6 +139,12 @@ class SeleccionProgramaTableViewController: UITableViewController {
         siguienteVista.link = t as! String
     }
     
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?){
+        if motion == .motionShake {
+            let i = arc4random_uniform(UInt32(nuevoArray!.count)) + 1
+            AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+        }
+    }
     
     /*
      // Override to support conditional editing of the table view.
