@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D46595C1E5651D400FC9415 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D46595B1E5651D400FC9415 /* MediaPlayer.framework */; };
 		1D7DB7FB1E6B72C50059C836 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7DB7FA1E6B72C50059C836 /* RadioPlayer.swift */; };
+		1D7E6AED1EB8594F001535CB /* CONCEPTOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E6AEC1EB8594F001535CB /* CONCEPTOUITests.swift */; };
 		384262F91E86056B0044B078 /* SeleccionPodcast2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384262F81E86056B0044B078 /* SeleccionPodcast2TableViewController.swift */; };
 		384262FB1E8609D30044B078 /* SeleccionProgramaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384262FA1E8609D30044B078 /* SeleccionProgramaTableViewController.swift */; };
 		384262FD1E860E5B0044B078 /* ReproducirPodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384262FC1E860E5B0044B078 /* ReproducirPodcastViewController.swift */; };
@@ -41,6 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1D7E6AEF1EB8594F001535CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38CA79701E4F8D7900F498CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38CA79771E4F8D7900F498CD;
+			remoteInfo = CONCEPTO;
+		};
 		384B7A371E6B42E000DBC3B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 38CA79701E4F8D7900F498CD /* Project object */;
@@ -85,6 +93,9 @@
 /* Begin PBXFileReference section */
 		1D46595B1E5651D400FC9415 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		1D7DB7FA1E6B72C50059C836 /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
+		1D7E6AEA1EB8594E001535CB /* CONCEPTOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CONCEPTOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D7E6AEC1EB8594F001535CB /* CONCEPTOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CONCEPTOUITests.swift; sourceTree = "<group>"; };
+		1D7E6AEE1EB8594F001535CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		384262F81E86056B0044B078 /* SeleccionPodcast2TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionPodcast2TableViewController.swift; sourceTree = "<group>"; };
 		384262FA1E8609D30044B078 /* SeleccionProgramaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionProgramaTableViewController.swift; sourceTree = "<group>"; };
 		384262FC1E860E5B0044B078 /* ReproducirPodcastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReproducirPodcastViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +134,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D7E6AE71EB8594E001535CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		384B7A321E6B42E000DBC3B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +170,15 @@
 				1D46595B1E5651D400FC9415 /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D7E6AEB1EB8594E001535CB /* CONCEPTOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1D7E6AEC1EB8594F001535CB /* CONCEPTOUITests.swift */,
+				1D7E6AEE1EB8594F001535CB /* Info.plist */,
+			);
+			path = CONCEPTOUITests;
 			sourceTree = "<group>";
 		};
 		384B7A2A1E6B42DF00DBC3B0 /* conceptoWatch */ = {
@@ -196,6 +223,7 @@
 				38CA797A1E4F8D8800F498CD /* CONCEPTO */,
 				384B7A2A1E6B42DF00DBC3B0 /* conceptoWatch */,
 				384B7A391E6B42E000DBC3B0 /* conceptoWatch Extension */,
+				1D7E6AEB1EB8594E001535CB /* CONCEPTOUITests */,
 				38CA79791E4F8D8800F498CD /* Products */,
 				1D46595A1E5651D400FC9415 /* Frameworks */,
 			);
@@ -207,6 +235,7 @@
 				38CA79781E4F8D8800F498CD /* CONCEPTO.app */,
 				384B7A291E6B42DF00DBC3B0 /* conceptoWatch.app */,
 				384B7A351E6B42E000DBC3B0 /* conceptoWatch Extension.appex */,
+				1D7E6AEA1EB8594E001535CB /* CONCEPTOUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,6 +265,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1D7E6AE91EB8594E001535CB /* CONCEPTOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D7E6AF31EB8594F001535CB /* Build configuration list for PBXNativeTarget "CONCEPTOUITests" */;
+			buildPhases = (
+				1D7E6AE61EB8594E001535CB /* Sources */,
+				1D7E6AE71EB8594E001535CB /* Frameworks */,
+				1D7E6AE81EB8594E001535CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D7E6AF01EB8594F001535CB /* PBXTargetDependency */,
+			);
+			name = CONCEPTOUITests;
+			productName = CONCEPTOUITests;
+			productReference = 1D7E6AEA1EB8594E001535CB /* CONCEPTOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		384B7A281E6B42DE00DBC3B0 /* conceptoWatch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 384B7A501E6B42E000DBC3B0 /* Build configuration list for PBXNativeTarget "conceptoWatch" */;
@@ -295,10 +342,16 @@
 		38CA79701E4F8D7900F498CD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Alfredo;
 				TargetAttributes = {
+					1D7E6AE91EB8594E001535CB = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = RN8F9392NA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 38CA79771E4F8D7900F498CD;
+					};
 					384B7A281E6B42DE00DBC3B0 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = BT3USA77FD;
@@ -332,11 +385,19 @@
 				38CA79771E4F8D7900F498CD /* CONCEPTO */,
 				384B7A281E6B42DE00DBC3B0 /* conceptoWatch */,
 				384B7A341E6B42E000DBC3B0 /* conceptoWatch Extension */,
+				1D7E6AE91EB8594E001535CB /* CONCEPTOUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1D7E6AE81EB8594E001535CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		384B7A271E6B42DE00DBC3B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,6 +428,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1D7E6AE61EB8594E001535CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D7E6AED1EB8594F001535CB /* CONCEPTOUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		384B7A311E6B42E000DBC3B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,6 +473,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1D7E6AF01EB8594F001535CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38CA79771E4F8D7900F498CD /* CONCEPTO */;
+			targetProxy = 1D7E6AEF1EB8594F001535CB /* PBXContainerItemProxy */;
+		};
 		384B7A381E6B42E000DBC3B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 384B7A341E6B42E000DBC3B0 /* conceptoWatch Extension */;
@@ -444,6 +518,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1D7E6AF11EB8594F001535CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = RN8F9392NA;
+				INFOPLIST_FILE = CONCEPTOUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MundoSystems.CONCEPTOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CONCEPTO;
+			};
+			name = Debug;
+		};
+		1D7E6AF21EB8594F001535CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = RN8F9392NA;
+				INFOPLIST_FILE = CONCEPTOUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MundoSystems.CONCEPTOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CONCEPTO;
+			};
+			name = Release;
+		};
 		384B7A4A1E6B42E000DBC3B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -638,6 +742,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D7E6AF31EB8594F001535CB /* Build configuration list for PBXNativeTarget "CONCEPTOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D7E6AF11EB8594F001535CB /* Debug */,
+				1D7E6AF21EB8594F001535CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		384B7A4E1E6B42E000DBC3B0 /* Build configuration list for PBXNativeTarget "conceptoWatch Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
