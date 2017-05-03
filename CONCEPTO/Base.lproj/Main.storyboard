@@ -55,12 +55,6 @@
                                     <action selector="playButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="sag-in-JXS"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mac2" translatesAutoresizingMaskIntoConstraints="NO" id="bZK-QR-WR5">
-                                <rect key="frame" x="-47" y="64" width="469" height="277"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="277" id="SXt-Mx-8i6"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Streaming en Vivo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
                                 <rect key="frame" x="128.5" y="449" width="118" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -71,6 +65,12 @@
                                 <rect key="frame" x="67" y="482" width="241" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mac2" translatesAutoresizingMaskIntoConstraints="NO" id="bZK-QR-WR5">
+                                <rect key="frame" x="-47" y="56" width="469" height="277"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="277" id="SXt-Mx-8i6"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -78,7 +78,7 @@
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="Qy6-88-dzY" secondAttribute="centerX" id="4XO-48-VFO"/>
                             <constraint firstAttribute="bottom" secondItem="5nw-Yf-0ed" secondAttribute="bottom" constant="113" id="99v-Kg-Bfr"/>
                             <constraint firstItem="Qy6-88-dzY" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="51" id="AYt-8C-QBJ"/>
-                            <constraint firstItem="rAZ-VJ-ndg" firstAttribute="top" secondItem="bZK-QR-WR5" secondAttribute="bottom" constant="42" id="QyT-r9-HiP"/>
+                            <constraint firstItem="rAZ-VJ-ndg" firstAttribute="top" secondItem="bZK-QR-WR5" secondAttribute="bottom" constant="50" id="QyT-r9-HiP"/>
                             <constraint firstItem="5nw-Yf-0ed" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="143" id="SbZ-Xg-Ita"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Qy6-88-dzY" secondAttribute="bottom" constant="8" symbolic="YES" id="TLp-7p-Yuc"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="rAZ-VJ-ndg" secondAttribute="bottom" constant="28" id="TUP-1Z-h3G"/>
@@ -87,7 +87,7 @@
                             <constraint firstItem="Qy6-88-dzY" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="16" id="aYZ-o7-uEb"/>
                             <constraint firstItem="bZK-QR-WR5" firstAttribute="centerX" secondItem="rAZ-VJ-ndg" secondAttribute="centerX" id="cwA-Lw-S2w"/>
                             <constraint firstItem="bZK-QR-WR5" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="d2A-Ax-cid"/>
-                            <constraint firstItem="bZK-QR-WR5" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="gTq-dv-MtY"/>
+                            <constraint firstItem="bZK-QR-WR5" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="-8" id="gTq-dv-MtY"/>
                             <constraint firstItem="5nw-Yf-0ed" firstAttribute="bottom" secondItem="sIu-Lk-0MK" secondAttribute="bottom" id="ih7-cK-v1f"/>
                             <constraint firstItem="5nw-Yf-0ed" firstAttribute="leading" secondItem="sIu-Lk-0MK" secondAttribute="trailing" constant="-24" id="wt0-wZ-isc"/>
                             <constraint firstItem="sIu-Lk-0MK" firstAttribute="leading" secondItem="5nw-Yf-0ed" secondAttribute="trailing" constant="24" id="zd9-8b-nvv"/>
@@ -836,7 +836,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="listeningImage" translatesAutoresizingMaskIntoConstraints="NO" id="3Tk-cG-BQC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="listeningImage" translatesAutoresizingMaskIntoConstraints="NO" id="3Tk-cG-BQC">
                                 <rect key="frame" x="0.0" y="34" width="375" height="299"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -1122,7 +1122,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4If-L2-jiW"/>
-        <segue reference="Htr-JW-JsP"/>
+        <segue reference="9w5-Vc-GEb"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
