@@ -60,9 +60,9 @@ class ReproducirPodcastViewController: UIViewController {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
-                PodcastPlayer.sharedInstance.forward()
-            case UISwipeGestureRecognizerDirection.left:
                 PodcastPlayer.sharedInstance.rewind()
+            case UISwipeGestureRecognizerDirection.left:
+                PodcastPlayer.sharedInstance.forward()
             default:
                 break
             }

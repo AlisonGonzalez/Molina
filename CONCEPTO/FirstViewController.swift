@@ -130,9 +130,9 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
-                RadioPlayer.sharedInstance.forward()
-            case UISwipeGestureRecognizerDirection.left:
                 RadioPlayer.sharedInstance.rewind()
+            case UISwipeGestureRecognizerDirection.left:
+                RadioPlayer.sharedInstance.forward()
             default:
                 break
             }
