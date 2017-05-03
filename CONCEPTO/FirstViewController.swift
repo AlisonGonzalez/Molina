@@ -30,6 +30,13 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
         }catch{
             print("Error")
         }
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        self.view.addGestureRecognizer(swipeRight)
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        self.view.addGestureRecognizer(swipeLeft)
     }
     
     func toggle() {
@@ -117,6 +124,19 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
         let activities = UIActivityViewController(activityItems : objects, applicationActivities: nil)
         //activities.excludedActivityTypes = [UIActivityType.mail]
         self.present(activities, animated:true, completion:nil)
+    }
+    
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.right:
+                RadioPlayer.sharedInstance.forward()
+            case UISwipeGestureRecognizerDirection.left:
+                RadioPlayer.sharedInstance.rewind()
+            default:
+                break
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

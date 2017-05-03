@@ -33,6 +33,16 @@ class PodcastPlayer {
         isPlaying = false
     }
     
+    func forward(){
+        let seekTime = player.currentTime() + CMTimeMake(10, 1)
+        player.seek(to: seekTime)
+    }
+    
+    func rewind(){
+        let seekTime = player.currentTime() - CMTimeMake(10, 1)
+        player.seek(to: seekTime)
+    }
+    
     func toggle() {
         if isPlaying == true {
             pause()

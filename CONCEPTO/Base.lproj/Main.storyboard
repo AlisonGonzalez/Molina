@@ -332,6 +332,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bjork2" translatesAutoresizingMaskIntoConstraints="NO" id="tvZ-4X-OCE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jXq-V2-pc0">
                                 <rect key="frame" x="21" y="314" width="343" height="201"/>
@@ -395,6 +396,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="depeche2" translatesAutoresizingMaskIntoConstraints="NO" id="5US-Gc-Wpv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vsO-fQ-AcB">
                                 <rect key="frame" x="16" y="309" width="343" height="201"/>
@@ -749,7 +751,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9rR-dp-DPd" id="BOP-im-Qoi">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -825,6 +827,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="listeningImage" translatesAutoresizingMaskIntoConstraints="NO" id="3Tk-cG-BQC">
                                 <rect key="frame" x="0.0" y="34" width="375" height="299"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="299" id="9WH-zs-Lpa"/>
                                 </constraints>
@@ -846,6 +849,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="vGZ-M9-TMq" firstAttribute="top" secondItem="LKx-D3-eiS" secondAttribute="bottom" constant="8" symbolic="YES" id="Hum-P8-Sy2"/>
                             <constraint firstItem="LKx-D3-eiS" firstAttribute="centerX" secondItem="vGZ-M9-TMq" secondAttribute="centerX" id="J9h-hR-j1R"/>
@@ -925,7 +929,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ini-bX-gFA" id="GhF-Lb-i5G">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>

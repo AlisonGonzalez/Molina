@@ -25,6 +25,14 @@ class ReproducirPodcastViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        self.view.addGestureRecognizer(swipeRight)
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        self.view.addGestureRecognizer(swipeLeft)
+        
     }
     @IBAction func reproducir(_ sender: UIButton) {
         toggle()
@@ -47,7 +55,19 @@ class ReproducirPodcastViewController: UIViewController {
         playButton.setImage(#imageLiteral(resourceName: "play"), for: UIControlState.normal)
         PodcastPlayer.sharedInstance.pause()
     }
- 
+    
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.right:
+                PodcastPlayer.sharedInstance.forward()
+            case UISwipeGestureRecognizerDirection.left:
+                PodcastPlayer.sharedInstance.rewind()
+            default:
+                break
+            }
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
