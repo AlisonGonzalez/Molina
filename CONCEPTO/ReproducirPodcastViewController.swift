@@ -11,7 +11,7 @@ import AVFoundation
 import Foundation
 
 class ReproducirPodcastViewController: UIViewController {
-
+    
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var playButton: UIButton!
     var nombre: String = ""

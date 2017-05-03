@@ -257,32 +257,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qV8-dt-e31">
-                                <rect key="frame" x="40" y="327" width="294" height="180"/>
+                                <rect key="frame" x="40" y="281" width="294" height="169"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="w0T-FM-mUg"/>
+                                    <constraint firstAttribute="height" constant="169" id="mgQ-vF-TBQ"/>
                                 </constraints>
                             </mapView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hQb-ZZ-Vky">
-                                <rect key="frame" x="40" y="515" width="294" height="103"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="hQb-ZZ-Vky">
+                                <rect key="frame" x="40" y="523" width="294" height="87"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="103" id="5FX-cv-4KT"/>
+                                    <constraint firstAttribute="height" constant="87" id="Dty-Vn-oEE"/>
                                 </constraints>
-                                <string key="text">Aplicación desarrollada por Alison Ricardo González, Irvin Mundo, Emiliano Cervantes y Alfredo Puente para la clase "Proyecto de desarrollo de dispositivos móviles" del Dr. José Martín Molina Espinosa en ITESM CCM.                        Mayo 2017.</string>
+                                <string key="text">Aplicación desarrollada en ITESM Campus Ciudad de México en el curso TC2024 Proyectos de desarrollo para dispositivos móviles por los estudiantes A01064754, A01332891, A01333820 y A01332573. Profesor: José M. Molina Espinosa.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acerca de" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bD-8t-APK">
-                                <rect key="frame" x="143.5" y="78" width="87" height="22"/>
+                                <rect key="frame" x="144" y="78" width="87" height="22"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="XIb-Tf-wBR">
-                                <rect key="frame" x="40" y="171" width="294" height="150"/>
+                                <rect key="frame" x="40" y="171" width="294" height="102"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Concepto Radial es la estación de radio del Tecnológico de monterrey, Campus Ciudad de México ubicada en Calle del Puente #222 Col. Ejidos de Huipulco en la Delegación Tlalpan, México D.F. Transmitimos las 24 horas del día los 365 días del año.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="bdA-3O-d1j"/>
+                                </constraints>
+                                <string key="text">Concepto Radial es la estación de radio del Tecnológico de Monterrey, Campus Ciudad de México ubicada en Calle del Puente #222 Col. Ejidos de Huipulco en la Delegación Tlalpan, México D.F. Transmitimos las 24 horas del día los 365 días del año.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotitulo" translatesAutoresizingMaskIntoConstraints="NO" id="zoQ-Li-KNu">
@@ -291,23 +294,31 @@
                                     <constraint firstAttribute="height" constant="35" id="Yvk-Pq-Wpi"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ITESM" translatesAutoresizingMaskIntoConstraints="NO" id="lgP-bL-SfA">
+                                <rect key="frame" x="96" y="452" width="182" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="2gA-6F-oeq"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5bD-8t-APK" firstAttribute="centerX" secondItem="zoQ-Li-KNu" secondAttribute="centerX" constant="7.5" id="3Ht-Mh-M2v"/>
-                            <constraint firstItem="hQb-ZZ-Vky" firstAttribute="top" secondItem="qV8-dt-e31" secondAttribute="bottom" constant="8" symbolic="YES" id="725-6G-LfG"/>
-                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="centerX" secondItem="zoQ-Li-KNu" secondAttribute="centerX" constant="7.5" id="7hs-D0-EHl"/>
+                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="top" secondItem="zoQ-Li-KNu" secondAttribute="bottom" constant="8" symbolic="YES" id="4eD-O9-OGZ"/>
                             <constraint firstItem="zoQ-Li-KNu" firstAttribute="top" secondItem="5bD-8t-APK" secondAttribute="bottom" constant="28" id="7zN-Yv-or3"/>
+                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="centerX" secondItem="M2d-lr-fbp" secondAttribute="centerX" id="9bI-yQ-FDP"/>
                             <constraint firstItem="5bD-8t-APK" firstAttribute="top" secondItem="GqA-UA-iDS" secondAttribute="bottom" constant="14" id="CoG-bW-p1I"/>
-                            <constraint firstItem="qV8-dt-e31" firstAttribute="leading" secondItem="hQb-ZZ-Vky" secondAttribute="leading" id="D4I-eN-I6a"/>
-                            <constraint firstItem="qV8-dt-e31" firstAttribute="trailing" secondItem="hQb-ZZ-Vky" secondAttribute="trailing" id="IQE-h2-QMW"/>
-                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="centerY" secondItem="M2d-lr-fbp" secondAttribute="centerY" constant="-87.5" id="Sl5-RV-Aor"/>
-                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="top" secondItem="zoQ-Li-KNu" secondAttribute="bottom" constant="8" symbolic="YES" id="TJc-Ku-CYh"/>
-                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="leading" secondItem="M2d-lr-fbp" secondAttribute="leadingMargin" constant="24" id="UZd-Jr-ge1"/>
-                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="leading" secondItem="qV8-dt-e31" secondAttribute="leading" id="fVW-cF-hhC"/>
-                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="centerX" secondItem="M2d-lr-fbp" secondAttribute="centerX" id="ihv-el-9SR"/>
-                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="trailing" secondItem="qV8-dt-e31" secondAttribute="trailing" id="qsE-AQ-39D"/>
-                            <constraint firstItem="hQb-ZZ-Vky" firstAttribute="bottom" secondItem="23c-uf-zm1" secondAttribute="top" id="tBJ-x3-83j"/>
+                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="trailing" secondItem="qV8-dt-e31" secondAttribute="trailing" id="DMk-tW-4cI"/>
+                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="leading" secondItem="zoQ-Li-KNu" secondAttribute="leading" id="PjM-Vx-92I"/>
+                            <constraint firstItem="lgP-bL-SfA" firstAttribute="centerX" secondItem="hQb-ZZ-Vky" secondAttribute="centerX" id="Urm-NH-8Kr"/>
+                            <constraint firstItem="23c-uf-zm1" firstAttribute="top" secondItem="lgP-bL-SfA" secondAttribute="bottom" constant="69" id="YZM-2z-0fR"/>
+                            <constraint firstItem="hQb-ZZ-Vky" firstAttribute="bottom" secondItem="23c-uf-zm1" secondAttribute="top" constant="-8" id="Zn3-n7-LHo"/>
+                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="leading" secondItem="qV8-dt-e31" secondAttribute="leading" id="aXk-l0-IAj"/>
+                            <constraint firstItem="hQb-ZZ-Vky" firstAttribute="top" secondItem="qV8-dt-e31" secondAttribute="bottom" constant="73" id="jgv-2U-jN5"/>
+                            <constraint firstItem="qV8-dt-e31" firstAttribute="trailing" secondItem="hQb-ZZ-Vky" secondAttribute="trailing" id="kag-Ay-GPE"/>
+                            <constraint firstItem="XIb-Tf-wBR" firstAttribute="centerX" secondItem="5bD-8t-APK" secondAttribute="centerX" id="tnx-dM-ty7"/>
+                            <constraint firstItem="qV8-dt-e31" firstAttribute="leading" secondItem="hQb-ZZ-Vky" secondAttribute="leading" id="uyl-5x-qNP"/>
+                            <constraint firstItem="lgP-bL-SfA" firstAttribute="leading" secondItem="M2d-lr-fbp" secondAttribute="leadingMargin" constant="80" id="zhk-Un-Fid"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1086,6 +1097,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
         </scene>
     </scenes>
     <resources>
+        <image name="ITESM" width="4724" height="1248"/>
         <image name="audioFilledTabBar" width="25" height="25"/>
         <image name="audioTabBar" width="25" height="25"/>
         <image name="bjork" width="1600" height="1000"/>
