@@ -510,7 +510,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                 <rect key="frame" x="47" y="173" width="279" height="393"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">La aplicación requiere de conexión a Internet para reproducción de contenido multimedia, así como a servidores diseñados para la distribución de Podcasts y selección de contenido. La información personal, como datos de cuentas y fotografías tomadas utilizando la aplicación, son almacenadas únicamente de forma local en el dispositivo utilizado. Se prohíbe la reproducción total o parcial del código y componentes de la aplicación "Concepto Radial" por cualquier medio digital, impreso o cualquier otro. Concepto Radial, ITESM y Tecnológico de Monterrey son marcas comerciales registradas por el Instituto Tecnológico de Monterrey.</mutableString>
+                                <string key="text">La aplicación requiere de conexión a Internet para reproducción de contenido multimedia, así como a servidores diseñados para la distribución de Podcasts y selección de contenido. La información personal, como datos de cuentas y fotografías tomadas utilizando la aplicación, son almacenadas únicamente de forma local en el dispositivo utilizado. Se prohíbe la reproducción total o parcial del código y componentes de la aplicación "Concepto Radial" por cualquier medio digital, impreso o cualquier otro. Concepto Radial, ITESM y Tecnológico de Monterrey son marcas comerciales registradas por el Instituto Tecnológico de Monterrey.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -736,7 +736,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="2P0-zQ-ycb">
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Buscar podcast" id="2P0-zQ-ycb">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -912,7 +912,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="NrF-mE-KyX">
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Buscar podcast" id="NrF-mE-KyX">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
