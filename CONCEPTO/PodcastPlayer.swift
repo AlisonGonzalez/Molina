@@ -43,6 +43,11 @@ class PodcastPlayer {
         player.seek(to: seekTime)
     }
     
+    func restart(){
+        let startTime = player.currentTime() - player.currentTime()
+        player.seek(to: startTime)
+    }
+    
     func toggle() {
         if isPlaying == true {
             pause()

@@ -60,14 +60,24 @@ class ReproducirPodcastViewController: UIViewController {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
+                AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 PodcastPlayer.sharedInstance.rewind()
             case UISwipeGestureRecognizerDirection.left:
+                AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 PodcastPlayer.sharedInstance.forward()
             default:
                 break
             }
         }
     }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?){
+        if motion == .motionShake {
+            AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+            PodcastPlayer.sharedInstance.restart()
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

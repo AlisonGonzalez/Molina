@@ -12,8 +12,6 @@ import AudioToolbox.AudioServices
 
 class SeleccionProgramaTableViewController: UITableViewController {
     
-    var shaked = false
-    
     //Definir direccion
     var direccion = "http://conceptoradial.000webhostapp.com/json/podcasts3.json"
     
@@ -131,10 +129,7 @@ class SeleccionProgramaTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         let siguienteVista = segue.destination as! ReproducirPodcastViewController
-        var indice = self.tableView.indexPathForSelectedRow?.row
-        if(shaked){
-            indice = Int(arc4random_uniform(UInt32(nuevoArray!.count)) + 1)
-        }
+        let indice = self.tableView.indexPathForSelectedRow?.row
         let objetoMarca = nuevoArray?[indice!] as! [String: Any]
         let s =  objetoMarca["título"]
         let t = objetoMarca["URL"]
@@ -142,17 +137,6 @@ class SeleccionProgramaTableViewController: UITableViewController {
         siguienteVista.link = t as! String
     }
     
-    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?){
-        if motion == .motionShake {
-            AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
-            shaked = true
-            //prepare
-            //self.prepare(for: UIStoryboardSegue.init(identifier: <#T##String?#>, source: <#T##UIViewController#>, destination: <#T##UIViewController#>), sender: nil)
-            
-            //performSegue
-            //performSegue(withIdentifier: <#T##String#>, sender: nil)
-        }
-    }
     
     /*
      // Override to support conditional editing of the table view.
