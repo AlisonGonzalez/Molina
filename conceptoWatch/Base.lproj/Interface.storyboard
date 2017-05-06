@@ -25,10 +25,23 @@
             </objects>
             <point key="canvasLocation" x="703" y="740"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Mapa Controller-->
         <scene sceneID="r80-mJ-OaT">
             <objects>
-                <controller id="wY1-EX-tqW"/>
+                <controller id="wY1-EX-tqW" customClass="MapaController" customModule="conceptoWatch_Extension">
+                    <items>
+                        <map height="100" alignment="left" id="fro-xM-fGR"/>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="ADJ-FI-K0h">
+                            <color key="color" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="hacerZoom:" destination="wY1-EX-tqW" id="tUq-E2-Hj7"/>
+                            </connections>
+                        </slider>
+                    </items>
+                    <connections>
+                        <outlet property="mapa" destination="fro-xM-fGR" id="yUS-m8-zlg"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="703" y="1311"/>
         </scene>
