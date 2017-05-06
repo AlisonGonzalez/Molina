@@ -25,6 +25,13 @@
             </objects>
             <point key="canvasLocation" x="703" y="740"/>
         </scene>
+        <!--Interface Controller-->
+        <scene sceneID="r80-mJ-OaT">
+            <objects>
+                <controller id="wY1-EX-tqW"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="1311"/>
+        </scene>
         <!--First Interface Controller-->
         <scene sceneID="zd1-ih-wJ2">
             <objects>
@@ -77,25 +84,66 @@
             </objects>
             <point key="canvasLocation" x="407" y="740"/>
         </scene>
+        <!--Interface Controller-->
+        <scene sceneID="pQj-Ja-lFY">
+            <objects>
+                <controller id="WIs-W5-XDt">
+                    <items>
+                        <label alignment="center" text="Aplicación" textAlignment="center" id="XxV-fx-Xma"/>
+                        <label alignment="center" text="desarrollada en" textAlignment="center" id="bxi-fS-Urp"/>
+                        <label alignment="center" text="ITESM CCM" textAlignment="center" id="ncz-en-r2T"/>
+                        <separator alignment="left" id="eo4-mQ-ehM"/>
+                        <imageView alignment="left" image="ITESMWatch" id="PPh-LL-6Gx"/>
+                        <button width="1" alignment="left" title="Ver en mapa" id="OVO-Rc-BBN">
+                            <connections>
+                                <segue destination="wY1-EX-tqW" kind="push" id="RDb-FE-dBN"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="407" y="1312"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Mpr-ub-1dy">
+            <objects>
+                <controller id="Trk-jZ-nTH"/>
+            </objects>
+            <point key="canvasLocation" x="407" y="1023"/>
+        </scene>
         <!--First Interface Controller-->
         <scene sceneID="mS5-Kf-9vi">
             <objects>
                 <controller id="9sH-yk-AcX" customClass="FirstInterfaceController" customModule="conceptoWatch_Extension">
                     <items>
                         <button width="1" alignment="left" title="Streaming" id="OxZ-4F-2fB">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="0L7-D8-hgY" kind="push" id="WTF-um-ajw"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Podcasts" id="lpB-5o-UAf">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="AgC-eL-Hgc" kind="push" id="3ut-ys-c0D"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Galería" id="KrV-f2-fnu">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="Trk-jZ-nTH" kind="push" id="IFM-3x-Gdw"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Acerca de" id="9Qd-qs-f1R">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="WIs-W5-XDt" kind="push" id="dPw-a5-2Zf"/>
                             </connections>
                         </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="126" y="617"/>
+            <point key="canvasLocation" x="3" y="1143"/>
         </scene>
     </scenes>
 </document>

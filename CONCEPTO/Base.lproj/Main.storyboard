@@ -257,13 +257,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qV8-dt-e31">
-                                <rect key="frame" x="40" y="281" width="294" height="169"/>
+                                <rect key="frame" x="40" y="330" width="294" height="169"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="169" id="mgQ-vF-TBQ"/>
                                 </constraints>
                             </mapView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="hQb-ZZ-Vky">
-                                <rect key="frame" x="40" y="523" width="294" height="87"/>
+                                <rect key="frame" x="40" y="572" width="294" height="87"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="Dty-Vn-oEE"/>
@@ -273,13 +273,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acerca de" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bD-8t-APK">
-                                <rect key="frame" x="144" y="78" width="87" height="22"/>
+                                <rect key="frame" x="144" y="34" width="87" height="22"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="XIb-Tf-wBR">
-                                <rect key="frame" x="40" y="171" width="294" height="102"/>
+                                <rect key="frame" x="40" y="127" width="294" height="102"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="102" id="bdA-3O-d1j"/>
@@ -289,13 +289,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotitulo" translatesAutoresizingMaskIntoConstraints="NO" id="zoQ-Li-KNu">
-                                <rect key="frame" x="40" y="128" width="279" height="35"/>
+                                <rect key="frame" x="40" y="84" width="279" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Yvk-Pq-Wpi"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ITESM" translatesAutoresizingMaskIntoConstraints="NO" id="lgP-bL-SfA">
-                                <rect key="frame" x="96" y="452" width="182" height="97"/>
+                                <rect key="frame" x="96" y="501" width="182" height="97"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="97" id="2gA-6F-oeq"/>
                                 </constraints>
