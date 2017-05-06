@@ -50,22 +50,27 @@
             <objects>
                 <controller id="0L7-D8-hgY" customClass="FirstInterfaceController" customModule="conceptoWatch_Extension">
                     <items>
-                        <label width="136" alignment="left" text="Concepto Radial" textAlignment="center" id="Hu7-6r-0dy"/>
+                        <label width="1" alignment="left" text="Concepto Radial" textAlignment="center" id="NdO-aS-Xei"/>
                         <label width="136" alignment="left" text="Streaming" textAlignment="center" id="6jk-f2-tFH">
                             <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
-                        <button width="136" height="56" alignment="left" title="Button" id="B2c-ho-D6i">
+                        <button width="1" height="38" alignment="left" title="Reproducir" id="B2c-ho-D6i">
                             <connections>
-                                <action selector="playRadio" destination="0L7-D8-hgY" id="n7e-Xs-K0p"/>
+                                <action selector="startPlay" destination="0L7-D8-hgY" id="0fC-y5-kUZ"/>
                             </connections>
                         </button>
-                        <slider width="1" alignment="left" value="1" maximum="7" steps="7" id="OqR-Zt-aNz">
-                            <color key="color" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </slider>
+                        <button width="1" alignment="left" title="Pausa" id="ni8-xs-ADk">
+                            <connections>
+                                <action selector="stopPlay" destination="0L7-D8-hgY" id="E5I-Bk-pHD"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="statusLabel" destination="6jk-f2-tFH" id="8xT-sd-zk2"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="404" y="427"/>
+            <point key="canvasLocation" x="404" y="418"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">

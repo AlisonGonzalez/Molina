@@ -13,7 +13,8 @@ class RadioPlayer {
     
     static let sharedInstance = RadioPlayer()
     
-    private var player = AVPlayer(url: NSURL(string: "http://204.12.193.98:8139/listen.pls")! as URL)
+    //http://204.12.193.98:8139/listen.pls
+    private var player = AVPlayer(url: NSURL(string: "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://us3.internet-radio.com:8007/listen.pls&t=.pls")! as URL)
     private var isPlaying = false
     
     func play() {

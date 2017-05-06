@@ -7,16 +7,35 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
-
+    var session : WCSession!
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         UITabBar.appearance().tintColor = UIColor.orange
         UIApplication.shared.statusBarStyle = .lightContent
+        
+        if (WCSession.isSupported()) {
+            session = WCSession.default()
+            session.delegate = self
+            session.activate()
+            
+            if session.isPaired != true {
+                print("Apple Watch is not paired")
+            }
+            
+            if session.isWatchAppInstalled != true {
+                print("WatchKit app is not installed")
+            }
+        } else {
+            print("WatchConnectivity is not supported on this device")
+        }
+        
         return true
         
     }
@@ -42,7 +61,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func viewWillAppear(animated: Bool){
+        if (WCSession.isSupported())
+        {
+            session = WCSession.default()
+            session.delegate = self
+            session.activate()
+            
+        }
+    }
+    
+    //WCSessionProtocol
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        
+        var replyValues = Dictionary<String, AnyObject>()
+        //let viewController = self.window!.rootViewController! as UIViewController
+        
+        switch message["command"] as! String {
+        case "start" :
+            RadioPlayer.sharedInstance.play()
+            replyValues["status"] = "Reproduciendo" as AnyObject?
+        case "stop" :
+            RadioPlayer.sharedInstance.pause()
+            replyValues["status"] = "Detenido" as AnyObject?
+        default:
+            break
+        }
+        replyHandler(replyValues)
+    }
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState,error: Error?){
+        print("")
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession){
+        print("")
+    }
+    
+    func sessionDidDeactivate( _ session: WCSession){
+        print("")
+    }
 
 }
 

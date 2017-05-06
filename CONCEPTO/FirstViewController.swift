@@ -12,6 +12,7 @@ import AVFoundation
 import MobileCoreServices
 
 class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    static let sharedInstance = FirstViewController()
     
     @IBOutlet weak var imageView: UIImageView!
     var newMedia: Bool?
