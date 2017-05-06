@@ -3,7 +3,7 @@
 //  MapasProyecto WatchKit Extension
 //
 //  Created by Alison on 06/05/17.
-//  Copyright © 2015 Tec de Monterrey. All rights reserved.
+//  Copyright © 2017 Alison. All rights reserved.
 //
 
 import WatchKit
