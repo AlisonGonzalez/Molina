@@ -13,6 +13,9 @@
 		3830337A1EBED94E00DEE1AF /* PodcastTable2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383033791EBED94E00DEE1AF /* PodcastTable2.swift */; };
 		3830337B1EBED94E00DEE1AF /* PodcastTable2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383033791EBED94E00DEE1AF /* PodcastTable2.swift */; };
 		3830337C1EBED94E00DEE1AF /* PodcastTable2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383033791EBED94E00DEE1AF /* PodcastTable2.swift */; };
+		3830337E1EBEEA9900DEE1AF /* DetalleControlador2InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3830337D1EBEEA9900DEE1AF /* DetalleControlador2InterfaceController.swift */; };
+		3830337F1EBEEA9900DEE1AF /* DetalleControlador2InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3830337D1EBEEA9900DEE1AF /* DetalleControlador2InterfaceController.swift */; };
+		383033801EBEEA9900DEE1AF /* DetalleControlador2InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3830337D1EBEEA9900DEE1AF /* DetalleControlador2InterfaceController.swift */; };
 		384262F91E86056B0044B078 /* SeleccionPodcast2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384262F81E86056B0044B078 /* SeleccionPodcast2TableViewController.swift */; };
 		384262FB1E8609D30044B078 /* SeleccionProgramaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384262FA1E8609D30044B078 /* SeleccionProgramaTableViewController.swift */; };
 		384262FD1E860E5B0044B078 /* ReproducirPodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384262FC1E860E5B0044B078 /* ReproducirPodcastViewController.swift */; };
@@ -101,6 +104,7 @@
 		1D7E6AEC1EB8594F001535CB /* CONCEPTOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CONCEPTOUITests.swift; sourceTree = "<group>"; };
 		1D7E6AEE1EB8594F001535CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		383033791EBED94E00DEE1AF /* PodcastTable2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTable2.swift; sourceTree = "<group>"; };
+		3830337D1EBEEA9900DEE1AF /* DetalleControlador2InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleControlador2InterfaceController.swift; sourceTree = "<group>"; };
 		384262F81E86056B0044B078 /* SeleccionPodcast2TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionPodcast2TableViewController.swift; sourceTree = "<group>"; };
 		384262FA1E8609D30044B078 /* SeleccionProgramaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionProgramaTableViewController.swift; sourceTree = "<group>"; };
 		384262FC1E860E5B0044B078 /* ReproducirPodcastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReproducirPodcastViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				392FEBC61E958C1D009A065D /* FirstInterfaceController.swift */,
+				3830337D1EBEEA9900DEE1AF /* DetalleControlador2InterfaceController.swift */,
 				384B7A3C1E6B42E000DBC3B0 /* InterfaceController.swift */,
 				38EE132A1E8D612800518328 /* controladorRenglon.swift */,
 				3963BF5A1EBE241F00328268 /* MapaController.swift */,
@@ -444,6 +449,7 @@
 			files = (
 				3830337C1EBED94E00DEE1AF /* PodcastTable2.swift in Sources */,
 				1D7E6AED1EB8594F001535CB /* CONCEPTOUITests.swift in Sources */,
+				383033801EBEEA9900DEE1AF /* DetalleControlador2InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +465,7 @@
 				3830337B1EBED94E00DEE1AF /* PodcastTable2.swift in Sources */,
 				384B7A3D1E6B42E000DBC3B0 /* InterfaceController.swift in Sources */,
 				38EE132B1E8D612800518328 /* controladorRenglon.swift in Sources */,
+				3830337F1EBEEA9900DEE1AF /* DetalleControlador2InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +475,7 @@
 			files = (
 				A76A71861E8D73DF00DF6936 /* MapViewController.swift in Sources */,
 				384262FB1E8609D30044B078 /* SeleccionProgramaTableViewController.swift in Sources */,
+				3830337E1EBEEA9900DEE1AF /* DetalleControlador2InterfaceController.swift in Sources */,
 				39265C231E8DA12B003D36E1 /* mapaEventos2.swift in Sources */,
 				384262F91E86056B0044B078 /* SeleccionPodcast2TableViewController.swift in Sources */,
 				39265C211E8DA050003D36E1 /* mapaEvento1.swift in Sources */,

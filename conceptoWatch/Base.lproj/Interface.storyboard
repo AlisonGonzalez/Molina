@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9sH-yk-AcX">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9sH-yk-AcX">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,17 +9,17 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
-        <!--Detalle Controlador Interface Controller-->
+        <!--Detalle Controlador2 Interface Controller-->
         <scene sceneID="vFQ-N2-Nel">
             <objects>
-                <controller id="wdn-C5-Sc7" customClass="DetalleControladorInterfaceController" customModule="CONCEPTO">
+                <controller id="wdn-C5-Sc7" customClass="DetalleControlador2InterfaceController" customModule="CONCEPTO">
                     <items>
                         <label alignment="left" text="Label" id="EKU-cf-1Ny"/>
                         <label alignment="left" text="Label" id="GkZ-vW-1Dj"/>
                     </items>
                     <connections>
-                        <outlet property="sintesis" destination="GkZ-vW-1Dj" id="Z00-0g-8iJ"/>
-                        <outlet property="titulo" destination="EKU-cf-1Ny" id="ig3-ec-z55"/>
+                        <outlet property="sintesis" destination="GkZ-vW-1Dj" id="chl-Vz-HXC"/>
+                        <outlet property="titulo" destination="EKU-cf-1Ny" id="Rs0-Fb-rDY"/>
                     </connections>
                 </controller>
             </objects>
@@ -83,13 +83,15 @@
                                     <group key="rootItem" width="1" alignment="left" id="HSS-5f-w6U">
                                         <items>
                                             <label alignment="left" text="Label" id="8Fu-2r-0VR"/>
-                                            <label alignment="left" text="Label" id="K1d-KP-Tc1"/>
+                                            <label alignment="left" id="K1d-KP-Tc1"/>
                                         </items>
+                                        <connections>
+                                            <segue destination="wdn-C5-Sc7" kind="push" id="0sG-Qk-qsa"/>
+                                        </connections>
                                     </group>
                                     <connections>
                                         <outlet property="name" destination="8Fu-2r-0VR" id="8KG-To-h3S"/>
                                         <outlet property="subname" destination="K1d-KP-Tc1" id="VHC-MG-B6u"/>
-                                        <segue destination="wdn-C5-Sc7" kind="push" id="Z1F-6b-LPj"/>
                                     </connections>
                                 </tableRow>
                             </items>

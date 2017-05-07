@@ -1,8 +1,8 @@
 //
-//  DetalleControladorInterfaceController.swift
+//  DetalleControlador2InterfaceController.swift
 //  CONCEPTO
 //
-//  Created by Alfredo on 3/30/17.
+//  Created by Alfredo on 5/7/17.
 //  Copyright © 2017 Alfredo. All rights reserved.
 //
 
@@ -10,16 +10,21 @@ import WatchKit
 import Foundation
 
 
-class DetalleControladorInterfaceController: WKInterfaceController {
+class DetalleControlador2InterfaceController: WKInterfaceController {
 
+    @IBOutlet var titulo: WKInterfaceLabel!
+    
+    @IBOutlet var sintesis: WKInterfaceLabel!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        let c = context as! PodcastTable2
+        //let c = context as! PodcastTable2
         
-        let texto1=c.nombre
-        let texto2=c.descripcion
-        
+        //let texto1=c.nombre
+        //let texto2=c.descripcion
+        //titulo.setText(texto1)
+        //sintesis.setText(texto2)
         
         // Configure interface objects here.
     }
