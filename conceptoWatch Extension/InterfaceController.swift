@@ -68,7 +68,7 @@ class InterfaceController: WKInterfaceController {
         let objetoMarca = nuevoArray?[rowIndex] as! [String: Any]
         let m=objetoMarca["nombre"] as! String
         let a=objetoMarca["descripcion"] as! String
-        let c=PodcastTable(elnombre: m, ladescripcion: a)
+        let c=PodcastTable2(elnombre: m, ladescripcion: a)
         return c
     }
     

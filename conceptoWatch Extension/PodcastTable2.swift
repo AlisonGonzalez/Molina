@@ -1,15 +1,15 @@
 //
-//  PodcastTable.swift
+//  PodcastTable2.swift
 //  CONCEPTO
 //
-//  Created by cdt307 on 3/30/17.
+//  Created by Alfredo on 5/6/17.
 //  Copyright © 2017 Alfredo. All rights reserved.
 //
 
 import WatchKit
-import UIKit
 
-class PodcastTable {
+class PodcastTable2: NSObject {
+    
     var nombre:String
     var descripcion:String
     
