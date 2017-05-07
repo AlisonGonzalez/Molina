@@ -19,12 +19,12 @@ class DetalleControlador2InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        //let c = context as! PodcastTable2
+        let c = context as! PodcastTable2
         
-        //let texto1=c.nombre
-        //let texto2=c.descripcion
-        //titulo.setText(texto1)
-        //sintesis.setText(texto2)
+        let texto1=c.nombre
+        let texto2=c.descripcion
+        titulo.setText(texto1)
+        sintesis.setText(texto2)
         
         // Configure interface objects here.
     }

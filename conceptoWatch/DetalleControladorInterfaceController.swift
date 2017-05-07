@@ -21,6 +21,12 @@ class DetalleControladorInterfaceController: WKInterfaceController {
         let texto2=c.descripcion
         
         
+        //let s=context as! MarcaAuto
+        //let numAgencias=s.agencias
+        //let contenidoMarca=s.marca
+        //agencias.setText(String(numAgencias))
+        //marca.setText(contenidoMarca)
+
         // Configure interface objects here.
     }
 
