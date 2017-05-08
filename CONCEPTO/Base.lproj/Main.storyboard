@@ -500,7 +500,26 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                                             <action selector="useCameraRoll:" destination="hV6-gr-mJi" id="71L-DY-eMK"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="                                   " id="05V-GL-Ptq"/>
+                                    <barButtonItem style="plain" id="JYD-Tb-tgd">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="syO-PV-RUh">
+                                            <rect key="frame" x="170" y="7" width="102" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Enviar Watch "/>
+                                        </button>
+                                        <connections>
+                                            <action selector="enviarAWatch:" destination="hV6-gr-mJi" id="q8r-3N-3Mj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="7Ld-hs-zfe">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="p3e-Eb-Tt0">
+                                            <rect key="frame" x="282" y="7" width="52" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Saludar"/>
+                                        </button>
+                                        <connections>
+                                            <action selector="saludarWatch:" destination="hV6-gr-mJi" id="Use-4a-gX4"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem systemItem="action" id="in8-AQ-Tkc">
                                         <connections>
                                             <action selector="share:" destination="hV6-gr-mJi" id="9gz-YA-2Cg"/>

@@ -161,7 +161,7 @@ class SeleccionProgramaTableViewController: UITableViewController, UISearchBarDe
             buscando = true
             
             //Any es $0, String? es barraBuscar.text
-            infoFiltrada = nuevoArray?.filter({ $0 as! String == barraBuscar.text })
+            infoFiltrada = nuevoArray?.filter({ ($0 as! String) == barraBuscar.text })
             
             tableView.reloadData()
         }

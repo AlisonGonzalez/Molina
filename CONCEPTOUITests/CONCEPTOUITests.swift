@@ -35,15 +35,24 @@ class PruebasUnitariasTests: XCTestCase {
     }
     func conexion(){
         let resultado = FirstViewController()
+        XCTAssertEqual(resultado.checarConexion(), true)
+        
             }
     func testConceptoRadial(){
         let resultado=SeleccionPodcast2TableViewController()
         XCTAssertEqual(resultado.direccion, "http://conceptoradial.000webhostapp.com/json/podcasts3.json")
     }
-    func testMap(){
-        let resultado = mapaEvento1()
-        //XCTAssert(resultado.punto1.latitude,19.424722)
+    func testConceptoRadialJSON(){
+        let resultado=SeleccionPodcast2TableViewController()
+        XCTAssertEqual(resultado.datosJSON, "[{\"título\": \"pod1\", \"URL\": \"http://mx.ivoox.com/es/sintonia-capital-seguridad-mexico-14-mar_mf_17565955_feed_1.mp3?_=1\"}]")
     }
+    func testConceptoRadialDir(){
+        let resultado=RadioPlayer()
+        XCTAssertEqual(resultado.conceptoradial, "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://us3.internet-radio.com:8007/listen.pls&t=.pls")
+    }
+
+   // http://204.12.193.98:8139/listen.pls
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

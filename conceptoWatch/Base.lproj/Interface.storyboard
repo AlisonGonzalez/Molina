@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9sH-yk-AcX">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9sH-yk-AcX">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
     <scenes>
         <!--Detalle Controlador2 Interface Controller-->
@@ -124,10 +124,19 @@
             </objects>
             <point key="canvasLocation" x="407" y="1312"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Galeria Interface Controller-->
         <scene sceneID="Mpr-ub-1dy">
             <objects>
-                <controller id="Trk-jZ-nTH"/>
+                <controller id="Trk-jZ-nTH" customClass="GaleriaInterfaceController" customModule="conceptoWatch_Extension">
+                    <items>
+                        <label alignment="left" text="hola" id="WWe-Bs-RdS"/>
+                        <imageView alignment="left" id="ZY2-0D-em0"/>
+                    </items>
+                    <connections>
+                        <outlet property="imagenRecibida" destination="ZY2-0D-em0" id="qL3-5n-9NR"/>
+                        <outlet property="saludo" destination="WWe-Bs-RdS" id="FTG-9d-1FP"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="407" y="1023"/>
         </scene>

@@ -53,9 +53,7 @@ class InterfaceController: WKInterfaceController {
             let elRenglon=laTable.rowController(at: indice) as! controladorRenglon
             let objetoMarca = nuevoArray?[indice] as! [String: Any]
             let marca=objetoMarca["nombre"] as! String
-            let agencia=objetoMarca["subnombre"] as! String
             elRenglon.name.setText(marca)
-            //elRenglon.subname.setText(agencia)
             
         }
     }

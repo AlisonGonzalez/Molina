@@ -83,9 +83,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         case "start" :
             RadioPlayer.sharedInstance.play()
             replyValues["status"] = "Reproduciendo" as AnyObject?
+            break
         case "stop" :
             RadioPlayer.sharedInstance.pause()
             replyValues["status"] = "Detenido" as AnyObject?
+            break
         default:
             break
         }

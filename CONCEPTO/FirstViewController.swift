@@ -12,9 +12,52 @@ import AVFoundation
 import MobileCoreServices
 import WatchConnectivity
 
-class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class FirstViewController: UIViewController,WCSessionDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     static let sharedInstance = FirstViewController()
     
+    public func sessionDidBecomeInactive(_ session: WCSession) {
+        print ("error in sessionDidBecomeInactive")
+    }
+    public func sessionDidDeactivate(_ session: WCSession) {
+        print ("error in SesssionDidDeactivate")
+    }
+    public func session(_ session: WCSession, activationDidCompleteWith    activationState: WCSessionActivationState, error: Error?) {
+        print ("error in activationDidCompleteWith error")
+    }
+    @IBAction func saludarWatch(_ sender: Any) {
+        if WCSession.default().isReachable == true {
+                let session = WCSession.default()
+                
+            session.sendMessage(["saluda":"hola"], replyHandler: nil, errorHandler: nil)
+             }
+    }
+
+    @IBAction func enviarAWatch(_ sender: Any) {
+        print("proceso imagen")
+        
+        if WCSession.default().isReachable == true {
+            
+           
+            
+            let ima = imageView.image! as UIImage?
+            if(ima != nil){
+                let data = UIImageJPEGRepresentation(ima!, 1.0)
+                let session = WCSession.default()
+                
+                session.sendMessageData(data!, replyHandler: { (data) -> Void in
+                    // handle the response from the device
+                    
+                }) { (error) -> Void in
+                    print("error: \(error.localizedDescription)")
+                    
+                }
+            }else{
+                print("No hay imagen")
+            }
+        }else{
+            print("No hay sesión")
+        }
+    }
     @IBOutlet weak var imageView: UIImageView!
     var newMedia: Bool?
     @IBOutlet weak var playButton: UIButton!
@@ -99,25 +142,6 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
             }else if mediaType.isEqual(to: kUTTypeMovie as String){
                 //Video. Tal vez lo haga hoy, tal vez no
                 
-            }
-           
-            
-            
-            if WCSession.default().isReachable == true {
-                
-                let requestValues = ["command" : "imagenes"]
-                let session = WCSession.default()
-                
-                let image = imageView.image!
-                
-                let data = UIImageJPEGRepresentation(image, 1.0)
-                
-                session.sendMessageData(data!, replyHandler: { (data) -> Void in
-                    // handle the response from the device
-                   print("imagen enviada")
-                }) { (error) -> Void in
-                    print("error: \(error.localizedDescription)")
-                }
             }
         }
     }
