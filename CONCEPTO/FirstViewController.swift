@@ -166,6 +166,10 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func checarConexion() -> Bool{
+        return WCSession.default().isReachable
+    }
 
 }
 

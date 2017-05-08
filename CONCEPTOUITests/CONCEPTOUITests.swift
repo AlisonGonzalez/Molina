@@ -33,6 +33,9 @@ class PruebasUnitariasTests: XCTestCase {
         let resultado=PodcastPlayer()
         XCTAssertEqual(resultado.currentlyPlaying(), false)
     }
+    func conexion(){
+        let resultado = FirstViewController()
+            }
     func testConceptoRadial(){
         let resultado=SeleccionPodcast2TableViewController()
         XCTAssertEqual(resultado.direccion, "http://conceptoradial.000webhostapp.com/json/podcasts3.json")
