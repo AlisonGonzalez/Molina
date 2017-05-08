@@ -130,6 +130,7 @@ class SeleccionPodcast2TableViewController: UITableViewController, UISearchBarDe
             view.endEditing(true)
             
             tableView.reloadData()
+            
         } else {
             buscando = true
             
