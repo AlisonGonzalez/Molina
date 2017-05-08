@@ -10,7 +10,7 @@ import UIKit
 import AudioToolbox.AudioServices
 
 
-class SeleccionProgramaTableViewController: UITableViewController {
+class SeleccionProgramaTableViewController: UITableViewController, UISearchBarDelegate {
     
     //Definir direccion
     var direccion = "http://conceptoradial.000webhostapp.com/json/podcasts3.json"
@@ -24,6 +24,13 @@ class SeleccionProgramaTableViewController: UITableViewController {
     
     //Definir nuevo arreglo
     var nuevoArray:[Any]?
+    
+    //Barra de busqueda
+    @IBOutlet weak var barraBuscar: UISearchBar!
+    
+    var buscando = false
+    var infoFiltrada:[Any]?
+    
     
     //Convertir json en diccionario
     func JSONParseArray(_ string: String) -> [AnyObject]{
@@ -88,6 +95,10 @@ class SeleccionProgramaTableViewController: UITableViewController {
         let datos = try? Data(contentsOf: url!)
         nuevoArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
         
+        //Barra de busqueda
+        barraBuscar.delegate = self
+        barraBuscar.returnKeyType = UIReturnKeyType.done
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -105,6 +116,10 @@ class SeleccionProgramaTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         //Regresar el numero de elementos del arreglo
+        //Barra de busqueda
+        if buscando {
+            return (infoFiltrada?.count)!
+        }
         return (nuevoArray?.count)!
     }
     
@@ -116,7 +131,14 @@ class SeleccionProgramaTableViewController: UITableViewController {
         // Configure the cell...
         
         //Obtener la fila
-        let objetoPodcast = nuevoArray?[indexPath.row] as! [String: Any]
+        var objetoPodcast = nuevoArray?[indexPath.row] as! [String: Any]
+        
+        //Barra de busqueda
+        if buscando {
+            objetoPodcast = infoFiltrada?[indexPath.row] as! [String: Any]
+        } else {
+            objetoPodcast = nuevoArray?[indexPath.row] as! [String: Any]
+        }
         
         //Determinar el valor de la fila
         let s: String = objetoPodcast["título"] as! String
@@ -124,6 +146,27 @@ class SeleccionProgramaTableViewController: UITableViewController {
         
         return cell
     }
+    
+    
+    //barra de busqueda
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if barraBuscar.text == nil || barraBuscar.text == "" {
+            buscando = false
+            
+            view.endEditing(true)
+            
+            tableView.reloadData()
+            
+        } else {
+            buscando = true
+            
+            //Any es $0, String? es barraBuscar.text
+            infoFiltrada = nuevoArray?.filter({ $0 as! String == barraBuscar.text })
+            
+            tableView.reloadData()
+        }
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.

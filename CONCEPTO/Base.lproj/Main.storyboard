@@ -877,6 +877,7 @@ La cita será el día 11 de  marzo del 2018 en el Foro Sol.</string>
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="barraBuscar" destination="NrF-mE-KyX" id="C5D-6M-Gas"/>
                         <outlet property="searchDisplayController" destination="5jG-Ie-7Ph" id="y3p-da-DOm"/>
                     </connections>
                 </tableViewController>
