@@ -8,8 +8,8 @@
 
 import UIKit
 
-class SeleccionPodcast2TableViewController: UITableViewController {
-   
+class SeleccionPodcast2TableViewController: UITableViewController, UISearchBarDelegate {
+    
     //Definir direccion
     let direccion = "http://conceptoradial.000webhostapp.com/json/podcasts3.json"
     
@@ -21,9 +21,18 @@ class SeleccionPodcast2TableViewController: UITableViewController {
     //Definir nuevo arreglo
     var nuevoArray:[Any]?
     
-    //Elementos para barra de buscar
-    var barraControlador: UISearchController!
-    var resultadosControlador = UITableViewController()
+    //Elementos barra de buscar
+    /* Primera version
+     var barraControlador: UISearchController!
+     var resultadosControlador = UITableViewController()
+     */
+    //Segunda vers
+    @IBOutlet weak var barraBuscar: UISearchBar!
+    
+    
+    var buscando = false
+    var infoFiltrada:[Any]?
+    
     
     //Convertir json en diccionario
     func JSONParseArray(_ string: String) -> [AnyObject]{
@@ -54,8 +63,17 @@ class SeleccionPodcast2TableViewController: UITableViewController {
         //Obtener contenido de la nube
         let datos = try? Data(contentsOf: url!)
         nuevoArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
-        self.barraControlador = UISearchController(searchResultsController: self.resultadosControlador)
-        self.tableView.tableHeaderView = self.barraControlador.searchBar
+        
+        //Elementos barra de búsqueda
+        /* Primera version
+         self.barraControlador = UISearchController(searchResultsController: self.resultadosControlador)
+         self.tableView.tableHeaderView = self.barraControlador.searchBar
+         */
+        //Segunda vers
+        barraBuscar.delegate = self
+        barraBuscar.returnKeyType = UIReturnKeyType.done
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -71,8 +89,11 @@ class SeleccionPodcast2TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        //Regresar el numero de elementos del arreglo
+        
+        //barra de busqueda
+        if buscando {
+            return (infoFiltrada?.count)!
+        }
         return (nuevoArray?.count)!
     }
     
@@ -80,18 +101,43 @@ class SeleccionPodcast2TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NombrePodcast", for: indexPath)
         cell.accessoryType = .disclosureIndicator
-        //cell.textLabel?.text = datos[indexPath.row]
-        
-        // Configure the cell...
         
         //Obtener fila
-        let objetoPodcast = nuevoArray?[indexPath.row] as! [String: Any]
+        //let objetoPodcast = nuevoArray?[indexPath.row] as! [String: Any]
+        var objetoPodcast = nuevoArray?[indexPath.row] as! [String: Any]
+        
+        //Barra de busqueda
+        if buscando {
+            objetoPodcast = infoFiltrada?[indexPath.row] as! [String: Any]
+        } else {
+            objetoPodcast = nuevoArray?[indexPath.row] as! [String: Any]
+        }
         
         //Determinar el valor del renglon
         let s: String = objetoPodcast["nombre"] as! String
+        
+        
         cell.textLabel?.text = s
         
         return cell
+    }
+    
+    //barra de busqueda
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if barraBuscar.text == nil || barraBuscar.text == "" {
+            buscando = false
+            
+            view.endEditing(true)
+            
+            tableView.reloadData()
+        } else {
+            buscando = true
+            
+            //Any es $0, String? es barraBuscar.text
+            infoFiltrada = nuevoArray?.filter({ $0 as! String == barraBuscar.text })
+            
+            tableView.reloadData()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -105,52 +151,4 @@ class SeleccionPodcast2TableViewController: UITableViewController {
         let s =  objetoMarca["nombre"]
         siguienteVista.tipo = s as! String
     }
-    
-    
-    
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
-    
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
