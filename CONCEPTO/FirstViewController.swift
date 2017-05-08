@@ -10,6 +10,7 @@ import UIKit
 import MediaPlayer
 import AVFoundation
 import MobileCoreServices
+import WatchConnectivity
 
 class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     static let sharedInstance = FirstViewController()
@@ -98,6 +99,25 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
             }else if mediaType.isEqual(to: kUTTypeMovie as String){
                 //Video. Tal vez lo haga hoy, tal vez no
                 
+            }
+           
+            
+            
+            if WCSession.default().isReachable == true {
+                
+                let requestValues = ["command" : "imagenes"]
+                let session = WCSession.default()
+                
+                let image = imageView.image!
+                
+                let data = UIImageJPEGRepresentation(image, 1.0)
+                
+                session.sendMessageData(data!, replyHandler: { (data) -> Void in
+                    // handle the response from the device
+                   print("imagen enviada")
+                }) { (error) -> Void in
+                    print("error: \(error.localizedDescription)")
+                }
             }
         }
     }
